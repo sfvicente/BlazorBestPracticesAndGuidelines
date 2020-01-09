@@ -10,6 +10,4 @@ A guide for Blazor syntax, conventions, and application structure.
 
 [HTTP Communication](https://github.com/sfvicente/BlazorStyleGuide/blob/master/HttpCommunication.md)
 
-
-
-
+[Routing](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Routing.md)
