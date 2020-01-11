@@ -6,7 +6,7 @@ A guide for Blazor syntax, conventions, and application structure.
 **Components**
 
  - [Rendering](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Rendering.md)
-
+ - [Localization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Localization.md)
 
  **HTTP Communication**
 
