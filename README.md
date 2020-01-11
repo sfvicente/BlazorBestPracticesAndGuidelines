@@ -1,4 +1,5 @@
 
+
 # BlazorStyleGuide
 A guide for Blazor syntax, conventions, and application structure.
 
@@ -6,7 +7,11 @@ A guide for Blazor syntax, conventions, and application structure.
 
 
 
-[Components](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components.md)
+Components
+
+ - [Rendering](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Rendering.md)
+
+
 
 [HTTP Communication](https://github.com/sfvicente/BlazorStyleGuide/blob/master/HttpCommunication.md)
 
