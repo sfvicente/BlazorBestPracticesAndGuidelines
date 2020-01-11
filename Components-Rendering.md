@@ -1,6 +1,52 @@
 # Components | Rendering
 
 
+
+
+### Usage of the  `StateHasChanged()`
+
+
+**CDxxx - Do not use `StateHasChanged()` to force the render of components in synchronous methods.**
+
+```
+<button @onclick="@PlaceOrder_Clicked" disabled="@DisablePlaceOrderButton">Place Order</button>
+
+@code {
+ private bool DisablePlaceOrderButton { get; set; } = false;
+ private void PlaceOrder_Clicked()
+    {
+        DisablePlaceOrderButton = true;
+        StateHasChanged();
+        if (cart.Lines.Count() == 0)
+        {
+            DisablePlaceOrderButton = false;
+            return;
+        }
+        ...
+}
+```
+In this example button will be disabled only after PlaceOrder() method finishes executing. 
+
+StateHasChanged informs the component that its state has changed but it does not render the component. The component will decide when to render itself. You can't do that in a synchronous method, you should async your code to let the component a chance to render.
+
+```
+<button @onclick="@PlaceOrder_Clicked" disabled="@DisablePlaceOrderButton">Place Order</button>
+
+@code{
+    private bool DisablePlaceOrderButton { get; set; } = false;
+    private async Task PlaceOrder_Clicked()
+    {
+        DisablePlaceOrderButton = true;
+        ...
+
+    }
+}
+```
+
+
+
+
+
 ### Usage of the  `@key`
 
 **CS010 - Use `@key` whenever a list such as a `@foreach` block is rendered and a suitable value exists to define the `@key`.**
