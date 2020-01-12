@@ -35,6 +35,18 @@ The `HttpClient` method `PutJsonAsync`  sends an HTTP PUT request, including JSO
 ``` 
 <BR>
 
+**Use  `DeleteAsync`  to send HTTP DELETE requests to a server**
+
+The `HttpClient` method `DeleteAsync`  send a DELETE request to the specified Uri as an asynchronous operation.
+
+```  
+@code {  
+        ...       
+}  
+``` 
+<BR>
+
+
 **Use `SendAsync` and `HttpRequestMessage` to customize requests**
 
 If there is a need to specify the request URI, include specific HTTP headers or use HTTP methods that are not GET, POST, PUT or DELETE. Use `HttpRequestMessage` to configure the message and `SendAsync` to perform communication.
