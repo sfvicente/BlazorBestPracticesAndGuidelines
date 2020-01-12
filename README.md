@@ -1,5 +1,6 @@
-# BlazorStyleGuide
-A guide for Blazor syntax, conventions, and application structure.
+# Blazor | Best Practices and Guidelines
+
+A collection of best practices and guidelines for Blazor.
 
 ### Table of Contents
 
