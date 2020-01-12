@@ -24,6 +24,17 @@ The `HttpClient` method `PostJsonAsync`  sends an HTTP POST request, including J
 ``` 
 <BR>
 
+**Use  `PutJsonAsync`  to send HTTP PUT requests to a server**
+
+The `HttpClient` method `PutJsonAsync`  sends an HTTP PUT request, including JSON-encoded content.
+
+```  
+@code {  
+        ...       
+}  
+``` 
+<BR>
+
 **Use `SendAsync` and `HttpRequestMessage` to customize requests**
 
 If there is a need to specify the request URI, include specific HTTP headers or use HTTP methods that are not GET, POST, PUT or DELETE. Use `HttpRequestMessage` to configure the message and `SendAsync` to perform communication.
