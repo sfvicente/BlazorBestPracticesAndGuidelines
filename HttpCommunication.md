@@ -1,5 +1,6 @@
 # HTTP Communication
 
+### General
 
 **Use `SendAsync` and `HttpRequestMessage` to customize requests**
 
