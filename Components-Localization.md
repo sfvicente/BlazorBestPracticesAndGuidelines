@@ -1,4 +1,4 @@
-### Localization
+### Components | Localization
 
 **Use a _redirect-based approach_ to provide UI to allow a user to select a culture**
 
