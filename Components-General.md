@@ -1,4 +1,4 @@
-### Localization
+### Components | General
 
 **Do not use the loop variable in a `for` loop directly in a lambda expression.**
 
