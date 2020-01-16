@@ -12,6 +12,9 @@ A collection of best practices and guidelines for Blazor.
  - [Localization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Localization.md)
  - [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Security.md)
 
+ **Dependency Injection**
+ - [Dependency Injection](https://github.com/sfvicente/BlazorStyleGuide/blob/master/DependencyInjection.md)
+
  **HTTP Communication**
 
  - [HTTP Communication](https://github.com/sfvicente/BlazorStyleGuide/blob/master/HttpCommunication.md)
