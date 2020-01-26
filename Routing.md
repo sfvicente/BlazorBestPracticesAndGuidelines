@@ -1,6 +1,17 @@
 # Routing
 
 
+
+**Use the `LocationChanged` event to determine when the URL in the browser is changed.**
+
+`LocationChanged` is an event that is triggered whenever the URL in the browser is modified. It passes an instance of `LocationChangedEventArgs` which provides the the URL :
+
+```
+Example
+```
+<br/><br/>
+
+
 **Provide a 404 page when the application fails to match a URL to a component**
 
 
