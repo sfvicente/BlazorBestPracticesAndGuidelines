@@ -7,6 +7,7 @@ A collection of best practices and guidelines for Blazor.
 **Components**
 
  - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-General.md)
+ - [Events](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Events.md)
  - [Communication](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Communication.md)
  - [Rendering](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Rendering.md)
  - [Localization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Localization.md)
