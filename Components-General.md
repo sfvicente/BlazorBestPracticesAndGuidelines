@@ -1,5 +1,15 @@
 ### Components | General
 
+**Use PascalCase for naming components**
+
+Component names should be created by concatenating capitalized words.
+
+```
+NavMenu.razor
+```
+<br><br>
+
+
 **Do not use the loop variable in a `for` loop directly in a lambda expression.**
 
 The following code should not be used:
