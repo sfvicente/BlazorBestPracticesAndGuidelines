@@ -33,3 +33,14 @@ Example
 ```
 
 ToDo: Image
+
+<br/><br/>
+
+**Don't use `RedirectToPage` to perform a redirect.**
+
+Do not use the `PageBase.RedirectToPage()` method to perform redirection in Blazer based apps. as `RedirectToPage()` will perform a HTTP redirect to a _Razor_ page. Instead, inject the `NavigationManager` component and use it's `NavigateTo()` method.
+
+```
+ToDo: Example
+```
+<br/><br/>
