@@ -10,3 +10,11 @@ Blazor Server uses SignalR for communication between the client and the server. 
 Blazor Server application doesn't ensure the integrity and confidentiality of the data sent between the server and the client, so HTTPS is needed to ensure Always use HTTPS.
 <br><br>
 
+
+**Use *Content Security Policy (CSP)* and  `X-Frame-Options`  header to protect an app from rendering inside of an  `<iframe>`**
+
+```
+ToDo: Example
+```
+
+<br><br>
