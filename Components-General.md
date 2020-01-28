@@ -20,3 +20,15 @@ Using the same variable used by all lambda expressions causes `i`'s value to be 
 
 `ToDo: Example`
 <br><br>
+
+**Use the `Parameter` attribute to specify arguments for a component in markup.**
+
+```
+<h1>@Title</h1>
+
+@code {
+	[Parameter]
+	public string Title { get; set; }
+}
+```
+<br><br>
