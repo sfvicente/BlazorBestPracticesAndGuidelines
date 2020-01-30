@@ -28,3 +28,11 @@ ToDo: Example
 
 <br><br>
 
+
+**Validate arguments to ensure that the target is allowed by the app.***
+
+```
+ToDo: Example
+```
+
+<br><br>
