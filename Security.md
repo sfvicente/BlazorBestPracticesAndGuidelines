@@ -45,3 +45,11 @@ ToDo: Example
 ```
 
 <br><br>
+
+**When rendering links as part of an application, validate that absolute link destinations are valid before including them in a page.***
+
+```
+ToDo: Example
+```
+
+<br><br>
