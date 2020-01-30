@@ -36,3 +36,12 @@ ToDo: Example
 ```
 
 <br><br>
+
+
+**When rendering links as part of an application, if possible, use relative links.***
+
+```
+ToDo: Example
+```
+
+<br><br>
