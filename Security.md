@@ -18,3 +18,13 @@ ToDo: Example
 ```
 
 <br><br>
+
+
+**Avoid using user input as part of the navigation call arguments.***
+
+```
+ToDo: Example
+```
+
+<br><br>
+
