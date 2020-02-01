@@ -15,7 +15,24 @@ In order to capture the reference to a child component, add the `@ref` attribute
 <br/><br/>
 
 
+**Use component references to issue commands to a component instance**
 
+After a reference field is populated with the child component instance, you can invoke methods on the component instance.
+
+```
+<AddTaskDialogBox @ref="addTaskDialogBox" ... />
+
+@code {
+	private AddTaskDialogBox addTaskDialogBox;
+
+	private void OnAddTaskButtonClick()
+	{
+		addTaskDialogBox.Show();
+	}
+	...
+}
+```
+<br/><br/>
 
 
 **Do not use component references to mutate the state of child components**
