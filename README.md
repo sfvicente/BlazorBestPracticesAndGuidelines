@@ -28,3 +28,7 @@ A collection of best practices and guidelines for Blazor.
 **JavaScript Interop**
 
 - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/JavaScriptInterop-General.md)
+
+**Application Development**
+
+- [Configuration](https://github.com/sfvicente/BlazorStyleGuide/blob/master/ApplicationDevelopment-Configuration.md)
