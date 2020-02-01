@@ -45,6 +45,19 @@ Instead, use normal declarative parameters to pass data to child components. Use
 <br><br>
 
 
+**Use the `OnAfterRenderAsync` or `OnAfterRender` methods to manipulate components via references after the component has finished rendering**
+
+Variables that hold references to components via `@ref` attribute are only populated after the component is rendered and its output includes the component element.
+
+```
+<AddTaskDialogBox @ref="addTaskDialogBox" ... />
+
+@code {
+	ToDo: code sample
+}
+```
+<br/><br/>
+
 
 
 
