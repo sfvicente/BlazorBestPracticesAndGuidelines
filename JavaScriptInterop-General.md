@@ -20,3 +20,18 @@ ToDo: Example
 ```
 <br><br>
 
+**Place custom JavaScript code at the bottom of the __Host.cshtml_ file, just below the script section that includes the Blazor code**
+
+```
+<script src="_framework/blazor.server.js"></script>
+<script>
+        window.MyMethods =
+        {
+            myMethod1: function (element) {
+                window.alert(element.id);
+            }
+        };
+</script>
+```
+
+<br/><br/>
