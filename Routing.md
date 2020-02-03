@@ -14,6 +14,25 @@ Current Url: @NavigationManager.Uri
 ```
 <br/><br/>
 
+**Use the `NavigateTo` method of the `NavigationManager` class to navigate to a specific URI**
+
+The `NavigationManager` class provides an abstraction for querying and managing URI navigation. Use the `NavigateTo` to navigate to the desired component.
+
+```
+@page "/navigate"
+@inject NavigationManager NavigationManager
+
+<h1>Hello, world!</h1>
+<button class="btn btn-primary" @onclick="NavigateToCheckout">Checkout</button>
+
+@code {
+	private void NavigateToCheckout()
+	{
+		NavigationManager.NavigateTo("checkout");
+	}
+}
+```
+<br/><br/>
 
 **Use the `LocationChanged` event to determine when the URL in the browser is changed.**
 
