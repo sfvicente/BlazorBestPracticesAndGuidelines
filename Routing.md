@@ -1,5 +1,18 @@
 # Routing
 
+**Use the `Uri` property of the `NavigationManager` class to obtain the current absolute URI**
+
+The `NavigationManager` class provides an abstraction for querying and managing URI navigation. Use the `Uri` to determine the current absolute URI.
+
+```
+@page "/"
+@inject NavigationManager NavigationManager
+
+<h1>Hello, world!</h1>
+
+Current Url: @NavigationManager.Uri
+```
+<br/><br/>
 
 
 **Use the `LocationChanged` event to determine when the URL in the browser is changed.**
