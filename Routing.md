@@ -44,6 +44,27 @@ Example
 <br/><br/>
 
 
+**Do not use `forceLoad` to navigate to an off-site URI.**
+
+Using `forceLoad` is not required in order to navigate to an off-site URI. Calling `NavigateTo` to another domain will perform a full browser navigation.
+
+```
+@page "/navigate"
+@inject NavigationManager NavigationManager
+
+<h1>Hello, world!</h1>
+<button class="btn btn-primary" @onclick="NavigateToBlazerHomepage">Blazor Homepage</button>
+
+@code {
+	private void NavigateToBlazorHomepage()
+	{
+		NavigationManager.NavigateTo("https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor");
+	}
+}
+```
+<br/><br/>
+
+
 **Provide a 404 page when the application fails to match a URL to a component**
 
 
