@@ -44,6 +44,27 @@ Example
 <br/><br/>
 
 
+**Use the `forceLoad` parameter of the `NavigateTo` method to instruct Blazor to bypass its own routing system and perform an HTTP request to the server to retrieve the content to display**
+
+Using `forceLoad` will make the browser navigate to the new URL through a server request.
+
+```
+@page "/navigate"
+@inject NavigationManager NavigationManager
+
+<h1>Hello, world!</h1>
+<button class="btn btn-primary" @onclick="NavigateToTerms">Terms & Conditions</button>
+
+@code {
+	private void NavigateToTerms()
+	{
+		NavigationManager.NavigateTo("https://mydomain.com/terms.html");
+	}
+}
+```
+<br/><br/>
+
+
 **Do not use `forceLoad` to navigate to an off-site URI.**
 
 Using `forceLoad` is not required in order to navigate to an off-site URI. Calling `NavigateTo` to another domain will perform a full browser navigation.
