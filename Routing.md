@@ -65,6 +65,33 @@ Using `forceLoad` is not required in order to navigate to an off-site URI. Calli
 <br/><br/>
 
 
+
+**To create optional route parameters add additional  `@page`  declarations in a component.**
+
+Although there is no specific mechanism for optional route parameters, the functionality can be achieve by using multiple `@page`  declarations.
+
+```
+@page "/counter"
+@page "/counter/{CounterId:int}"
+
+<h1>Counter</h1>
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
+```
+<br/><br/>
+
+
+
 **Provide a 404 page when the application fails to match a URL to a component**
 
 
