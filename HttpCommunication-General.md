@@ -1,4 +1,4 @@
-# HTTP Communication
+# HTTP Communication | General
 
 ### General
 
@@ -54,6 +54,3 @@ If there is a need to specify the request URI, include specific HTTP headers or 
 ```
 TODO: Example
 ```
-
-
-### CORS
