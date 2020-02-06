@@ -18,7 +18,7 @@ A collection of best practices and guidelines for Blazor.
 
  **HTTP Communication**
 
- - [HTTP Communication](https://github.com/sfvicente/BlazorStyleGuide/blob/master/HttpCommunication.md)
+ - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/HttpCommunication-General.md)
 
 **Routing**
 
