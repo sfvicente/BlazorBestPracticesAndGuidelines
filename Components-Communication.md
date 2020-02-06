@@ -1,4 +1,5 @@
-### Components | Communication
+# Components | Communication
+<br>
 
 **Use `@ref` attribute to capture references to child components**
 

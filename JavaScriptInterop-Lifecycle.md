@@ -1,5 +1,5 @@
-### Javascript Interop | Lifecycle
-
+# Javascript Interop | Lifecycle
+<br>
 
 **Use the `OnAfterRenderAsync` component method to execute JavaScript code after your components have been rendered.**
 

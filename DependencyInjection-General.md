@@ -1,4 +1,5 @@
-# Dependency Injection
+# Dependency Injection | General
+<br>
 
 **Use multiple `@inject` statements to inject different services in a component.**
 

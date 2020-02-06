@@ -1,6 +1,5 @@
 # Components | Rendering
-
-
+<br>
 
 
 ### Usage of the  `StateHasChanged()`

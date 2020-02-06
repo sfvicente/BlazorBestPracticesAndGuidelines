@@ -1,4 +1,5 @@
-# Routing
+# Routing | General
+<br>
 
 **Use the `Uri` property of the `NavigationManager` class to obtain the current absolute URI**
 

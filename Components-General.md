@@ -1,4 +1,5 @@
-### Components | General
+# Components | General
+<br>
 
 **Use PascalCase for naming components**
 

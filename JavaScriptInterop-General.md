@@ -1,6 +1,5 @@
-# JavaScript Interop
-
-### General
+# JavaScript Interop | General
+<br>
 
 **Inject the `JSRuntime` object  to execute JSInterop calls.**
 

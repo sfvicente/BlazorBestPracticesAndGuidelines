@@ -1,6 +1,5 @@
 # HTTP Communication | General
-
-### General
+<br>
 
 **Use  `GetJsonAsync`  to send HTTP GET requests to a server**
 

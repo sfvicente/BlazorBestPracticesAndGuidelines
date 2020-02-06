@@ -1,4 +1,5 @@
 # Components | Security
+<br>
 
 **Don't render raw HTML constructed from any untrusted source**
 

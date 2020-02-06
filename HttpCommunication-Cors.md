@@ -1,5 +1,5 @@
 # HTTP Communication | CORS
-
+<br>
 
 **When using endpoint routing, configure CORS middleware to execute between the calls to `UseRouting` and `UseEndpoints`.**
 

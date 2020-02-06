@@ -1,4 +1,5 @@
-### Components | Events
+# Components | Events
+<br>
 
 Use the @on{EVENT}:stopPropagation directive attribute to stop event propagation.
 
