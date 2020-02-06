@@ -19,7 +19,7 @@ A collection of best practices and guidelines for Blazor.
  **HTTP Communication**
 
  - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/HttpCommunication-General.md)
- - [CORS](https://github.com/sfvicente/BlazorStyleGuide/blob/master/HttpCommunication-CORS.md)
+ - [CORS](https://github.com/sfvicente/BlazorStyleGuide/blob/master/HttpCommunication-Cors.md)
 
 **Routing**
 
