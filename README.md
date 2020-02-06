@@ -16,7 +16,7 @@ A collection of best practices and guidelines for Blazor.
  <br>
 
  **Dependency Injection**
- - [Dependency Injection](https://github.com/sfvicente/BlazorStyleGuide/blob/master/DependencyInjection.md)
+ - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/DependencyInjection-General.md)
  <br>
 
  **HTTP Communication**
