@@ -27,7 +27,7 @@ A collection of best practices and guidelines for Blazor.
 
 **Routing**
 
-- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Routing.General.md)
+- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Routing-General.md)
 <br>
 
 **JavaScript Interop**
