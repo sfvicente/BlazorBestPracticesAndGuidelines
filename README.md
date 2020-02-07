@@ -1,6 +1,6 @@
 # Blazor | Best Practices and Guidelines
 
-A collection of best practices and guidelines for Blazor.
+A collection of best practices and guidelines for Blazor application development.
 
 ### Table of Contents
 <br>
