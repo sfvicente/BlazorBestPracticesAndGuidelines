@@ -20,3 +20,14 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 ``` 
 <br><br>
 
+
+**Do not specify `AllowAnyOrigin` and `AllowCredentials` simultaneously when configuring CORS middleware.**
+
+Using both `AllowAnyOrigin` and `AllowCredentials` is an insecure configuration and can result in cross-site request forgery.
+
+```
+TODO: Sample code
+```
+
+The CORS service returns an invalid CORS response when an app is configured with both methods.
+<br><br>
