@@ -5,6 +5,10 @@ A collection of best practices and guidelines for Blazor application development
 ### Table of Contents
 <br>
 
+**Layouts**
+ - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Layouts-General.md)
+ <br>
+
 **Components**
 
  - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-General.md)
