@@ -6,6 +6,7 @@ A collection of best practices and guidelines for Blazor application development
 <br>
 
 **Layouts**
+
  - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Layouts-General.md)
  <br>
 
@@ -20,6 +21,7 @@ A collection of best practices and guidelines for Blazor application development
  <br>
 
  **Dependency Injection**
+
  - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/DependencyInjection-General.md)
  <br>
 
