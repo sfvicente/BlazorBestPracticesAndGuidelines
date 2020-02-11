@@ -33,3 +33,21 @@ Using the same variable used by all lambda expressions causes `i`'s value to be 
 }
 ```
 <br><br>
+
+
+**To render raw HTML on a page, use the `MarkupString` property.**
+
+To render raw HTML, wrap the HTML content in a `MarkupString` value. The value is parsed as HTML or SVG and inserted into the DOM.
+
+```
+@page "/test"
+
+<h1>Example: Raw HTML</h1>
+
+@((MarkupString)markup)
+
+@code{
+	string markup = "<p>This is a <strong>Hello World</strong> example</p>";
+}
+```
+<br><br>
