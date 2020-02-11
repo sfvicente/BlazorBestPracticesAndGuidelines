@@ -1,7 +1,12 @@
 # JavaScript Interop | General
 <br>
 
-**Inject the `JSRuntime` object  to execute JSInterop calls.**
+# JavaScript Interop | General
+<br>
+
+**Inject the `JSRuntime` object into a component to execute JSInterop calls within the component.**
+
+Inject the IJSRuntime abstraction into the Razor component using the `inject` keywork.
 
 ```
  @page "/"
@@ -10,6 +15,7 @@
  <h1 id="title" >Hello, world!</h1>
 ```
 <br><br>
+
 
 **Wrap JavaScript interop calls within `try-catch` statements.**
 ToDo: Add description
