@@ -17,6 +17,16 @@ Inject the IJSRuntime abstraction into the Razor component using the `inject` ke
 <br><br>
 
 
+**Inject the `IJSRuntime` abstraction into a class to execute JSInterop calls from within the class.**
+
+Inject the `IJSRuntime` abstraction into a class via constructor injection.
+
+```
+TODO: Example
+```
+<br><br>
+
+
 **Wrap JavaScript interop calls within `try-catch` statements.**
 ToDo: Add description
 
