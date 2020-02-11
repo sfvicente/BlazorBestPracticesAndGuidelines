@@ -27,6 +27,17 @@ TODO: Example
 <br><br>
 
 
+**Inject the `IJSRuntime` abstraction with the `[Inject]` attribute for dynamic content generation with `BuildRenderTree`**
+
+Inject the `IJSRuntime` abstraction using property injection.
+
+```
+[Inject]
+IJSRuntime JSRuntime { get; set; }
+```
+<br><br>
+
+
 **Wrap JavaScript interop calls within `try-catch` statements.**
 ToDo: Add description
 
