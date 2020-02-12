@@ -14,7 +14,23 @@ Use both the @on{EVENT}:stopPropagation directive attribute and with your event 
 ```
 <input type="text" value="" @onkeypress="HandleKeyPresses" @onkeypress:preventDefault />
 ```
+<br><br>
 
 
+**To detect and handle mouse right-click events, use the `MouseEventArgs` property `Button`**
+```
+<div @onmouseup="HandleMouseUp" >
+    div content
+</div>
+
+@code {
+    void HandleMouseUp(MouseEventArgs args)
+    {
+        if (args.Button == 2)
+            Console.WriteLine("This is a right click");
+    }
+}
+```
+<br><br>
 
 
