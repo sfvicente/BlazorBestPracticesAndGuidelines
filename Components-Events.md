@@ -34,3 +34,19 @@ Use both the @on{EVENT}:stopPropagation directive attribute and with your event 
 <br><br>
 
 
+**To handle mouse right-click events and not display the browser context menu, use the HTML `oncontextmenu` attribute**
+```
+<div oncontextmenu="return false;" @onmouseup="HandleMouseUp">
+    div content
+</div>
+
+@code {
+    void HandleMouseUp(MouseEventArgs args)
+    {
+        if (args.Button == 2)
+            Console.WriteLine("This is a right click");
+    }
+}
+```
+<br><br>
+
