@@ -5,12 +5,21 @@
 
 Add the code below to your _Startup.cs_ to see more details about exceptions happening in your application:
 
-```
-services.AddServerSideBlazor()
-     .AddCircuitOptions(o =>
-     {
-         o.DetailedErrors = true;
-     });
+```csharp
+public class Startup
+{
+	public void ConfigureServices(IServiceCollection services)
+	{
+		...
+		services.AddRazorPages();
+		services.AddServerSideBlazor()
+		    .AddCircuitOptions(opt =>
+		    {
+				opt.DetailedErrors = true;
+			});
+		...
+	}
+}
 ```
 <br><br>
 
