@@ -1,8 +1,6 @@
 # JavaScript Interop | General
 <br>
 
-# JavaScript Interop | General
-<br>
 
 **Inject the `JSRuntime` object into a component to execute JSInterop calls within the component.**
 
