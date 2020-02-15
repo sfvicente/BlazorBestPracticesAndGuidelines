@@ -27,3 +27,25 @@ If there is Javascript code that needs to execute after a component has been ren
 ```
 <br/><br/>
 
+
+**When using `OnAfterRender()` or `OnAfterRenderAsync()`, use the `firstRender` parameter to ensure that initialization work is only performed once.**
+
+The `OnAfterRender()` and `OnAfterRenderAsync()` lifecycle methods are useful for performing tasks such as _JavaScript_ interop or interacting with values received from `@ref`. 
+
+```csharp
+protected override Task OnAfterRenderAsync(bool firstRender)
+{
+    if (firstRender)
+    {
+        this._usb.OnConnect += OnConnect;
+        this._usb.OnDisconnect += OnDisconnect;
+        this._usb.Initialize();
+        this._initialized = true;
+    }
+    return Task.CompletedTask;
+}
+```
+When the `firstRender` variable is true, which occurs only when the component is rendered for the first time, you should initialize your _JavaScript_ objects.
+<br/><br/>
+
+
