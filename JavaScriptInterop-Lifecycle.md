@@ -37,10 +37,7 @@ protected override Task OnAfterRenderAsync(bool firstRender)
 {
     if (firstRender)
     {
-        this._usb.OnConnect += OnConnect;
-        this._usb.OnDisconnect += OnDisconnect;
-        this._usb.Initialize();
-        this._initialized = true;
+        TODO: Example
     }
     return Task.CompletedTask;
 }
