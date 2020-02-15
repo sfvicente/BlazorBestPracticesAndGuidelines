@@ -57,5 +57,30 @@ ToDo: Example
         };
 </script>
 ```
+<br/><br/>
 
+
+**Avoid modifying the Document Object Model (DOM) directly with _JavaScript_.**
+
+In most scenarios modifying the DOM with Javascript isn't recommended because JavaScript can interfere with Blazor's change tracking.
+
+```csharp
+@using Microsoft.JSInterop
+@inject IJSRuntime JSRuntime
+
+<div @ref="divElement">Text during render</div>
+
+@code {
+    private ElementReference divElement;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync(
+                "setElementText", divElement, "Text after render");
+        }
+    }
+}
+```
 <br/><br/>
