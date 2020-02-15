@@ -1,17 +1,16 @@
 # Javascript Interop | Lifecycle
 <br>
 
-**Use the `OnAfterRenderAsync` component method to execute JavaScript code after your components have been rendered.**
+**Use the `OnAfterRenderAsync` component method to execute JavaScript code after the app is fully rendered and the client connection is established.**
 
-If there is Javascript code that needs to execute after a component has been rendered, you should use the OnAfterRenderAsync method.
+If there is Javascript code that needs to execute after a component has been rendered, you can use the `OnAfterRenderAsync` component lifecycle event to delay JavaScript interop calls until after the connection with the browser is established.
 
-```
+```csharp
  @page "/"
  @inject IJSRuntime jsRuntime
 
  <h1 id="myid" @ref=MyElementReference>Hello, world!</h1>
-
-
+ 
 @code{
     ElementReference MyElementReference;
 
@@ -26,6 +25,5 @@ If there is Javascript code that needs to execute after a component has been ren
 }
 
 ```
-
 <br/><br/>
 
