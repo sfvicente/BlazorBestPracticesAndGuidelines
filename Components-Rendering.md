@@ -27,6 +27,8 @@
 In this example button will be disabled only after PlaceOrder() method finishes executing. 
 
 StateHasChanged informs the component that its state has changed but it does not render the component. The component will decide when to render itself. You can't do that in a synchronous method, you should async your code to let the component a chance to render.
+<br><br>
+
 
 ```csharp
 <button @onclick="@PlaceOrder_Clicked" disabled="@DisablePlaceOrderButton">Place Order</button>
@@ -41,9 +43,7 @@ StateHasChanged informs the component that its state has changed but it does not
     }
 }
 ```
-
-
-
+<br><br>
 
 
 ### Usage of the  `@key`
@@ -53,12 +53,16 @@ StateHasChanged informs the component that its state has changed but it does not
 ```csharp
     ToDo: example
 ```
+<br><br>
+
 
 **CS011 - Use `@key` to prevent Blazor from preserving an element or component subtree when an object changes**
 
 ```csharp
     ToDo: example
 ```
+<br><br>
+
 
 **CD0xx - Do not to use @key when there's a performance cost when diffing with  `@key`.**
 
@@ -67,6 +71,7 @@ StateHasChanged informs the component that its state has changed but it does not
 ```
 
 The performance cost isn't large, but only specify  `@key`  if controlling the element or component preservation rules benefit the app.
+<br><br>
 
 
 **CS012 - Only use distinct values, such as object instances or primary key values**
@@ -74,3 +79,5 @@ The performance cost isn't large, but only specify  `@key`  if controlling the e
 ```csharp
     ToDo: example
 ```
+<br><br>
+
