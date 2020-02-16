@@ -27,6 +27,14 @@ NavMenu.razor
 <br><br>
 
 
+**Add the `@using` directive in the an __Imports.razor_ file at any level file to make a library's components available to a single page or set of pages within a folder.**
+```csharp
+@using MyComponent
+
+```
+<br><br>
+
+
 **Do not use the loop variable in a `for` loop directly in a lambda expression.**
 
 The following code should not be used:
