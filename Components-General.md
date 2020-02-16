@@ -11,6 +11,22 @@ NavMenu.razor
 <br><br>
 
 
+**Use the `@using` directive in the top-level __Imports.razor_ file to make a library's components available to an entire project.**
+
+```csharp
+@using System.Net.Http
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.JSInterop
+
+@using MyComponent
+```
+<br><br>
+
+
 **Do not use the loop variable in a `for` loop directly in a lambda expression.**
 
 The following code should not be used:
