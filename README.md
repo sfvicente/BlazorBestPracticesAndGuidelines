@@ -25,6 +25,11 @@ A collection of best practices and guidelines for Blazor application development
 
  - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/DependencyInjection-General.md)
  <br>
+ 
+ **State Management**
+
+ - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/StateManagement-General.md)
+ <br>
 
  **HTTP Communication**
 
