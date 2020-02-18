@@ -52,4 +52,5 @@ A collection of best practices and guidelines for Blazor application development
 
 - [Configuration](https://github.com/sfvicente/BlazorStyleGuide/blob/master/ApplicationDevelopment-Configuration.md)
 - [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/ApplicationDevelopment-Debugging.md)
+- [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/ApplicationDevelopment-Security.md)
 <br>
