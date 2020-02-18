@@ -11,12 +11,11 @@ Blazor Server application doesn't ensure the integrity and confidentiality of th
 <br><br>
 
 
-**Use *Content Security Policy (CSP)* and  `X-Frame-Options`  header to protect an app from rendering inside of an  `<iframe>`**
+**Use *Content Security Policy (CSP)* and  `X-Frame-Options` header to protect an app from rendering inside of an `<iframe>`**
 
 ```
 ToDo: Example
 ```
-
 <br><br>
 
 
