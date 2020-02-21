@@ -75,3 +75,26 @@ To render raw HTML, wrap the HTML content in a `MarkupString` value. The value i
 }
 ```
 <br><br>
+
+
+**To assign a result of an `async` function to _razor_ component, use a property to store the value.**
+
+```csharp
+@page "/"
+@inject ICountingService Counter
+
+<h1>Hello World!</h1>
+
+<MyComponent Count="@CounterValue" />
+
+@code{
+
+     public int CounterValue {get; set;}
+     protected override async Task OnInitalizedAsync()
+     {
+           CounterValue = await Counter.Get();
+     }
+}
+```
+<br><br>
+
