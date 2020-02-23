@@ -7,50 +7,50 @@ A collection of best practices and guidelines for Blazor application development
 
 **Layouts**
 
- - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Layouts-General.md)
+ - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Layouts/Layouts-General.md)
  <br>
 
 **Components**
 
- - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-General.md)
- - [Lifecycle](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Lifecycle.md)
- - [Events](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Events.md)
- - [Communication](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Communication.md)
- - [Rendering](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Rendering.md)
- - [Localization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Localization.md)
- - [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Components-Security.md)
+ - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-General.md)
+ - [Lifecycle](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Lifecycle.md)
+ - [Events](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Events.md)
+ - [Communication](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Communication.md)
+ - [Rendering](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Rendering.md)
+ - [Localization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Localization.md)
+ - [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Security.md)
  <br>
 
  **Dependency Injection**
 
- - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/DependencyInjection-General.md)
+ - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/DependencyInjection/DependencyInjection-General.md)
  <br>
  
  **State Management**
 
- - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/StateManagement-General.md)
+ - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/StateManagement/StateManagement-General.md)
  <br>
 
  **HTTP Communication**
 
- - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/HttpCommunication-General.md)
- - [CORS](https://github.com/sfvicente/BlazorStyleGuide/blob/master/HttpCommunication-Cors.md)
+ - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-General.md)
+ - [CORS](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-Cors.md)
  <br>
 
 **Routing**
 
-- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Routing-General.md)
+- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Routing/Routing-General.md)
 <br>
 
 **JavaScript Interop**
 
-- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/JavaScriptInterop-General.md)
-- [Lifecycle](https://github.com/sfvicente/BlazorStyleGuide/blob/master/JavaScriptInterop-Lifecycle.md)
+- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/JavaScriptInterop/JavaScriptInterop-General.md)
+- [Lifecycle](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/JavaScriptInterop/JavaScriptInterop-Lifecycle.md)
 <br>
 
 **Application Development**
 
-- [Configuration](https://github.com/sfvicente/BlazorStyleGuide/blob/master/ApplicationDevelopment-Configuration.md)
-- [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/ApplicationDevelopment-Debugging.md)
-- [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/ApplicationDevelopment-Security.md)
+- [Configuration](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Configuration.md)
+- [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Debugging.md)
+- [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Security.md)
 <br>
