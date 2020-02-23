@@ -2,7 +2,7 @@
 <br>
 
 
-**To set the focus to a text box element, use _JSInterop_ to invoke the `focus()` _JavaScript_ function.**
+### To set the focus to a text box element, use _JSInterop_ to invoke the `focus()` _JavaScript_ function.
 
 At the moment, the only way to achieve this functionality is by using _JSInterop_.
 

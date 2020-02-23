@@ -1,17 +1,19 @@
 # Components | General
 <br>
 
-**Use PascalCase for naming components**
+
+### Use PascalCase for naming components
 
 Component names should be created by concatenating capitalized words.
 
 ```
 NavMenu.razor
+
 ```
 <br><br>
 
 
-**Use the `@using` directive in the top-level __Imports.razor_ file to make a library's components available to an entire project.**
+### Use the `@using` directive in the top-level __Imports.razor_ file to make a library's components available to an entire project.
 
 ```csharp
 @using System.Net.Http
@@ -27,7 +29,8 @@ NavMenu.razor
 <br><br>
 
 
-**Add the `@using` directive in the an __Imports.razor_ file at any level file to make a library's components available to a single page or set of pages within a folder.**
+### Add the `@using` directive in the an __Imports.razor_ file at any level file to make a library's components available to a single page or set of pages within a folder.
+
 ```csharp
 @using MyComponent
 
@@ -35,20 +38,25 @@ NavMenu.razor
 <br><br>
 
 
-**Do not use the loop variable in a `for` loop directly in a lambda expression.**
+### Do not use the loop variable in a `for` loop directly in a lambda expression.
 
 The following code should not be used:
 
-`ToDo: Example`
+```csharp
+// ToDo: Example
+```
 
 Using the same variable used by all lambda expressions causes `i`'s value to be the same in all lambdas. Always capture its value in a local variable before using it.
 
-`ToDo: Example`
+```csharp
+// ToDo: Example
+```
 <br><br>
 
-**Use the `Parameter` attribute to specify arguments for a component in markup.**
 
-```
+### Use the `Parameter` attribute to specify arguments for a component in markup.
+
+```csharp
 <h1>@Title</h1>
 
 @code {
@@ -59,11 +67,11 @@ Using the same variable used by all lambda expressions causes `i`'s value to be 
 <br><br>
 
 
-**To render raw HTML on a page, use the `MarkupString` property.**
+### To render raw HTML on a page, use the `MarkupString` property.
 
 To render raw HTML, wrap the HTML content in a `MarkupString` value. The value is parsed as HTML or SVG and inserted into the DOM.
 
-```
+```csharp
 @page "/test"
 
 <h1>Example: Raw HTML</h1>
@@ -77,7 +85,7 @@ To render raw HTML, wrap the HTML content in a `MarkupString` value. The value i
 <br><br>
 
 
-**To assign a result of an `async` function to _razor_ component, use a property to store the value.**
+### To assign a result of an `async` function to _razor_ component, use a property to store the value.
 
 ```csharp
 @page "/"

@@ -1,24 +1,26 @@
 # Components | Events
 <br>
 
-Use the @on{EVENT}:stopPropagation directive attribute to stop event propagation.
 
-```
+### Use the @on{EVENT}:stopPropagation directive attribute to stop event propagation.
+
+```csharp
 <input type="text" value="" @onkeypress:preventDefault />
 ```
+<br><br>
 
-<br/><br/>
 
-Use both the @on{EVENT}:stopPropagation directive attribute and with your event handling to stop event propagation but still process your code.
+### Use both the @on{EVENT}:stopPropagation directive attribute and with your event handling to stop event propagation but still process your code.
 
-```
+```csharp
 <input type="text" value="" @onkeypress="HandleKeyPresses" @onkeypress:preventDefault />
 ```
 <br><br>
 
 
-**To detect and handle mouse right-click events, use the `MouseEventArgs` property `Button`**
-```
+### To detect and handle mouse right-click events, use the `MouseEventArgs` property `Button`
+
+```csharp
 <div @onmouseup="HandleMouseUp" >
     div content
 </div>
@@ -34,8 +36,9 @@ Use both the @on{EVENT}:stopPropagation directive attribute and with your event 
 <br><br>
 
 
-**To handle mouse right-click events and not display the browser context menu, use the HTML `oncontextmenu` attribute**
-```
+### To handle mouse right-click events and not display the browser context menu, use the HTML `oncontextmenu` attribute
+
+```csharp
 <div oncontextmenu="return false;" @onmouseup="HandleMouseUp">
     div content
 </div>
