@@ -1,11 +1,12 @@
 # Routing | General
 <br>
 
-**Use the `Uri` property of the `NavigationManager` class to obtain the current absolute URI**
+
+### Use the `Uri` property of the `NavigationManager` class to obtain the current absolute URI.
 
 The `NavigationManager` class provides an abstraction for querying and managing URI navigation. Use the `Uri` to determine the current absolute URI.
 
-```
+```csharp
 @page "/"
 @inject NavigationManager NavigationManager
 
@@ -13,13 +14,14 @@ The `NavigationManager` class provides an abstraction for querying and managing 
 
 Current Url: @NavigationManager.Uri
 ```
-<br/><br/>
+<br>
 
-**Use the `NavigateTo` method of the `NavigationManager` class to navigate to a specific URI**
+
+### Use the `NavigateTo` method of the `NavigationManager` class to navigate to a specific URI.
 
 The `NavigationManager` class provides an abstraction for querying and managing URI navigation. Use the `NavigateTo` to navigate to the desired component.
 
-```
+```csharp
 @page "/navigate"
 @inject NavigationManager NavigationManager
 
@@ -33,23 +35,25 @@ The `NavigationManager` class provides an abstraction for querying and managing 
 	}
 }
 ```
-<br/><br/>
+<br>
 
-**Use the `LocationChanged` event to determine when the URL in the browser is changed.**
+
+### Use the `LocationChanged` event to determine when the URL in the browser is changed.
 
 `LocationChanged` is an event that is triggered whenever the URL in the browser is modified. It passes an instance of `LocationChangedEventArgs` which provides the the URL :
 
+```csharp
+// TODO: Example
+
 ```
-Example
-```
-<br/><br/>
+<br>
 
 
-**Use the `forceLoad` parameter of the `NavigateTo` method to instruct Blazor to bypass its own routing system and perform an HTTP request to the server to retrieve the content to display**
+### Use the `forceLoad` parameter of the `NavigateTo` method to instruct Blazor to bypass its own routing system and perform an HTTP request to the server to retrieve the content to display.
 
 Using `forceLoad` will make the browser navigate to the new URL through a server request.
 
-```
+```csharp
 @page "/navigate"
 @inject NavigationManager NavigationManager
 
@@ -63,14 +67,14 @@ Using `forceLoad` will make the browser navigate to the new URL through a server
 	}
 }
 ```
-<br/><br/>
+<br>
 
 
-**Do not use `forceLoad` to navigate to an off-site URI.**
+### Do not use `forceLoad` to navigate to an off-site URI.
 
 Using `forceLoad` is not required in order to navigate to an off-site URI. Calling `NavigateTo` to another domain will perform a full browser navigation.
 
-```
+```csharp
 @page "/navigate"
 @inject NavigationManager NavigationManager
 
@@ -84,7 +88,7 @@ Using `forceLoad` is not required in order to navigate to an off-site URI. Calli
 	}
 }
 ```
-<br/><br/>
+<br>
 
 
 ### Use the `IsNavigationIntercepted` property of the `NavigationManager` to determine whether navigation was initiated through code or HTML.
@@ -116,11 +120,11 @@ void IDisposable.Dispose()
 <br>
 
 
-**To create optional route parameters add additional  `@page`  declarations in a component.**
+### To create optional route parameters add additional  `@page`  declarations in a component.
 
-Although there is no specific mechanism for optional route parameters, the functionality can be achieve by using multiple `@page`  declarations.
+Although there is no specific mechanism for optional route parameters, the functionality can be achieve by using multiple `@page` declarations.
 
-```
+```csharp
 @page "/counter"
 @page "/counter/{CounterId:int}"
 
@@ -138,16 +142,14 @@ Although there is no specific mechanism for optional route parameters, the funct
     }
 }
 ```
-<br/><br/>
+<br>
 
 
-
-**Provide a 404 page when the application fails to match a URL to a component**
-
+### Provide a 404 page when the application fails to match a URL to a component.
 
 404 is a standard response code that is returned by a server to indicate that a page was successfully requested but the application was unable to locate it.
 
-```
+```csharp
 <Router AppAssembly="typeof(Program).Assembly">
 	<Found Context="routeData">
 		<RouteView RouteData="routeData" />
@@ -162,15 +164,16 @@ Although there is no specific mechanism for optional route parameters, the funct
 </Router>
 ```
 
-ToDo: Image
+TODO: Image
+<br>
 
-<br/><br/>
 
-**Don't use `RedirectToPage` to perform a redirect.**
+### Don't use `RedirectToPage` to perform a redirect.**
 
 Do not use the `PageBase.RedirectToPage()` method to perform redirection in Blazer based apps. as `RedirectToPage()` will perform a HTTP redirect to a _Razor_ page. Instead, inject the `NavigationManager` component and use it's `NavigateTo()` method.
 
+```csharp
+// TODO: Example
+
 ```
-ToDo: Example
-```
-<br/><br/>
+<br>
