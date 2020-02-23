@@ -87,15 +87,33 @@ Using `forceLoad` is not required in order to navigate to an off-site URI. Calli
 <br/><br/>
 
 
-**Use the `IsNavigationIntercepted` property of the `NavigationManager` to determine whether navigation was initiated through code or HTML**
+### Use the `IsNavigationIntercepted` property of the `NavigationManager` to determine whether navigation was initiated through code or HTML.
 
-The `IsNavigationIntercepted` indicates whether the navigation was initiated via code or via an HTML navigation. If the `IsNavigationIntercepted` is set to `false`, the navigation was initiated by using the `NavigationManager.NavigateTo` method in the code. If the value of the property is set to `true`, 
+The `IsNavigationIntercepted` indicates whether the navigation was initiated via code or via an HTML navigation. If the `IsNavigationIntercepted` is set to `false`, the navigation was initiated by using the `NavigationManager.NavigateTo()` method in the code. If the value of the property is set to `true`, then _Blazor_ has intercepted the navigation instead of allowing the browser to navigate to the new URL, which would result in a request to the server. Any request not initiated using the `NavigateTo()` method will be intercepted.
 
+```csharp
+@implement IDisposable
+@inject NavigationManager NavigationManager
+
+protected override void OnInitialized()
+{
+	NavigationManager.LocationChanged += LocationChanged;
+	base.OnInitialized();
+}
+
+void LocationChanged(object sender, LocationChangedEventArgs e)
+{
+	string method = e.IsNavigationIntercepted ? "HTML" : "code";
+	
+	Debug.WriteLine($"Navigation to '{e.Location}' initiated via  '{navigationMethod}'");
+}
+
+void IDisposable.Dispose()
+{
+	NavigationManager.LocationChanged -= LocationChanged;
+}
 ```
-TODO: Code Sample
-```
-
-<br/><br/>
+<br>
 
 
 **To create optional route parameters add additional  `@page`  declarations in a component.**
