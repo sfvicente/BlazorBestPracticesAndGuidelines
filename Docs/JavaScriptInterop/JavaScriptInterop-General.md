@@ -2,7 +2,7 @@
 <br>
 
 
-**Inject the `JSRuntime` object into a component to execute JSInterop calls within the component.**
+### Inject the `JSRuntime` object into a component to execute JSInterop calls within the component.
 
 Inject the IJSRuntime abstraction into the Razor component using the `inject` keywork.
 
@@ -12,20 +12,20 @@ Inject the IJSRuntime abstraction into the Razor component using the `inject` ke
 
  <h1 id="title" >Hello, world!</h1>
 ```
-<br><br>
+<br>
 
 
-**Inject the `IJSRuntime` abstraction into a class to execute JSInterop calls from within the class.**
+### Inject the `IJSRuntime` abstraction into a class to execute JSInterop calls from within the class.
 
 Inject the `IJSRuntime` abstraction into a class via constructor injection.
 
 ```
 TODO: Example
 ```
-<br><br>
+<br>
 
 
-**Inject the `IJSRuntime` abstraction with the `[Inject]` attribute for dynamic content generation with `BuildRenderTree`**
+### Inject the `IJSRuntime` abstraction with the `[Inject]` attribute for dynamic content generation with `BuildRenderTree`.
 
 Inject the `IJSRuntime` abstraction using property injection.
 
@@ -33,18 +33,20 @@ Inject the `IJSRuntime` abstraction using property injection.
 [Inject]
 IJSRuntime JSRuntime { get; set; }
 ```
-<br><br>
+<br>
 
 
-**Wrap JavaScript interop calls within `try-catch` statements.**
+### Wrap JavaScript interop calls within `try-catch` statements.
+
 ToDo: Add description
 
 ```
 ToDo: Example
 ```
-<br><br>
+<br>
 
-**Place custom JavaScript code at the bottom of the __Host.cshtml_ file, just below the script section that includes the Blazor code**
+
+### Place custom JavaScript code at the bottom of the __Host.cshtml_ file, just below the script section that includes the Blazor code.
 
 ```
 <script src="_framework/blazor.server.js"></script>
@@ -57,10 +59,10 @@ ToDo: Example
         };
 </script>
 ```
-<br/><br/>
+<br>
 
 
-**Avoid modifying the Document Object Model (DOM) directly with _JavaScript_.**
+### Avoid modifying the Document Object Model (DOM) directly with _JavaScript_.
 
 In most scenarios modifying the DOM with Javascript isn't recommended because JavaScript can interfere with Blazor's change tracking.
 
@@ -83,4 +85,4 @@ In most scenarios modifying the DOM with Javascript isn't recommended because Ja
     }
 }
 ```
-<br/><br/>
+<br>
