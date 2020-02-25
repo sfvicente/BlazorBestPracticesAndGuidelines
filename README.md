@@ -34,6 +34,7 @@ A collection of best practices and guidelines for Blazor application development
  **HTTP Communication**
 
  - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-General.md)
+ - [Headers](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-Headers.md)
  - [CORS](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-Cors.md)
  <br>
 
