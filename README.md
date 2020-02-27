@@ -49,6 +49,11 @@ A collection of best practices and guidelines for Blazor application development
 - [Lifecycle](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/JavaScriptInterop/JavaScriptInterop-Lifecycle.md)
 <br>
 
+**Security**
+
+- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-General.md)
+<br>
+
 **Application Development**
 
 - [Configuration](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Configuration.md)
