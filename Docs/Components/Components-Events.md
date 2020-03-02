@@ -51,5 +51,55 @@
     }
 }
 ```
-<br><br>
+<br>
+
+### To bind items in a collection to controls in a user interface structure such as table, use a loop with an event connected to a method that accepts the instance of item.
+
+The code below binds each button of the table to functionality for the removal of the item from the collection.
+
+```csharp
+@page "/cart"
+
+<h3>Cart</h3>
+
+<table>
+	<thead>
+		<tr>
+			<th>Product Name</th>
+			<th>Edit</th>
+			<th>Remove</th>
+	</tr>
+	</thead>
+	<tbody>
+	@foreach(var product in products)
+	{
+		<tr>
+			<td>@product.Name</td>
+			<td>@product.Quantity</td>
+			<td>@product.Price</td>
+			<td><button @onclick="@(() => Remove(product))">Remove</button></td>
+		</tr>
+	}
+	</tbody>
+</table>
+
+@code {
+	List<Product> products;
+
+	...
+	
+    void Remove(Product product)
+    {
+		...
+	}
+
+    class Product
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Quantity { get; set; }
+    }
+}
+```
+<br>
 
