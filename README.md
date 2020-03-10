@@ -52,6 +52,7 @@ A collection of best practices and guidelines for Blazor application development
 **Security**
 
 - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-General.md)
+- [Active Directory](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-ActiveDirectory.md)
 <br>
 
 **Application Development**
