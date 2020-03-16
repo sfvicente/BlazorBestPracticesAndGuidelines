@@ -58,3 +58,24 @@ Calling `StateHasChanged()` inside a components `Dispose()` method ins't support
 ```
 <br><br>
 
+
+### Implement `IDisposable` to dispose of resources when the component is removed from the UI
+
+Blazor components can implement `IDisposable` to dispose of resources when the component is removed from the UI. A Razor component can implement `IDispose` by using the `@implements` directive:
+
+```csharp
+@using System
+@implements IDisposable
+...
+@code {
+	...
+
+	public void Dispose()
+	{
+		... 
+	}
+}
+```
+<br>
+
+
