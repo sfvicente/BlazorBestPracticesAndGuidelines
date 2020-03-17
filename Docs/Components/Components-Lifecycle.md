@@ -79,3 +79,28 @@ Blazor components can implement `IDisposable` to dispose of resources when the c
 <br>
 
 
+### Implement  `IDisposable` in a component to unsubscribe to events.
+
+```csharp
+@using System
+@implements IDisposable
+...
+@code {
+    [Parameter]
+    public Cart cart { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        cart.OnCartChanged += CartChanged;
+    }
+
+    public void Dispose()
+    {
+        cart.OnCartChanged -= CartChanged;
+    }
+}
+```
+<br>
+
+
