@@ -10,7 +10,7 @@ Component names should be created by concatenating capitalized words.
 NavMenu.razor
 
 ```
-<br><br>
+<br>
 
 
 ### Use the `@using` directive in the top-level __Imports.razor_ file to make a library's components available to an entire project.
@@ -26,7 +26,7 @@ NavMenu.razor
 
 @using MyComponent
 ```
-<br><br>
+<br>
 
 
 ### Add the `@using` directive in the an __Imports.razor_ file at any level file to make a library's components available to a single page or set of pages within a folder.
@@ -35,7 +35,7 @@ NavMenu.razor
 @using MyComponent
 
 ```
-<br><br>
+<br>
 
 
 ### Do not use the loop variable in a `for` loop directly in a lambda expression.
@@ -51,7 +51,7 @@ Using the same variable used by all lambda expressions causes `i`'s value to be 
 ```csharp
 // ToDo: Example
 ```
-<br><br>
+<br>
 
 
 ### Use the `Parameter` attribute to specify arguments for a component in markup.
@@ -64,7 +64,7 @@ Using the same variable used by all lambda expressions causes `i`'s value to be 
 	public string Title { get; set; }
 }
 ```
-<br><br>
+<br>
 
 
 ### To render raw HTML on a page, use the `MarkupString` property.
@@ -82,7 +82,7 @@ To render raw HTML, wrap the HTML content in a `MarkupString` value. The value i
 	string markup = "<p>This is a <strong>Hello World</strong> example</p>";
 }
 ```
-<br><br>
+<br>
 
 
 ### To assign a result of an `async` function to _razor_ component, use a property to store the value.
@@ -104,5 +104,8 @@ To render raw HTML, wrap the HTML content in a `MarkupString` value. The value i
      }
 }
 ```
-<br><br>
+<br>
+
+
+
 
