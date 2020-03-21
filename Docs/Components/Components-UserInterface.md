@@ -64,4 +64,22 @@ window.playVideo = function(url) {
 <br>
 
 
+### To access the browser functions `alert()` , `prompt()` and `confirm()`` use JS Interop.
+
+Currently, there isn't a Blazor implementation of the browser functions `alert()` , `prompt()` and `confirm()`. You need to inject the `JSRuntime` object and use _Interop_.
+
+```csharp
+@inject IJSRuntime JsRuntime;
+...
+
+@code
+{
+	...
+    bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Are you sure?");
+    ...
+}
+```
+<br>
+
+
 
