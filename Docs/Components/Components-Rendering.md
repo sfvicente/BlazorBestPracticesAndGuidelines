@@ -2,6 +2,33 @@
 <br>
 
 
+### To render components dynamically, use `if-else` or `switch-case` conditional statements in _Razor_ view code.
+
+You can use and render different components for different scenarios. Displaying components dynamically can be done with if-else or switch-case conditions and through the use of variables.
+
+TODO: Example
+
+It is also possible to render components dynamically at the application level.
+
+```csharp
+<app>
+	@if(condition == 1)
+	{
+		<Component1/>
+	}
+	else if (condition == 2)
+	{
+		<Component2/>
+	}
+	else
+	{
+		<Component3/>
+	}
+</app>
+```
+<br>
+
+
 ### Do not use `StateHasChanged()` to force the render of components in synchronous methods.
 
 ```csharp
