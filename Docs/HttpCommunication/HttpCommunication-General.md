@@ -1,6 +1,12 @@
 # HTTP Communication | General
 <br>
 
+** Do not configure dependency injection for the `HttpClient` service in _Blazor_ _WebAssembly_ applications.
+
+When you create a _Blazor_ _WebAssembly_ application, an HTTP client is automatically configured and injected into the application.
+<br>
+
+
 **Use  `GetJsonAsync`  to send HTTP GET requests to a server**
 
 The HttpClient method `GetJsonAsync`  sends an HTTP GET request and parses the JSON response body to create an object.
