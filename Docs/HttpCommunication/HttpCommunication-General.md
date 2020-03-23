@@ -7,6 +7,28 @@ When you create a _Blazor_ _WebAssembly_ application, an HTTP client is automati
 <br>
 
 
+### To perform HTTP communication in a _Blazor Server_ application, provide an `HttpClient` to the application using the `HttpClient` factory infrastructure.
+
+A _Blazor Server_ application doesn't include an `HttpClient` service by default. To use the `HttpClient` service, call the `AddHttpClient()` on the service configuration:
+
+```csharp
+public class Startup
+{
+	public Startup(IConfiguration configuration) 
+	{
+		Configuration = configuration;
+	}
+
+	public IConfiguration Configuration { get; }
+
+	public void ConfigureServices(IServiceCollection services)
+	{
+		services.AddHttpClient();
+		...
+```
+<br>
+
+
 **Use  `GetJsonAsync`  to send HTTP GET requests to a server**
 
 The HttpClient method `GetJsonAsync`  sends an HTTP GET request and parses the JSON response body to create an object.
