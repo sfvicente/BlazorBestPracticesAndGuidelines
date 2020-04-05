@@ -61,3 +61,8 @@ A collection of best practices and guidelines for Blazor application development
 - [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Debugging.md)
 - [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Security.md)
 <br>
+
+**Application Functionality**
+
+- [File Upload](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationFunctionality/ApplicationFunctionality-FileUpload.md)
+<br>
