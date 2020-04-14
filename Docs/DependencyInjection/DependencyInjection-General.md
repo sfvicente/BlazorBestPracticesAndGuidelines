@@ -1,11 +1,12 @@
 # Dependency Injection | General
 <br>
 
-**Use multiple `@inject` statements to inject different services in a component.**
+
+### Use multiple `@inject` statements to inject different services in a component.
 
 If you require more services in a component, add the required services via additional `@inject` statements.
 
-```  
+``` csharp
 @page "/checkout"
 @using Services
 @inject ICartService CartService
@@ -26,4 +27,6 @@ If you require more services in a component, add the required services via addit
 	}
 }
 ``` 
-<br><br>
+<br>
+
+
