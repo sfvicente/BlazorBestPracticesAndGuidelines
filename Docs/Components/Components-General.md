@@ -107,5 +107,60 @@ To render raw HTML, wrap the HTML content in a `MarkupString` value. The value i
 <br>
 
 
+### To determine if a component parameter has been assigned a value, override the `SetParametersAsync()` method and inspect the parameter collection.
+
+When you create a component, it's possible to add parameters to allow passing information to the component. Consider the following component:
+
+```csharp
+<h1>@Title</h1>
+
+@code {
+	[Parameter]
+	public Foo Foo { get; set; }
+}
+```
+
+The component can be added to the application and it's parameter can be used as in the example below:
+
+```csharp
+<MyComponent Foo="@foo" />
+
+@code {
+    public Foo foo { get; set; }
+}
+```
+
+You can also choose to use the component but unlike the previous example, decide not to assign an argument to the `Foo` parameter.
+
+```csharp
+<MyComponent />
+```
+In this case, the parameter is omitted. As a component can be used both ways, it may be necessary to determine whether the parameter was assigned a value or not.
+
+You can override the `SetParametersAsync()` method and iterate through the 'parameters' collection to determine if the parameter has been passed to the component.
+A parameter that hasn't been specified will not be present in the collection.
+
+```csharp
+@code {
+
+    [Parameter]
+    public Foo Foo { get; set; }
+
+    public override async Task SetParametersAsync(ParameterView parameters)
+    {
+        foreach(var p in parameters)
+        {
+            if(p.Name == "Foo")
+            {
+                System.Diagnostics.Debug.WriteLine($"Value: {p.Value?.ToString()}");
+            }
+        }
+
+        await base.SetParametersAsync(parameters);
+    }
+}
+```
+<br>
+
 
 
