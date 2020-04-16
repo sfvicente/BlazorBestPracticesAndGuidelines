@@ -2,6 +2,14 @@
 <br>
 
 
+### To inject a service in a component, use the `@inject` directive.
+
+TODO: Description
+TODO: Example
+
+<br>
+
+
 ### Use multiple `@inject` statements to inject different services in a component.
 
 If you require more services in a component, add the required services via additional `@inject` statements.
@@ -28,5 +36,3 @@ If you require more services in a component, add the required services via addit
 }
 ``` 
 <br>
-
-
