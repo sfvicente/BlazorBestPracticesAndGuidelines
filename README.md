@@ -1,69 +1,65 @@
 # Blazor | Best Practices and Guidelines
 
-A collection of best practices and guidelines for Blazor application development.
+A collection of best practices and guidelines for application programming and development using the Blazor framework.
 
-### Table of Contents
-<br>
+## Blazor Programming
 
-**Layouts**
+Guidance and best practices for development using the Blazor framework.
 
- - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Layouts/Layouts-General.md)
- <br>
+### Layouts
 
-**Components**
+- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Layouts/Layouts-General.md)
 
- - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-General.md)
- - [Lifecycle](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Lifecycle.md)
- - [Events](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Events.md)
- - [Communication](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Communication.md)
- - [Rendering](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Rendering.md)
- - [Localization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Localization.md)
- - [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Security.md)
- <br>
+### Components
 
- **Dependency Injection**
+- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-General.md)
+- [Lifecycle](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Lifecycle.md)
+- [Events](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Events.md)
+- [Communication](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Communication.md)
+- [Rendering](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Rendering.md)
+- [Localization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Localization.md)
+- [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Security.md)
 
- - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/DependencyInjection/DependencyInjection-General.md)
- <br>
+### Dependency Injection
+
+- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/DependencyInjection/DependencyInjection-General.md)
  
- **State Management**
+### State Management
 
- - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/StateManagement/StateManagement-General.md)
- <br>
+- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/StateManagement/StateManagement-General.md)
 
- **HTTP Communication**
+### HTTP Communication
 
- - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-General.md)
- - [Headers](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-Headers.md)
- - [CORS](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-Cors.md)
- <br>
+- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-General.md)
+- [Headers](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-Headers.md)
+- [CORS](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-Cors.md)
 
-**Routing**
+### Routing
 
 - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Routing/Routing-General.md)
-<br>
 
-**JavaScript Interop**
+### JavaScript Interop
 
 - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/JavaScriptInterop/JavaScriptInterop-General.md)
 - [Lifecycle](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/JavaScriptInterop/JavaScriptInterop-Lifecycle.md)
-<br>
 
-**Security**
+### Security
 
 - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-General.md)
 - [Authorization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-Authorization.md)
 - [Active Directory](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-ActiveDirectory.md)
-<br>
 
-**Application Development**
+
+## Blazor Application Development
+
+Guidance on generic application development, software engineering and specific functionality for Blazor applications.
+
+### Application Development
 
 - [Configuration](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Configuration.md)
 - [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Debugging.md)
-- [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Security.md)
-<br>
+- [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Security.md)
 
-**Application Functionality**
+### Application Functionality
 
 - [File Upload](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationFunctionality/ApplicationFunctionality-FileUpload.md)
-<br>
