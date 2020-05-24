@@ -24,3 +24,14 @@
 <br>
 
 
+### Use the `Policy` parameter of the `[Authorize]` attribute to perform policy-based authorization.
+
+```cshtml
+@page "/"
+@attribute [Authorize(Policy = "allow-printing")]
+
+<p>This is only visible if users satisfies the 'allow-printing' policy.</p>
+```
+<br>
+
+
