@@ -14,6 +14,19 @@ This component is useful if the application only displays the data and not use i
 <br>
 
 
+### Use the `AuthorizeView` component to only display user information.
+
+This component is useful if the application only displays the data and does not use in any procedural logic.
+
+```cshtml
+<AuthorizeView>
+    <h1>Hello, @context.User.Identity.Name!</h1>
+    You can only see this content if you're authenticated.
+</AuthorizeView>
+```
+<br>
+
+
 ### Use the `Authorize` attribute to control authorization to a _Razor_ component.
 
 ```cshtml
