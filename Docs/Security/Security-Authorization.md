@@ -14,14 +14,15 @@ The component simplifies the process to display information for an authorized us
 <br>
 
 
-### Use the `AuthorizeView` component to only display user information.
+### Use the `AuthorizeView` component to display information about the logged-in user but not use it in procedural logic.
 
-This component is useful if the application only displays the data and does not use in any procedural logic.
+If there is no need to access authorization data from code but you need to display it, you can use the `<AuthorizeView>`. The component exposes a context variable of type
+AuthenticationState, which can be used to display information about the current user:
 
 ```cshtml
 <AuthorizeView>
     <h1>Hello, @context.User.Identity.Name!</h1>
-    You can only see this content if you're authenticated.
+    This is only displayed to authenticated users.
 </AuthorizeView>
 ```
 <br>
