@@ -2,13 +2,13 @@
 <br>
 
 
-### Use the `AuthorizeView` component to selectively displays UI depending on whether the user is authorized to view it.
+### Use the `AuthorizeView` component to selectively display UI depending on whether the user is authorized to view it.
 
-This component is useful if the application only displays the data and not use in any procedural logic.
+The component simplifies the process to display information for an authorized user. It is suitable choice if there is no need to access authorization data from code.
 
 ```cshtml
 <AuthorizeView>
-    You can only see this content if you're authenticated.
+    This is only displayed to authenticated users.
 </AuthorizeView>
 ```
 <br>
