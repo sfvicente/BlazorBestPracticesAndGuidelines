@@ -33,7 +33,7 @@ public class Startup
 
 The HttpClient method `GetJsonAsync`  sends an HTTP GET request and parses the JSON response body to create an object.
 
-```  
+```csharp
 @code {  
         ...       
 }  
@@ -44,7 +44,7 @@ The HttpClient method `GetJsonAsync`  sends an HTTP GET request and parses the J
 
 The `HttpClient` method `PostJsonAsync`  sends an HTTP POST request, including JSON-encoded content, and parses the JSON response body to create an object.
 
-```  
+```csharp
 @code {  
         ...       
 }  
@@ -55,7 +55,7 @@ The `HttpClient` method `PostJsonAsync`  sends an HTTP POST request, including J
 
 The `HttpClient` method `PutJsonAsync`  sends an HTTP PUT request, including JSON-encoded content.
 
-```  
+```csharp
 @code {  
         ...       
 }  
@@ -66,7 +66,7 @@ The `HttpClient` method `PutJsonAsync`  sends an HTTP PUT request, including JSO
 
 The `HttpClient` method `DeleteAsync`  send a DELETE request to the specified Uri as an asynchronous operation.
 
-```  
+```csharp
 @code {  
         ...       
 }  
@@ -78,6 +78,6 @@ The `HttpClient` method `DeleteAsync`  send a DELETE request to the specified Ur
 
 If there is a need to specify the request URI, include specific HTTP headers or use HTTP methods that are not GET, POST, PUT or DELETE. Use `HttpRequestMessage` to configure the message and `SendAsync` to perform communication.
 
-```
+```csharp
 TODO: Example
 ```

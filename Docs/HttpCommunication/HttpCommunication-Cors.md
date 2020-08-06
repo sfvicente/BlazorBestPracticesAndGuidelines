@@ -5,7 +5,7 @@
 
 Using the wrong configuration sequence will cause the middleware to stop functioning correctly.
 
-```  
+```csharp
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
 	...
