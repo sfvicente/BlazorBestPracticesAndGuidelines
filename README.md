@@ -64,4 +64,4 @@ Guidance on generic application development, software engineering and specific f
 
 ### Application Functionality
 
-- [File Upload](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationFunctionality/ApplicationFunctionality-FileUpload.md)
+- [File Upload](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationFunctionality/FileUpload.md)
