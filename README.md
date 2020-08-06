@@ -56,10 +56,10 @@ Guidance on generic application development, software engineering and specific f
 
 ### Application Development
 
-- [Configuration](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Configuration.md)
-- [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Debugging.md)
+- [Configuration](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Configuration.md)
+- [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Debugging.md)
 - [Error Handling](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ErrorHandling.md)
-- [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ApplicationDevelopment-Security.md)
+- [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Security.md)
 
 ### Application Functionality
 
