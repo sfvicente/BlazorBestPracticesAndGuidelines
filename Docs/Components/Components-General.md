@@ -13,6 +13,15 @@ NavMenu.razor
 <br>
 
 
+### Use the `Razor` code block notation to be able to use quotes inside component declarations.
+
+You can use the parenthesis @( ) to create a code block. This will allow quotes to be used inside the component declaration.
+
+```csharp
+<MyComponent User="@context.User.Claims.Where(user => user.Type == "administrator")"></MyComponent>
+```
+<br>
+
 ### Use the `@using` directive in the top-level __Imports.razor_ file to make a library's components available to an entire project.
 
 ```csharp
