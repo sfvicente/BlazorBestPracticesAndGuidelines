@@ -53,6 +53,37 @@
 ```
 <br>
 
+
+### Use the `ontoggle` event to show or hide additional data of the `details` HTML element.
+
+The `ontoggle` event occurs when the user opens or closes the `<details>` element. You can use the the `ontoggle` event to control the additional data contained in element.
+
+```csharp
+<div>
+    @if (detailsExpanded)
+    {
+        <p>Read the details carefully!</p>
+    }
+    <details id="details-toggle" @ontoggle="OnToggle">
+        <summary>Summary</summary>
+        <p>Detailed content</p>
+    </details>
+</div>
+
+@code {
+    bool detailsExpanded;
+    string message { get; set; }
+
+    void OnToggle()
+    {
+        detailsExpanded = !detailsExpanded;
+    }
+}
+```
+
+Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+
+
 ### To bind items in a collection to controls in a user interface structure such as table, use a loop with an event connected to a method that accepts the instance of item.
 
 The code below binds each button of the table to functionality for the removal of the item from the collection.
