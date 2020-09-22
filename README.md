@@ -56,6 +56,7 @@ Guidance on generic application development, software engineering and specific f
 
 ### Application Development
 
+- [Compatibility](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Compatibility.md)
 - [Configuration](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Configuration.md)
 - [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Debugging.md)
 - [Deployment](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Deployment.md)
