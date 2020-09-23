@@ -84,3 +84,28 @@ public class Customer
 
 Note: `ObjectGraphDataAnnotationsValidator` was introduced in ASP<span>.<span>NET Core updates in .NET Core 3.1 Preview 2 as experimental support for object graph validation using data annotations.
 <br>
+
+
+### Specify custom validation class names when integrating with CSS frameworks, like Bootstrap.
+
+To specify custom validation class names, create a class derived from FieldCssClassProvider and set it on the EditContext instance.
+
+```csharp
+var editContext = new EditContext(model);
+editContext.SetFieldCssClassProvider(new MyFieldClassProvider());
+
+// ...
+
+class MyFieldClassProvider : FieldCssClassProvider
+{
+    public override string GetFieldCssClass(EditContext editContext, in FieldIdentifier fieldIdentifier)
+    {
+        var isValid = !editContext.GetValidationMessages(fieldIdentifier).Any();
+        
+        return isValid ? "legit" : "totally-bogus";
+    }
+}
+```
+
+Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+
