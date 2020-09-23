@@ -116,3 +116,41 @@ The performance cost isn't large, but only specify `@key` if controlling the ele
 ```
 <br><br>
 
+
+### Improve the perceived performance of component rendering using the built-in virtualization support.
+
+Virtualization is a technique for limiting the UI rendering to just the parts that are currently visible. A common example is when an application has a long list or table with 
+many rows and only a small subset is visible at any given time. Blazor has a `Virtualize` component that can be used to add virtualization to components.
+
+A typical list or table-based component might use a C# foreach loop to render each item in the list or each row in the table, like this:
+
+```csharp
+@foreach (var employee in employees)
+{
+    <tr>
+        <td>@employee.FirstName</td>
+        <td>@employee.LastName</td>
+        <td>@employee.JobTitle</td>
+    </tr>
+}
+```
+
+If the list grew to include thousands of rows, then rendering it may take a while, resulting in a noticeable UI lag.
+
+Instead, you can replace the foreach loop with the `Virtualize` component, which only renders the rows that are currently visible.
+
+```csharp
+<Virtualize Items="employees" Context="employee">
+    <tr>
+        <td>@employee.FirstName</td>
+        <td>@employee.LastName</td>
+        <td>@employee.JobTitle</td>
+    </tr>
+</Virtualize>
+```
+
+The `Virtualize` component calculates how many items to render based on the height of the container and the size of the rendered items.
+
+Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+Additional Tags: Performance
+
