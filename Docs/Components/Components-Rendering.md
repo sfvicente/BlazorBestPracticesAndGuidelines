@@ -159,3 +159,27 @@ The `Virtualize` component calculates how many items to render based on the heig
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
 Additional Tags: Performance
 
+
+### Use a placeholder to render temporary elements while waiting for the item data to become available.
+
+The `Virtualize` component allows the use of a placeholder to denote the temporarily missing data.
+
+This can be used to improve perceived performance. It especially useful when requesting information from remote or slow data sources.
+
+```csharp
+<Virtualize ItemsProvider="LoadUsers" Context="user">
+    <ItemContent>
+        <tr>
+            <td>@user.FirstName</td>
+            <td>@user.LastName</td>
+            <td>@user.Email</td>
+            <td>@user.DateRegistered</td>
+        </tr>
+    </ItemContent>
+    <Placeholder>
+        <tr>
+            <td>Loading...</td>
+        </tr>
+    </Placeholder>
+</Virtualize>
+```
