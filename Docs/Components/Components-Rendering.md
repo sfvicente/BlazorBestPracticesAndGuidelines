@@ -83,6 +83,11 @@ Even if  `ShouldRender()`  is overridden, the component is always initially rend
 <br>
 
 
+## `@key` directive attribute
+
+The `@key` directive attribute is a mechanism to control the mapping process of model objects to elements or components.
+
+
 ### Use `@key` whenever a list such as a `@foreach` block is rendered and a suitable value exists to define the `@key`.
 
 ```csharp
