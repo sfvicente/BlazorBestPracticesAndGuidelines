@@ -117,10 +117,15 @@ The performance cost isn't large, but only specify `@key` if controlling the ele
 <br><br>
 
 
+## Component Virtualization
+
+<Virtualization is a technique for limiting the UI rendering to just the parts that are currently visible. A common example is when an application has a long list or table with 
+many rows and only a small subset is visible at any given time.>
+
+
 ### Improve the perceived performance of component rendering using the built-in virtualization support.
 
-Virtualization is a technique for limiting the UI rendering to just the parts that are currently visible. A common example is when an application has a long list or table with 
-many rows and only a small subset is visible at any given time. Blazor has a `Virtualize` component that can be used to add virtualization to components.
+ Blazor has a `Virtualize` component that can be used to add virtualization to components.
 
 A typical list or table-based component might use a C# foreach loop to render each item in the list or each row in the table, like this:
 
