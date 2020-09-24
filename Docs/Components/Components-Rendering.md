@@ -123,7 +123,7 @@ The performance cost isn't large, but only specify `@key` if controlling the ele
 many rows and only a small subset is visible at any given time.>
 
 
-### Improve the perceived performance of component rendering using the built-in virtualization support.
+### Use the built-in virtualization support to improve the perceived performance of component rendering.
 
  Blazor has a `Virtualize` component that can be used to add virtualization to components.
 
