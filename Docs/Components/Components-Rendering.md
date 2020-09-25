@@ -29,6 +29,11 @@ It is also possible to render components dynamically at the application level.
 <br>
 
 
+## `StateHasChanged` Method
+
+The `StateHasChanged` is a method of the `ComponentBase` that notifies the component that its state has changed.
+
+
 ### Do not use `StateHasChanged()` to force the render of components in synchronous methods.
 
 ```csharp
