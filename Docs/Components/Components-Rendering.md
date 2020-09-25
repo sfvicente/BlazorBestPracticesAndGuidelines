@@ -165,6 +165,36 @@ Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-r
 Additional Tags: Performance
 
 
+### Specify an `ItemsProvider` when performing virtualization to prevent loading all items into memory.
+
+To avoid loading all the items from a data source into memory, specify an `ItemsProvider` when defining the `Virtualize` component:
+
+```csharp
+<Virtualize ItemsProvider="LoadUsers" Context="user">
+     <tr>
+         <td>@user.FirstName</td>
+         <td>@user.LastName</td>
+         <td>@user.Email</td>
+         <td>@user.DateRegistered</td>
+    </tr>
+</Virtualize>
+```
+
+<An items provider is a delegate method that asynchronously retrieves the requested items on demand. The items provider receives an ItemsProviderRequest, which specifies
+the required number of items starting at a specific start index. The items provider then retrieves the requested items from a database or other service and returns them as an 
+ItemsProviderResult<TItem> along with a count of the total number of items available.>
+
+<
+```csharp
+async ValueTask<ItemsProviderResult<Employee>> LoadEmployees(ItemsProviderRequest request)
+{
+    var numEmployees = Math.Min(request.Count, totalEmployees - request.StartIndex);
+    var employees = await EmployeesService.GetEmployeesAsync(request.StartIndex, numEmployees, request.CancellationToken);
+    return new ItemsProviderResult<Employee>(employees, totalEmployees);
+}
+```
+>
+
 ### Use a placeholder to render temporary elements while waiting for the item data to become available.
 
 The `Virtualize` component allows the use of a placeholder to denote the temporarily missing data.
