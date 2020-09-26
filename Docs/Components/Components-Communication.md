@@ -7,7 +7,7 @@
 The `@ref` attribute provide a way to reference a component instance to allow sending commands to that instance.
 
 
-**Use `@ref` attribute to capture references to child components**
+### Use `@ref` attribute to capture references to child components
 
 In order to capture the reference to a child component, add the `@ref` attribute to the declaration of the child component in the markup section. You also need to define a field with the same type as the child component.
 
@@ -19,10 +19,10 @@ In order to capture the reference to a child component, add the `@ref` attribute
 	...
 }
 ```
-<br/><br/>
+<br/>
 
 
-**Use component references to issue commands to a component instance**
+### Use component references to issue commands to a component instance.
 
 After a reference field is populated with the child component instance, you can invoke methods on the component instance.
 
@@ -39,10 +39,10 @@ After a reference field is populated with the child component instance, you can 
 	...
 }
 ```
-<br/><br/>
+<br/>
 
 
-**Do not use component references to mutate the state of child components**
+### Do not use component references to mutate the state of child components.
 
 `ToDo: Example`
 
@@ -52,7 +52,7 @@ Instead, use normal declarative parameters to pass data to child components. Use
 <br><br>
 
 
-**Use the `OnAfterRenderAsync` or `OnAfterRender` methods to manipulate components via references after the component has finished rendering**
+### Use the `OnAfterRenderAsync` or `OnAfterRender` methods to manipulate components via references after the component has finished rendering.
 
 Variables that hold references to components via `@ref` attribute are only populated after the component is rendered and its output includes the component element.
 
@@ -63,8 +63,5 @@ Variables that hold references to components via `@ref` attribute are only popul
 	ToDo: code sample
 }
 ```
-<br/><br/>
-
-
-
+<br/>
 
