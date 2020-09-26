@@ -1,6 +1,12 @@
 # Components | Communication
 <br>
 
+
+## `@ref` attribute
+
+The `@ref` attribute provide a way to reference a component instance to allow sending commands to that instance.
+
+
 **Use `@ref` attribute to capture references to child components**
 
 In order to capture the reference to a child component, add the `@ref` attribute to the declaration of the child component in the markup section. You also need to define a field with the same type as the child component.
