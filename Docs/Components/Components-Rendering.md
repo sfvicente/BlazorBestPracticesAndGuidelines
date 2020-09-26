@@ -200,6 +200,9 @@ async ValueTask<ItemsProviderResult<Employee>> LoadEmployees(ItemsProviderReques
 ```
 >
 
+Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+
+
 ### Use a placeholder to render temporary elements while waiting for the item data to become available.
 
 The `Virtualize` component allows the use of a placeholder to denote the temporarily missing data.
