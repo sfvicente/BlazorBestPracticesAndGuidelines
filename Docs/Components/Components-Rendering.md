@@ -203,6 +203,24 @@ async ValueTask<ItemsProviderResult<Employee>> LoadEmployees(ItemsProviderReques
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
 
 
+### Consider caching data in the items provider so it is readily available.
+
+The items provider method is used to retrieve the required items. It can either retrieve data with each request or include a caching mechanism to prevent trips to the data source.
+
+```csharp
+async ValueTask<ItemsProviderResult<Post>> LoadPosts(ItemsProviderRequest request)
+{
+    var postCount = Math.Min(request.Count, totalPosts - request.StartIndex);
+    var posts = await PostsService.GetPostsAsync(request.StartIndex, postCount, request.CancellationToken);
+
+    //TODO: Add caching code
+
+    return new ItemsProviderResult<Post>(posts, totalPosts);
+}
+```
+Additional Tags: Performance
+
+
 ### Use a placeholder to render temporary elements while waiting for the item data to become available.
 
 The `Virtualize` component allows the use of a placeholder to denote the temporarily missing data.
