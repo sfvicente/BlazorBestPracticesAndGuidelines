@@ -8,7 +8,7 @@ The `HttpClient` service sends HTTP requests and receives HTTP responses from a 
 <br>
 
 
-** Do not configure dependency injection for the `HttpClient` service in _Blazor_ _WebAssembly_ applications.
+### Do not configure dependency injection for the `HttpClient` service in _Blazor_ _WebAssembly_ applications.
 
 When you create a _Blazor_ _WebAssembly_ application, an HTTP client is automatically configured and injected into the application.
 <br>
@@ -36,7 +36,7 @@ public class Startup
 <br>
 
 
-**Use  `GetJsonAsync`  to send HTTP GET requests to a server**
+### Use  `GetJsonAsync`  to send HTTP GET requests to a server.
 
 The HttpClient method `GetJsonAsync`  sends an HTTP GET request and parses the JSON response body to create an object.
 
@@ -45,9 +45,10 @@ The HttpClient method `GetJsonAsync`  sends an HTTP GET request and parses the J
         ...       
 }  
 ``` 
-<BR>
+<br>
 
-**Use  `PostJsonAsync`  to send HTTP POST requests to a server**
+
+### Use  `PostJsonAsync`  to send HTTP POST requests to a server.
 
 The `HttpClient` method `PostJsonAsync`  sends an HTTP POST request, including JSON-encoded content, and parses the JSON response body to create an object.
 
@@ -56,9 +57,10 @@ The `HttpClient` method `PostJsonAsync`  sends an HTTP POST request, including J
         ...       
 }  
 ``` 
-<BR>
+<br>
 
-**Use  `PutJsonAsync`  to send HTTP PUT requests to a server**
+
+### Use  `PutJsonAsync`  to send HTTP PUT requests to a server.
 
 The `HttpClient` method `PutJsonAsync`  sends an HTTP PUT request, including JSON-encoded content.
 
@@ -67,9 +69,10 @@ The `HttpClient` method `PutJsonAsync`  sends an HTTP PUT request, including JSO
         ...       
 }  
 ``` 
-<BR>
+<br>
 
-**Use  `DeleteAsync`  to send HTTP DELETE requests to a server**
+
+### Use  `DeleteAsync`  to send HTTP DELETE requests to a server.
 
 The `HttpClient` method `DeleteAsync`  send a DELETE request to the specified Uri as an asynchronous operation.
 
@@ -78,13 +81,14 @@ The `HttpClient` method `DeleteAsync`  send a DELETE request to the specified Ur
         ...       
 }  
 ``` 
-<BR>
+<br>
 
 
-**Use `SendAsync` and `HttpRequestMessage` to customize requests**
+### Use `SendAsync` and `HttpRequestMessage` to customize requests.
 
 If there is a need to specify the request URI, include specific HTTP headers or use HTTP methods that are not GET, POST, PUT or DELETE. Use `HttpRequestMessage` to configure the message and `SendAsync` to perform communication.
 
 ```csharp
 TODO: Example
 ```
+<br>
