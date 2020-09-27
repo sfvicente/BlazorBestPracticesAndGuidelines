@@ -1,6 +1,13 @@
 # HTTP Communication | General
 <br>
 
+
+## `HttpClient` service
+
+The `HttpClient` service sends HTTP requests and receives HTTP responses from a resource identified by a URI.
+<br>
+
+
 ** Do not configure dependency injection for the `HttpClient` service in _Blazor_ _WebAssembly_ applications.
 
 When you create a _Blazor_ _WebAssembly_ application, an HTTP client is automatically configured and injected into the application.
