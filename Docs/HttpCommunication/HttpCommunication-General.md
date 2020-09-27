@@ -36,6 +36,12 @@ public class Startup
 <br>
 
 
+## HTTP Request Methods
+
+HTTP requests are actions to be performed on a resource identified by a given Uri.
+<br>
+
+
 ### Use  `GetJsonAsync`  to send HTTP GET requests to a server.
 
 The HttpClient method `GetJsonAsync`  sends an HTTP GET request and parses the JSON response body to create an object.
