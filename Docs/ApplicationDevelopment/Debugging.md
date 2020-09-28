@@ -61,3 +61,28 @@ _Blazor WebAssembly_ applications can be debugged using the following tools:
 	- Browser development tools in Edge (version 80 or later) and Chrome (version 70 or later)
 	- Visual Studio Integrated development environments (IDEs)
 
+
+
+### Add a delay at the start of the `OnInitialized` or `OnInitialized¿sync` methods if breakpoints are not being hit.
+
+Due to the time required for the _Blazor_ framework's debugging proxy to execute, breakpoints set in the `OnInitialized`{Async} `OnInitializedAsync` methods might not trigger.
+
+Adding a delay at the start of the method code will allow the debug proxy enough time to launch before the breakpoints is hit.
+
+```csharp
+protected override void OnInitialized()
+{
+	Thread.Sleep(10000);
+    ...
+}
+```
+
+```csharp
+protected override void OnInitializedAsync()
+{
+	await Task.Delay(10000);
+    ...
+}
+```
+
+
