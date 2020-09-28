@@ -53,3 +53,11 @@ public class Startup
 }
 ```
 <br><br>
+
+
+## Blazor Web Assembly Debugging
+
+_Blazor WebAssembly_ applications can be debugged using the following tools:
+	- Browser development tools in Edge (version 80 or later) and Chrome (version 70 or later)
+	- Visual Studio Integrated development environments (IDEs)
+
