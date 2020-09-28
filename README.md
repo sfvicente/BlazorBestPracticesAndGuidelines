@@ -56,6 +56,7 @@ Guidance on generic application development, software engineering and specific f
 
 ### Application Development
 
+- [Caching](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Caching.md)
 - [Compatibility](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Compatibility.md)
 - [Configuration](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Configuration.md)
 - [Debugging](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Debugging.md)
