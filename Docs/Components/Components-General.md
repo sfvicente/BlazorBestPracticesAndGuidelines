@@ -63,19 +63,6 @@ Using the same variable used by all lambda expressions causes `i`'s value to be 
 <br>
 
 
-### Use the `Parameter` attribute to specify arguments for a component in markup.
-
-```csharp
-<h1>@Title</h1>
-
-@code {
-	[Parameter]
-	public string Title { get; set; }
-}
-```
-<br>
-
-
 ### To render raw HTML on a page, use the `MarkupString` property.
 
 To render raw HTML, wrap the HTML content in a `MarkupString` value. The value is parsed as HTML or SVG and inserted into the DOM.
@@ -111,6 +98,24 @@ To render raw HTML, wrap the HTML content in a `MarkupString` value. The value i
      {
            CounterValue = await Counter.Get();
      }
+}
+```
+<br>
+
+
+## Component Parameters
+
+Components can have component parameters, which are values passed to the component so that it can execute and complete it's tasks.
+
+
+### Use the `Parameter` attribute to specify arguments for a component in markup.
+
+```csharp
+<h1>@Title</h1>
+
+@code {
+	[Parameter]
+	public string Title { get; set; }
 }
 ```
 <br>
