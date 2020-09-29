@@ -244,3 +244,16 @@ This can be used to improve perceived performance. It especially useful when req
     </Placeholder>
 </Virtualize>
 ```
+
+
+### Invoke `StateHasChanged` when changes are made to the items rendered in a `Virtualize` component to force re-evaluation and rerendering of the component.
+
+ToDo: Add explanation
+
+```csharp
+/// TODO: Add code sample
+```
+
+Additional Tags: `StateHasChanged` Method
+
+<br><br>
