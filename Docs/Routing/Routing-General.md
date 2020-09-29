@@ -2,6 +2,45 @@
 <br>
 
 
+### To allow multiple URLs to resolve to a component, add additional route templates using the `page` directive.
+
+It is possible to add multiple route templates to a component. In the example below, both `/admin` and `/administration` will resolve to the same component which will then
+process the requests.
+
+```csharp
+@page "/admin"
+@page "/administration"
+
+<h1>User Administration</h1>
+```
+<br>
+
+
+### To create optional route parameters add additional  `@page` declarations in a component.
+
+Although there is no specific mechanism for optional route parameters, the functionality can be achieve by using multiple `@page` declarations.
+
+```csharp
+@page "/counter"
+@page "/counter/{CounterId:int}"
+
+<h1>Counter</h1>
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
+```
+<br>
+
+
 ### Use the `Uri` property of the `NavigationManager` class to obtain the current absolute URI.
 
 The `NavigationManager` class provides an abstraction for querying and managing URI navigation. Use the `Uri` to determine the current absolute URI.
@@ -115,31 +154,6 @@ void LocationChanged(object sender, LocationChangedEventArgs e)
 void IDisposable.Dispose()
 {
 	NavigationManager.LocationChanged -= LocationChanged;
-}
-```
-<br>
-
-
-### To create optional route parameters add additional  `@page`  declarations in a component.
-
-Although there is no specific mechanism for optional route parameters, the functionality can be achieve by using multiple `@page` declarations.
-
-```csharp
-@page "/counter"
-@page "/counter/{CounterId:int}"
-
-<h1>Counter</h1>
-<p>Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-
-@code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
 }
 ```
 <br>
