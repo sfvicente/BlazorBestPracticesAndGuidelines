@@ -2,6 +2,12 @@
 <br>
 
 
+## Route Templates
+
+Route templates are mechanisms to match URLs to components. You can define route templates for components by adding the `@page` directive to the top of the component definition.
+<br>
+
+
 ### To allow multiple URLs to resolve to a component, add additional route templates using the `page` directive.
 
 It is possible to add multiple route templates to a component. In the example below, both `/admin` and `/administration` will resolve to the same component which will then
