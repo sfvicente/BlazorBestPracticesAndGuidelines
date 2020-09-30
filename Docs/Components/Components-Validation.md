@@ -26,6 +26,29 @@ TODO: add description
 <br>
 
 
+### Use `OnSubmit` event of the `EditForm` to use custom code to trigger validation and verification of field data.
+
+The `EditForm` component has an `OnSubmit` that can be used to perform additional tasks when the form submission is triggered.
+
+```csharp
+<EditForm EditContext="@editContext" OnSubmit="@HandleSubmit">
+
+	...
+	<button type="submit">Submit</button>
+</EditForm>
+
+@code {
+	...
+	
+	private async Task HandleSubmit()
+	{
+		/// Validate and verify field data.
+		...
+	}
+```
+<br>
+
+
 ### To determine if changes have been made to an `EditForm` use the `IsModified()` methods of the `EditContext` class.
 
 The `EditContext` class provide the following methods to determine if an `EditForm` has been changed or not:
