@@ -14,6 +14,9 @@ private UserModel userModel = new UserModel();
 
 ### Do not use both a `Model` and an `EditContext` for the same `EditForm` to perform validation.
 
+In order for the EditForm to perform validation, it requires either a `Model` or an `EditContext` to be assign to it. It is not possible to assignment both. Doing so will generates
+a runtime error.
+
 TODO: add description
 
 ```csharp
