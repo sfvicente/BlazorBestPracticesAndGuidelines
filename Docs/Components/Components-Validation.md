@@ -2,6 +2,16 @@
 <br>
 
 
+### Always instantiate the `Model` before assigning it to an `EditForm`.
+
+TODO: add description
+
+```csharp
+private UserModel userModel = new UserModel();
+```
+<br>
+
+
 ### Do not use both a `Model` and an `EditContext` for the same `EditForm` to perform validation.
 
 TODO: add description
