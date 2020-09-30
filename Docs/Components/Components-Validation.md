@@ -49,7 +49,7 @@ The `EditForm` component has an `OnSubmit` that can be used to perform additiona
 <br>
 
 
-### To determine if changes have been made to an `EditForm` use the `IsModified()` methods of the `EditContext` class.
+### Use the `IsModified()` methods of the `EditContext` class to determine if changes have been made to an `EditForm`.
 
 The `EditContext` class provide the following methods to determine if an `EditForm` has been changed or not:
 
