@@ -2,6 +2,17 @@
 <br>
 
 
+### Do not use both a `Model` and an `EditContext` for the same `EditForm` to perform validation.
+
+TODO: add description
+
+```csharp
+
+	/// TODO: add code sample
+```
+<br>
+
+
 ### To determine if changes have been made to an `EditForm` use the `IsModified()` methods of the `EditContext` class.
 
 The `EditContext` class provide the following methods to determine if an `EditForm` has been changed or not:
