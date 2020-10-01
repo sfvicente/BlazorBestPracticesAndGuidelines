@@ -10,8 +10,10 @@ The `@inject` directive allows adding services from the service container to com
 ### To inject a service in a component, use the `@inject` directive.
 
 TODO: Description
-TODO: Example
 
+```csharp
+TODO: Example
+```
 <br>
 
 
@@ -19,7 +21,7 @@ TODO: Example
 
 If you require more services in a component, add the required services via additional `@inject` statements.
 
-``` csharp
+```csharp
 @page "/checkout"
 @using Services
 @inject ICartService CartService
@@ -39,7 +41,7 @@ If you require more services in a component, add the required services via addit
 		...
 	}
 }
-``` 
+```
 <br>
 
 
