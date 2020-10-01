@@ -41,3 +41,21 @@ If you require more services in a component, add the required services via addit
 }
 ``` 
 <br>
+
+
+### Do not use the `@inject` directive on derived components for services already injected in the base class.
+
+Assuming you have the following base component class:
+
+```csharp
+TODO: Add code
+```
+
+If a component inherits from that base class, the @inject directive is not required on the component. The service injected in the base class is automatically made available on
+derived components.
+
+```csharp
+TODO: Add code
+```
+<br>
+
