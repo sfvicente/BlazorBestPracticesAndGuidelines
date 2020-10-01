@@ -1,5 +1,13 @@
 # Security
 
+
+## HTTPS
+
+Hypertext transfer protocol secure (HTTPS) is the secure version of the HTTP protocol. HTTP is the main protocol used to exchange data between a web browser and a website. Unlike HTTP, HTTPS
+is encrypted to provide a secure transfer of data.
+<br>
+
+
 **Always use HTTPS  to protect information in transit** 
 [Blazor Server]
 
