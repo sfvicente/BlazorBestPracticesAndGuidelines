@@ -2,6 +2,11 @@
 <br>
 
 
+## `@inject` directive
+
+The `@inject` directive allows adding services from the service container to components via dependency injection.
+
+
 ### To inject a service in a component, use the `@inject` directive.
 
 TODO: Description
