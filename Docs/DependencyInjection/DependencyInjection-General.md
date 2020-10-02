@@ -61,3 +61,19 @@ TODO: Add code
 ```
 <br>
 
+
+### Use constructor injection to add required services to a service.
+
+Unlike components, when developing services, the `@inject` directive and the `[Inject]` attribute is not supported. To allow for dependencies to be injected, constructor injection
+is used.
+
+```csharp
+public class HttpCrawler
+{
+	public HttpCrawler(HttpClient httpClient)
+	{
+		...
+	}
+}
+```
+
