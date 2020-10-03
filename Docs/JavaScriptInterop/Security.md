@@ -9,3 +9,10 @@ TODO: Add description
 TODO: Add code sample
 <br>
 
+
+### Always validate the data returned from JavaScript interop calls.
+
+TODO: Add description
+
+TODO: Add code sample
+<br>
