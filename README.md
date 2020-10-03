@@ -42,6 +42,7 @@ Guidance and best practices for development using the Blazor framework.
 
 - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/JavaScriptInterop/JavaScriptInterop-General.md)
 - [Lifecycle](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/JavaScriptInterop/JavaScriptInterop-Lifecycle.md)
+- [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/JavaScriptInterop/Security.md)
 
 ### Security
 
