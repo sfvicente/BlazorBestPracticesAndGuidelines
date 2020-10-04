@@ -134,3 +134,16 @@ The code below binds each button of the table to functionality for the removal o
 ```
 <br>
 
+
+### Avoid using events that produce large amounts of data in _Blazor Server_ applications.
+
+Example of DOM events that can produce excessive data are `oninput` and `onscroll`.
+
+TODO: complement description
+
+TODO: add code samples
+
+Applies to: Blazor Server
+Tags: Events, Security
+
+<br>
