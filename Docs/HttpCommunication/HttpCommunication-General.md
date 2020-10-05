@@ -104,6 +104,15 @@ TODO: Example
 <br>
 
 
+### Use the `SetBrowserResponseStreamingEnabled` extension method on the request to enable support for response streaming.
+
+<An HTTP response is typically buffered in a _Blazor WebAssembly_ app to enable support for sync reads on the response content.>
+
+```csharp
+todo: add code
+```
+<br>
+
 ### Use the `SetBrowserRequestCredentials` extension method to include credentials in a cross-origin request.
 
 todo: add description
