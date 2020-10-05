@@ -2,13 +2,6 @@
 <br>
 
 
-## URLs
-<br>
-
-
-### Use URLs to store transient data that represents navigational state withi
-
-
 ## Browser Storage
 
 Browser storage, also known as local storage or web storage is a feature that allows web applications to store information on a user's browser. It provides an alternative solution
@@ -41,4 +34,3 @@ User interface state can't be persisted in a similar way to component instances 
 TODO: Example
 ```
 <br><br>
-
