@@ -2,6 +2,13 @@
 <br>
 
 
+## Browser Storage
+
+Browser storage, also known as local storage or web storage is a feature that allows web applications to store information on a user's browser. It provides an alternative solution
+to cookies. HTML5 provides the `localStorage` and the `sessionStorage` objects for storing and manipulating data on the browser.
+<br>
+
+
 ### Prefer `sessionStorage` to `localStorage` to store transient application data and avoid synchronization across multiple browser tabs.
 
 If you want to avoid performing synchronization state across browser tags, it is generaly safer to use `sessionStorage` as it is scope to the current browser tab.
