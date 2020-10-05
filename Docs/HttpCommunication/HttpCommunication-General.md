@@ -2,7 +2,7 @@
 <br>
 
 
-## `HttpClient` service
+## `HttpClient` Service
 
 The `HttpClient` service sends HTTP requests and receives HTTP responses from a resource identified by a URI.
 <br>
