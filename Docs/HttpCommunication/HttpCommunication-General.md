@@ -98,3 +98,20 @@ If there is a need to specify the request URI, include specific HTTP headers or 
 TODO: Example
 ```
 <br>
+
+
+## Request Customization
+<br>
+
+
+### Use the `SetBrowserRequestCredentials` extension method to include credentials in a cross-origin request.
+
+todo: add description
+
+```csharp
+requestMessage.SetBrowserRequestCredentials(BrowserRequestCredentials.Include);
+```
+
+Applies to: Blazor WebAssembly
+Additional tags: security, authentication
+<br>
