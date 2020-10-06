@@ -257,3 +257,24 @@ ToDo: Add explanation
 Additional Tags: `StateHasChanged` Method
 
 <br><br>
+
+
+## `ShouldRender` Method
+
+The `ShouldRender` method of the `ComponentBase` class returns a flag to indicate whether the component should render.
+<br>
+
+
+### Configure `ShouldRender` to return `false` when developing UI-only components that won't change after the initial render.
+
+If a UI-only component doesn't change after being rendered the first time, the `ShouldRender` should be set to `false`. This prevents re-rendering of the component and associated
+cost for the application.
+
+```csharp
+@code {
+    protected override bool ShouldRender() => false;
+}
+```
+
+Additional Tags: Lifecycle, Performance
+<br>
