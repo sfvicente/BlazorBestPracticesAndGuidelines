@@ -1,6 +1,7 @@
 # JavaScript Interop | General
-<br>
 
+JavasScript interopability is the ability to invoke invoke JavaScript functions from .NET methods and .NET methods from JavaScript functions by _Blazor_ applications.
+<br>
 
 ### Inject the `JSRuntime` object into a component to execute JSInterop calls within the component.
 
