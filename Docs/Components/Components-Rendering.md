@@ -278,3 +278,15 @@ cost for the application.
 
 Additional Tags: Lifecycle, Performance
 <br>
+
+
+### Use private fields to manually control the `ShouldRender` method to prevent rendering of exceptionally expensive subtrees that degrade UI performance.
+
+If a component UI changes based on one or more of its parameters, you can use fields to manually control the rendering.
+
+todo: description
+
+todo: code sample
+
+Additional Tags: Lifecycle, Performance
+<br>
