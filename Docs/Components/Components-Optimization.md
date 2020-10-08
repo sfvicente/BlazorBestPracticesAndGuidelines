@@ -16,3 +16,8 @@ todo: add description
 <br>
 
 
+### Consider optimizing components containing charts with a large number of data points.
+
+todo: add description
+
+<br>
