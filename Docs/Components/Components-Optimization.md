@@ -9,3 +9,10 @@ todo: add description
 <br>
 
 
+### Consider optimizing components containing grids with a large number of rows and cells.
+
+todo: add description
+
+<br>
+
+
