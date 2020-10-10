@@ -62,6 +62,23 @@ TODO: Add code
 <br>
 
 
+### Use the `[Inject]` attribute to inject services into component classes.
+
+Using the `[Inject]` attribute, you can add a service to a class-only component. In the example below, the `CartService` service is injected into the component property injection.
+
+```csharp
+
+	...
+    public class CartComponent : ComponentBase  
+    {  
+        [Inject]  
+        protected ICartService cartService { get; set; }  
+    }  
+}  
+```
+<br>
+
+
 ### Use constructor injection to add required services to a service.
 
 Unlike components, when developing services, the `@inject` directive and the `[Inject]` attribute is not supported. To allow for dependencies to be injected, constructor injection
