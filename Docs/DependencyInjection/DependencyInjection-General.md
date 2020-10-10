@@ -62,6 +62,11 @@ TODO: Add code
 <br>
 
 
+## `[Inject]` Attribute
+
+The `[Inject]` indicates that the associated property should have a value injected from the service provider during the class initialization.
+
+
 ### Use the `[Inject]` attribute to inject services into component classes.
 
 Using the `[Inject]` attribute, you can add a service to a class-only component. In the example below, the `CartService` service is injected into the component property injection.
