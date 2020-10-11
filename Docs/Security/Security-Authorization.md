@@ -52,7 +52,9 @@ The `AuthorizeAttribute.Roles` property gets or sets a comma delimited list of r
 <br>
 
 
-### Use the `Policy` parameter of the `[Authorize]` attribute to perform policy-based authorization.
+### Use the `Policy` property of the `[Authorize]` attribute to perform policy-based authorization.
+
+The `AuthorizeAttribute.Policy` property gets or sets the policy name that determines access to the resource.
 
 ```cshtml
 @page "/"
