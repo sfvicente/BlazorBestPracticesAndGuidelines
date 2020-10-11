@@ -28,7 +28,7 @@ AuthenticationState, which can be used to display information about the current 
 <br>
 
 
-### Use the `Authorize` attribute to control authorization to a _Razor_ component.
+### Use the `[Authorize]` attribute to control authorization to a _Razor_ component.
 
 ```cshtml
 @page "/"
