@@ -39,7 +39,9 @@ AuthenticationState, which can be used to display information about the current 
 <br>
 
 
-### Use the `Roles` parameter of the `[Authorize]` attribute to perform role-based authorization.
+### Use the `Roles` property of the `[Authorize]` attribute to perform role-based authorization.
+
+The `AuthorizeAttribute.Roles` property gets or sets a comma delimited list of roles that are allowed to access the resource.
 
 ```cshtml
 @page "/"
