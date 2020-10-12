@@ -19,6 +19,18 @@ The component simplifies the process to display information for an authorized us
 <br>
 
 
+### Use the `context` variable exposed by `AuthorizeView` to access information about the signed-in user.
+
+The `AuthorizeView` component exposes a `context` variable of type `AuthenticationState`. The `AuthenticationState` class provides information about the currently authenticated user.
+
+```cshtml
+<AuthorizeView>
+    <h1>Signed-in Username: @context.User.Identity.Name</h1>
+</AuthorizeView>
+```
+<br>
+
+
 ### Use the `AuthorizeView` component to display information about the logged-in user but not use it in procedural logic.
 
 If there is no need to access authorization data from code but you need to display it, you can use the `<AuthorizeView>`. The component exposes a context variable of type
