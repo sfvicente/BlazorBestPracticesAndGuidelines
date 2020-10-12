@@ -2,9 +2,9 @@
 <br>
 
 
-## `AuthorizeView` Class
+## `AuthorizeView` Component
 
-The `AuthorizeView` class displays content depending on the user's authorization status.
+The `AuthorizeView` component displays content depending on the user's authorization status.
 
 
 ### Use the `AuthorizeView` component to selectively display UI depending on whether the user is authorized to view it.
