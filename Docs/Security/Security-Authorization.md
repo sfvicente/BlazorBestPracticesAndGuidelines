@@ -87,3 +87,24 @@ The `AuthorizeAttribute.Policy` property gets or sets the policy name that deter
 <br>
 
 
+### Use the <Authorizing> tag to display content while authentication occurs when performing asynchronous authentication.
+
+The `AuthorizeView` component allows the display of content while authentication occurs. Consider the scenario where your _Blazor WebAssemly_ application needs to
+call an external authentication service. By default, no content is showed while the authentication is being performed. You can use the `Authorizing` tag to display UI
+content during the operation.
+
+```csharp
+<AuthorizeView>
+    <Authorized>
+        <h1>Username: @context.User.Identity.Name!</h1>
+        <p>You are currently authenticated.</p>
+    </Authorized>
+    <Authorizing>
+        <h1>Authentication in progress</h1>
+        <p>Please wait while we perform authentication...</p>
+    </Authorizing>
+</AuthorizeView>
+```
+
+Applies to: Blazor WebAssembly
+<br>
