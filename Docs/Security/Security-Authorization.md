@@ -2,6 +2,11 @@
 <br>
 
 
+## `AuthorizeView` Class
+
+The `AuthorizeView` class displays content depending on the user's authorization status.
+
+
 ### Use the `AuthorizeView` component to selectively display UI depending on whether the user is authorized to view it.
 
 The component simplifies the process to display information for an authorized user. It is suitable choice if there is no need to access authorization data from code.
@@ -26,6 +31,11 @@ AuthenticationState, which can be used to display information about the current 
 </AuthorizeView>
 ```
 <br>
+
+
+## `[Authorize]` Attribute
+
+The `[Authorize]` attribute specifies that the class or method it is applied to, requires the defined authorization.
 
 
 ### Use the `[Authorize]` attribute to control authorization to a _Razor_ component.
