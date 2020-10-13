@@ -59,6 +59,12 @@ Calling `StateHasChanged()` inside a components `Dispose()` method ins't support
 <br><br>
 
 
+## Component Disposal
+
+Component disposal is a mechanism for releasing resources, such as memory that was allocated or locks that have been acquired.
+<br>
+
+
 ### Implement `IDisposable` to dispose of resources when the component is removed from the UI
 
 Blazor components can implement `IDisposable` to dispose of resources when the component is removed from the UI. A Razor component can implement `IDispose` by using the `@implements` directive:
