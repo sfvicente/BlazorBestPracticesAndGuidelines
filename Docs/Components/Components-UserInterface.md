@@ -2,37 +2,16 @@
 <br>
 
 
-### To set the focus to a text box element, use _JSInterop_ to invoke the `focus()` _JavaScript_ function.
+### Use the `FocusAsync()` method of `ElementReference` to set the UI focus to an element in Blazor apps.
 
-At the moment, the only way to achieve this functionality is by using _JSInterop_.
+The `ElementReference` struct represents a reference to a rendered element. Blazor has a `FocusAsync` method on `ElementReference` that allows setting the UI focus on that element.
 
 ```csharp
-<input type="text" @ref="myref"/>
-
-@code {
-	private ElementReference myref;
-    [Inject] IJSRuntime JSRuntime { get; set; }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-	    if (firstRender)
-        {
-	        await JSRuntime.InvokeVoidAsync("exampleJsFunctions.focusElement", myref);
-        }
-   }
-}
-```
-```javascript
-<script>
-    window.exampleJsFunctions =
-    {
-        focusElement: function(element) {
-           element.focus();
-        }
-	};
-</script>
+<button @onclick="() => textInput.FocusAsync()">Set focus</button>
+<input @ref="textInput"/>
 ```
 <br>
+
 
 ### To play or manage a video, use _JSInterop_ to invoke the methods of the HTML5 `video` element.
 
