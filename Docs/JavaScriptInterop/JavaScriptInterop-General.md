@@ -44,6 +44,37 @@ IJSRuntime JSRuntime { get; set; }
 <br>
 
 
+### Consider performing synchronous calls from _.NET_ to _JavaScript_ to improve performance.
+
+Performing synchronous interop calls have decreased overhead and can result in fewer render cycles as there is no need for `await` actions on results.
+
+To allow the application to make calls to _Javascript_ in a synchronous way, the `IJSRUntime` needs to be cast to `IJSInProcessRuntime`. The interface `IJSInProcessRuntime` represents
+an instance of a _JavaScript_ runtime to which calls may be dispatched.
+
+```csharp
+@inject IJSRuntime JSRuntime
+
+...
+@code {
+    protected override void OnInitialized()
+    {
+        CartService.OnCartUpdated += cartUpdate =>
+        {
+                var jsInProcess = (IJSInProcessRuntime)JSRuntime;
+                var value = jsInProcess.Invoke<string>("cartContentUpdated");
+                ...
+        };
+    }
+}
+```
+
+Synchronous calls can only be perform from _Blazor WebAssembly_ applications as _JavaScript_ interop calls on _Blazor Server_ applications are sent over a network connection.
+
+Applies to: Blazor WebAssembly
+Additional Tags: Performance
+<br>
+
+
 ### Wrap JavaScript interop calls within `try-catch` statements.
 
 ToDo: Add description
