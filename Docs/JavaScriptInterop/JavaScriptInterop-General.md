@@ -3,6 +3,13 @@
 JavasScript interopability is the ability to invoke invoke JavaScript functions from .NET methods and .NET methods from JavaScript functions by _Blazor_ applications.
 <br>
 
+
+## `IJSRuntime` Interface
+
+The `IJSRuntime` interface represents an instance of a JavaScript runtime to which calls may be dispatched.
+<br>
+
+
 ### Inject the `JSRuntime` object into a component to execute JSInterop calls within the component.
 
 Inject the IJSRuntime abstraction into the Razor component using the `inject` keywork.
