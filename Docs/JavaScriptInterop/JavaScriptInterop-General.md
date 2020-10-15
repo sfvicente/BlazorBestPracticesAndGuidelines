@@ -10,7 +10,7 @@ The `IJSRuntime` interface represents an instance of a JavaScript runtime to whi
 <br>
 
 
-### Inject the `IJSRuntime` interface into a component to issue _JavaScript_ interop calls within the component.
+### To perform _JavaScript_ interop calls within a _Razor_ component, inject the `IJSRuntime` interface into the component.
 
 Inject the `IJSRuntime` abstraction into the _Razor_ component using the `inject` keyword.
 
