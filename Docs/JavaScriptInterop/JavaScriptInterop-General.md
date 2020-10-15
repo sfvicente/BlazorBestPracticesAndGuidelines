@@ -10,15 +10,15 @@ The `IJSRuntime` interface represents an instance of a JavaScript runtime to whi
 <br>
 
 
-### Inject the `JSRuntime` object into a component to execute JSInterop calls within the component.
+### Inject the `IJSRuntime` interface into a component to issue _JavaScript_ interop calls within the component.
 
-Inject the IJSRuntime abstraction into the Razor component using the `inject` keywork.
+Inject the `IJSRuntime` abstraction into the _Razor_ component using the `inject` keyword.
 
-```
+```csharp
  @page "/"
- @inject IJSRuntime jsRuntime
+ @inject IJSRuntime JSRuntime
 
- <h1 id="title" >Hello, world!</h1>
+ <h1 id="title">Hello, world!</h1>
 ```
 <br>
 
