@@ -23,12 +23,25 @@ Inject the `IJSRuntime` abstraction into the _Razor_ component using the `inject
 <br>
 
 
-### Inject the `IJSRuntime` abstraction into a class to execute JSInterop calls from within the class.
+### To execute _JavaScript_ interop calls from within a class, inject the `IJSRuntime` abstraction into the class.
 
 Inject the `IJSRuntime` abstraction into a class via constructor injection.
 
-```
-TODO: Example
+```csharp
+public class JsInteropExtensions
+{
+    private readonly IJSRuntime jsRuntime;
+
+    public JsInteropClasses(IJSRuntime jsRuntime)
+    {
+        this.jsRuntime = jsRuntime;
+    }
+
+    public ValueTask<string> CartUpdated(string data)
+    {
+        return jsRuntime.InvokeAsync<string>("handleCartChanged", cartUpdate.items, cartUpdate.action);
+    }
+}
 ```
 <br>
 
