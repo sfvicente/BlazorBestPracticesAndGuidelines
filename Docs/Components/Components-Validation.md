@@ -2,6 +2,12 @@
 <br>
 
 
+## `EditForm` Component
+
+The `EditForm` class renders a form element that cascades an EditContext to descendants.
+<br>
+
+
 ### Always instantiate the `Model` before assigning it to an `EditForm`.
 
 TODO: add description
