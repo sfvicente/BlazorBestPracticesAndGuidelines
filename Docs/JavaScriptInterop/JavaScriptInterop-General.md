@@ -46,11 +46,11 @@ public class JsInteropExtensions
 <br>
 
 
-### Inject the `IJSRuntime` abstraction with the `[Inject]` attribute for dynamic content generation with `BuildRenderTree`.
+### To perform dynamic content generation with `BuildRenderTree`, inject the `IJSRuntime` abstraction using the `[Inject]` attribute.
 
 Inject the `IJSRuntime` abstraction using property injection.
 
-```
+```csharp
 [Inject]
 IJSRuntime JSRuntime { get; set; }
 ```
