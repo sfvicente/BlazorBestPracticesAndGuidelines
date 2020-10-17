@@ -140,3 +140,30 @@ Consider the example below:
 }
 ```
 <br>
+
+
+## `JSRuntimeExtensions`
+
+The `JSRuntimeExtensions` class provides a set of extensions for the `IJSRuntime`.
+
+
+### To call a _JavaScript_ function that doesn't return a value, use the `InvokeVoidAsync` method of the `JSRuntimeExtensions` class.
+
+The `InvokeVoidAsync` can be used to call a _JavaScript_ function asynchronously, when the function does not return a value.
+
+```csharp
+@inject IJSRuntime JSRuntime
+
+TODO: Complement code
+
+@code {
+    private ElementReference username;
+
+    public async Task X()
+    {
+        await JSRuntime.InvokeVoidAsync(
+            "jsFunctions.X", X);
+    }
+}
+```
+<br>
