@@ -167,3 +167,21 @@ TODO: Complement code
 }
 ```
 <br>
+
+
+### When performing interop with generic types and returning a value, use `ValueTask<TResult>`.
+
+TODO: add description
+
+```csharp
+public static ValueTask<T> GenericMethod<T>(this ElementReference elementRef, 
+    IJSRuntime jsRuntime)
+{
+    TODO: complement code
+
+    return jsRuntime.InvokeAsync<T>(
+        "x.x", elementRef);
+}
+```
+<br>
+
