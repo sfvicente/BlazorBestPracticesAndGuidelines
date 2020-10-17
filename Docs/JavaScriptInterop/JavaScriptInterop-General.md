@@ -116,7 +116,9 @@ ToDo: Example
 
 ### Avoid modifying the Document Object Model (DOM) directly with _JavaScript_.
 
-In most scenarios modifying the DOM with Javascript isn't recommended because JavaScript can interfere with Blazor's change tracking.
+In most scenarios, modifying the DOM with Javascript isn't recommended because JavaScript can interfere with Blazor's change tracking.
+
+Consider the example below:
 
 ```csharp
 @using Microsoft.JSInterop
