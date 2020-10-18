@@ -185,3 +185,17 @@ public static ValueTask<T> GenericMethod<T>(this ElementReference elementRef,
 ```
 <br>
 
+
+## To change the default timeout for all interop calls, set the `JSInteropDefaultCallTimeout` property in `Startup.ConfigureServices`.
+
+TODO: improve description
+<JS interop may fail due to networking errors and should be treated as unreliable. By default, a Blazor Server app times out JS interop calls on the server after one minute.
+If an app can tolerate a more aggressive timeout,> set the timeout using the `JSInteropDefaultCallTimeout` property in `Startup.ConfigureServices`.
+
+The following code sets the default timeout for interop calls as 10 seconds.
+
+```csharp
+services.AddServerSideBlazor(
+    options => options.JSInteropDefaultCallTimeout = TimeSpan.FromSeconds(10));
+```
+<br>
