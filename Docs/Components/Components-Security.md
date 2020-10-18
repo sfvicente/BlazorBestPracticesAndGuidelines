@@ -28,6 +28,9 @@ Rendering raw HTML from sources that you do not trust is a security risk and sho
 <br><br>
 
 
+## Link Rendering
+<br>
+
 ### When rendering links as part of an application, if possible, use relative links.
 
 ```csharp
