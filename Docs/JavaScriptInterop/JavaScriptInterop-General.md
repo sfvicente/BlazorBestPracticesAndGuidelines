@@ -199,3 +199,18 @@ services.AddServerSideBlazor(
     options => options.JSInteropDefaultCallTimeout = TimeSpan.FromSeconds(10));
 ```
 <br>
+
+
+## To change the default timeout for a interop call, set the `cancellationToken` parameter of `InvokeAsync` method.
+
+TODO: improve description
+<JS interop may fail due to networking errors and should be treated as unreliable. By default, a Blazor Server app times out JS interop calls on the server after one minute.
+If an app can tolerate a more aggressive timeout,> set the timeout for a function using the `cancellationToken` parameter of `InvokeAsync`.
+
+The following code sets the default timeout for an interop call as 10 seconds.
+
+```csharp
+var result = await JSRuntime.InvokeAsync<string>("myFunction", 
+    TimeSpan.FromSeconds(10), new[] { "Arg1" });
+```
+<br>
