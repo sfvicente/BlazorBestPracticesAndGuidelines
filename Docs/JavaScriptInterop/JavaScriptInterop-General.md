@@ -214,3 +214,23 @@ var result = await JSRuntime.InvokeAsync<string>("myFunction",
     TimeSpan.FromSeconds(10), new[] { "Arg1" });
 ```
 <br>
+
+
+### Consider sending the content of interop calls with large payloads in smaller chunks and processing the messages as a `Stream`.
+
+TODO: improve description
+<In Blazor WebAssembly, the framework doesn't impose limits on the size of inputs and outputs of JS interop calls.>
+<In Blazor Server, the result of a JS interop call is limited by the maximum payload size enforced by SignalR, which defaults to 32 KB>
+
+<Increasing the SignalR limit comes at the cost of requiring the use of more server resources, and it exposes the server to increased risks from a malicious user. Additionally,
+reading a large amount of content in to memory as strings or byte arrays can also result in allocations that work poorly with the garbage collector, resulting in additional
+performance penalties.>
+
+TODO: Add description
+
+TODO: Add sample code
+
+Applies To: Blazor Server
+Additional Tags: Configuration, SignalR
+
+
