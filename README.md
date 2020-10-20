@@ -68,6 +68,7 @@ Guidance on generic application development, software engineering and specific f
 - [Deployment](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Deployment.md)
 - [Environment](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Environment.md)
 - [Error Handling](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ErrorHandling.md)
+- [Hosting](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Hosting.md)
 - [Performance](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Performance.md)
 - [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Security.md)
 
