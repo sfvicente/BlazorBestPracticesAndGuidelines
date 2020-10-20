@@ -12,3 +12,16 @@ todo: add description
 Applies To: Blazor Server
 Additional Tags: Performance
 <br>
+
+
+### Limit application memory usage to improve application latency.
+
+When memory consumption increases within an application, it can trigger an increase in garbage collection or paging of memory to disk. Both of these mechanisms impact the application
+performance which leads to UI latency.
+
+todo: complement description
+
+Applies To: Blazor Server
+Additional Tags: Performance
+<br>
+
