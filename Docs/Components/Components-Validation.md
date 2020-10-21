@@ -163,3 +163,36 @@ class MyFieldClassProvider : FieldCssClassProvider
 
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
 
+
+## `ValidationSummary`
+
+The `ValidationSummary` class displays a list of validation messages from a cascaded `EditContext`.
+<br>
+
+
+### To prevent displaying `ValidationSummary` component messages before triggering form submission, use the _CSS_ `display` property with the 'OnValidSubmit' event handling.
+
+The example below make the `ValidationSummary` component visible only when the submit button is pressed. The visibility of the component is controlled via the `display` _CSS_ property.
+
+```csharp
+<EditForm EditContext="@editContext" OnValidSubmit="@HandleOnValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary style="@validationSummaryStyle" />
+
+    ...
+
+    <button type="submit" disabled="@formInvalid">Submit</button>
+</EditForm>
+
+@code {
+    private string validationSummaryStyle = "display:none";
+
+    ...
+
+    private void HandleOnValidSubmit()
+    {
+        validationSummaryStyle = "display:block";
+    }
+}
+```
+<br>
