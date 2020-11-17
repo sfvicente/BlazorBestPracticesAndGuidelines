@@ -1,6 +1,9 @@
 # Application Development | Deployment
 <br>
 
+## Internet Information Services (IIS)
+<br>
+
 ### After publishing an application to IIS, perform a hard reload of the application in the browser to view the newest version
 
 After publishing a _Blazor_ application, browsers like _Chrome_ can cache resources, even if you redeploy the application. To prevent this behavior, perform a hard reload of the browser page. Chrome will ignore the cache and will load all resources from the web page again. The hard reload functionality is not exposed directly in the UI of the browser. 
@@ -22,6 +25,10 @@ Other possible options that are not recommended are:
 ### When deploying a Blazor Server application to IIS, enable both WebSockets and Sticky sessions with Application Request Routing.
 
 TODO: Description
+<br>
+
+
+## Azure
 <br>
 
 ### When deploying Blazor Server application to an Azure App Service, enable WebSockets and ARR Affinity.
