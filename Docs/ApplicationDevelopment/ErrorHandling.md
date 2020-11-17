@@ -25,5 +25,5 @@ Applies To: Blazor WebAssembly
 
 TODO: add description
 
-Applies To: Blazer Server
+Applies To: Blazor Server
 <br>
