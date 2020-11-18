@@ -24,4 +24,12 @@ If you specify the layout in a component, it overrides the default layout set in
 <br>
 
 
+### Do not add `@layout` directives to the root __Imports.razor_ file.
 
+Adding a `@layout` directive to the __Imports.razor_ file results in an infinite loop of layouts in the application.
+
+To set the default application layout, specify the layout in the `Router` component.
+
+TODO: add code
+
+<br>
