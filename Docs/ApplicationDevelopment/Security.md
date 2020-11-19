@@ -20,6 +20,9 @@ Applies To: Blazor Server
 <br><br>
 
 
+## HTTP Headers
+<br>
+
 **Use *Content Security Policy (CSP)* and  `X-Frame-Options` header to protect an app from rendering inside of an `<iframe>`**
 
 ```
