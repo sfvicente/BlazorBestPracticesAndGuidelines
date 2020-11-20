@@ -51,8 +51,8 @@ Guidance and best practices for development using the Blazor framework.
 ### Security
 
 - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-General.md)
-- [Authorization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-Authorization.md)
 - [Active Directory](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-ActiveDirectory.md)
+- [Authorization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-Authorization.md)
 - [CPU Exhaustion](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-CpuExhaustion)
 
 ## Blazor Application Development
