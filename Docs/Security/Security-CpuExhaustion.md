@@ -6,3 +6,15 @@ that result in intensive CPU work.
 <br>
 
 
+### Always include appropriate checks and limits before performing potentially CPU-intensive work.
+
+Blazor server applications do not provide requests and connection time out as safeguards against CPU exhaustion.
+
+todo: complement description
+todo: add code examples
+
+Applies To: Blazor Server
+
+<br>
+
+
