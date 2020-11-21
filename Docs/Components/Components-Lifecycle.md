@@ -1,4 +1,7 @@
 # Components | Lifecycle
+
+The _Blazor_ framework includes a system to control order of eents in the lifetime of components. The each component has synchronous and asynchronous lifecycle methods which 
+can be overriden to extend and configure component initialization and rendering.
 <br>
 
 
