@@ -40,6 +40,8 @@ window.playVideo = function(url) {
 	video.play();
 }
 ```
+
+Additional Tags: JavaScript Interop
 <br>
 
 
@@ -58,6 +60,8 @@ Currently, there isn't a Blazor implementation of the browser functions `alert()
     ...
 }
 ```
+
+Additional Tags: JavaScript Interop
 <br>
 
 
