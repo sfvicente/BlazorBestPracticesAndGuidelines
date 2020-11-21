@@ -188,12 +188,17 @@ TODO: Image
 <br>
 
 
-### Don't use `RedirectToPage` to perform a redirect.
+### Don't use `RedirectToPage` to perform a redirect to a component.
 
-Do not use the `PageBase.RedirectToPage()` method to perform redirection in Blazer based apps. as `RedirectToPage()` will perform a HTTP redirect to a _Razor_ page. Instead, inject the `NavigationManager` component and use it's `NavigateTo()` method.
+Do not use the `PageBase.RedirectToPage()` method to perform redirection to a component in a _Blazor_ based applications. `RedirectToPage()` is used to perform HTTP redirects to
+_Razor_ pages. Instead, inject the `NavigationManager` component and use it's `NavigateTo()` method.
 
 ```csharp
-// TODO: Example
+@inject NavigationManager NavigationManager
+
+// TODO: Complement example
+
+NavigationManager.NavigateTo("counter/2");
 
 ```
 <br>
