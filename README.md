@@ -19,6 +19,7 @@ Guidance and best practices for development using the Blazor framework.
 - [UserInterface](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-UserInterface.md)
 - [Validation](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Communication.md)
 - [Rendering](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Rendering.md)
+- [CSS Isolation](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-CssIsolation.md)
 - [Localization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Localization.md)
 - [Optimization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Optimization.md)
 - [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Security.md)
