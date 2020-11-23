@@ -8,6 +8,16 @@ The `EditForm` class renders a form element that cascades an EditContext to desc
 <br>
 
 
+### Use the `EditForm` component to defined a form in the application.
+
+TODO: add description
+
+```csharp
+todo: add example
+```
+<br>
+
+
 ### Always instantiate the `Model` before assigning it to an `EditForm`.
 
 TODO: add description
