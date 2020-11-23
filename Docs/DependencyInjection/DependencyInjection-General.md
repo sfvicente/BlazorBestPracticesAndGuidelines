@@ -5,6 +5,7 @@
 ## `@inject` directive
 
 The `@inject` directive allows adding services from the service container to components via dependency injection.
+<br>
 
 
 ### To inject a service in a component, use the `@inject` directive.
@@ -65,6 +66,7 @@ TODO: Add code
 ## `[Inject]` Attribute
 
 The `[Inject]` indicates that the associated property should have a value injected from the service provider during the class initialization.
+<br>
 
 
 ### Use the `[Inject]` attribute to inject services into component classes.
@@ -98,4 +100,5 @@ public class HttpCrawler
 	}
 }
 ```
+<br>
 
