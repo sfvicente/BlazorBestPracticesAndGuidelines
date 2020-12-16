@@ -27,3 +27,18 @@ private static string GetLoggingDirectory()
 
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
 
+
+### Use a conditional `Microsoft.AspNetCore.Components` package reference to support both _.NET Core 3.x_ and _.NET 5_.
+
+// todo: complement description
+
+Microsoft recommends the following:
+
+```xml
+<PackageReference Include="Microsoft.AspNetCore.Components" Version="3.0.0" Condition="'$(TargetFramework)' == 'netstandard2.0'" />
+
+<PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.0-rc.1.*" Condition="'$(TargetFramework)' != 'netstandard2.0'" />
+```
+
+<br>
+
