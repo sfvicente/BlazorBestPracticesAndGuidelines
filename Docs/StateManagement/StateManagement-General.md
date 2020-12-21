@@ -18,7 +18,7 @@ TODO: complement.
 <br>
 
 
-### Use `localStorage` to persist application state across closing and re-opening the browser.
+### Use the browsers local storage to persist application state across closing and re-opening the browser.
 
 The `localStorage` collection is scoped to the browser's window. The stored application state will be persisted even if the user reloads the page or closes and re-opens the browser.
 
