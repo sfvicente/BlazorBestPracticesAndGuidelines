@@ -26,6 +26,26 @@ TODO: complement.
 <br>
 
 
+### Use the `ProtectedLocalStorage` in a component that requires loading or saving data to the browser's local storage.
+
+The `ProtectedLocalStorage` class allows storing and retrieving data in the browser's local storage collection. Any data stored through this method, will be shared across all tabs. The
+data will also be persisted even if the browser is restarted.
+
+Use the `@inject` directive to inject an instance of `ProtectedLocalStorage` in a component:
+
+```csharp
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inject ProtectedLocalStorage ProtectedLocalStore
+```
+
+// TODO: Complement description
+// TODO: add code samples
+
+Applies To: Blazor Server
+<br>
+
+
+
 ### Use custom code to persist UI state.
 
 User interface state can't be persisted in a similar way to component instances and their render trees. To persist something similar to UI state, such as the expanded nodes of a TreeView, the app must have custom code to model the behavior as serializable app state.
