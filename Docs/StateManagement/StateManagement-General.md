@@ -45,6 +45,24 @@ Applies To: Blazor Server
 <br>
 
 
+### Use the `ProtectedSessionStorage` in a component that requires loading or saving data to the browser's session storage collection.
+
+The `ProtectedSessionStorage` class allows storing and retrieving data in the browser's session storage collection. Any data stored through this method, will be scoped
+to the current browser tab. If the user closes the browser tab or the browser application, all the data will be discarded.
+
+Use the `@inject` directive to inject an instance of `ProtectedSessionStorage` in a component:
+
+```csharp
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inject ProtectedSessionStorage ProtectedSessionStore
+```
+
+// TODO: Complement description
+// TODO: add code samples
+
+Applies To: Blazor Server
+<br>
+
 
 ### Use custom code to persist UI state.
 
