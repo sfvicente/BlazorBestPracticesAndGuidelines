@@ -2,14 +2,19 @@
 <br>
 
 
-### Use the `FocusAsync()` method of `ElementReference` to set the UI focus to an element in Blazor apps.
+### Use the `FocusAsync()` method of `ElementReference` to set the UI focus to an element.
 
-The `ElementReference` struct represents a reference to a rendered element. Blazor has a `FocusAsync` method on `ElementReference` that allows setting the UI focus on that element.
+When required, the focus can be set on a UI element programmatically by using the `FocusAsync` method of on `ElementReference`. The `ElementReference` struct represents a
+reference to a rendered element.
+
+The following code displays how to set the UI focus on an element.
 
 ```csharp
 <button @onclick="() => textInput.FocusAsync()">Set focus</button>
 <input @ref="textInput"/>
 ```
+
+Applies To: .NET 5
 <br>
 
 
