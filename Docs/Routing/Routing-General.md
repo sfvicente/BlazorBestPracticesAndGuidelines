@@ -47,6 +47,12 @@ Although there is no specific mechanism for optional route parameters, the funct
 <br>
 
 
+## `NavigationManager`
+
+The `NavigationManager` provides an abstraction for querying and managing URI navigation in Blazor applications.
+<br>
+
+
 ### Use the `Uri` property of the `NavigationManager` class to obtain the current absolute URI.
 
 The `NavigationManager` class provides an abstraction for querying and managing URI navigation. Use the `Uri` to determine the current absolute URI.
