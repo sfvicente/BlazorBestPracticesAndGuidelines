@@ -47,6 +47,27 @@ Although there is no specific mechanism for optional route parameters, the funct
 <br>
 
 
+### To capture paths across multiple folder boundaries in components, use catch-all route parameters.
+
+A catch-all route parameter allows a component to capture multiple paths even
+
+Catch-all parameters need to be added at the end of the URL of the route template with a `string` type. The route value will be copied to the defined parameter in the component.
+
+```csharp
+@page "/catch-all/{*pageRoute}"
+
+@code {
+    [Parameter]
+    public string PageRoute { get; set; }
+}
+```
+
+todo: include route examples.
+
+Applies To: .NET 5
+<br>
+
+
 ## `NavigationManager`
 
 The `NavigationManager` provides an abstraction for querying and managing URI navigation in Blazor applications.
