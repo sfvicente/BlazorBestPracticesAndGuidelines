@@ -4,3 +4,9 @@
 <br>
 
 
+### Use JavaScript isolation to avoid polluting the global namespace with imported JavaScript.
+
+todo: add description
+todo: add examples
+
+<br>
