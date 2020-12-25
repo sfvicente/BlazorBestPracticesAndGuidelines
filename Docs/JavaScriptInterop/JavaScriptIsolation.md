@@ -10,3 +10,11 @@ todo: add description
 todo: add examples
 
 <br>
+
+
+### Use JavaScript isolation to avoid forcing consumers of a library or components to import its JavaScript dependencies.
+
+todo: add description
+todo: add examples
+
+<br>
