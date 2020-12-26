@@ -18,3 +18,11 @@ todo: add description
 todo: add examples
 
 <br>
+
+
+### To render UI generated from JavaScript libraries within a component, add an empty element with a reference and update it in the `OnAfterRenderAsync` first render.
+
+todo: add description
+todo: add examples
+
+<br>
