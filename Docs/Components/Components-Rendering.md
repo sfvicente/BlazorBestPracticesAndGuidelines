@@ -290,3 +290,33 @@ todo: code sample
 
 Additional Tags: Lifecycle, Performance
 <br>
+
+
+## Integration
+<br>
+
+
+### To render components in a page or view, use the Component Tag Helper.
+
+You can integrate _Razor_ components and views into _Razor Pages_ using the Component Tag Helper.
+
+todo: complement description
+
+```csharp
+@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<component type="typeof(RegisterBenefits)" render-mode="Static" />
+
+...
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+```
+<br>
