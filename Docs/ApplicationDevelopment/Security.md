@@ -23,7 +23,13 @@ Applies To: Blazor Server
 ## HTTP Headers
 <br>
 
+
 ### Use the `Content-Security-Policy` and `X-Frame-Options` headers to protect an application from rendering inside of an `<iframe>`.
+
+todo: complement description
+
+The `X-Frame-Options` HTTP response header can be used to indicate whether a browser should be allowed to render a page in a <frame>, <iframe>, <embed> or <object>. By
+ensuring that their content is not embedded into other sites, an application can use this to avoid click-jacking attacks.
 
 ```
 ToDo: Example
