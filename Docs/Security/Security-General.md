@@ -27,3 +27,19 @@ public static IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
 <small>Reference: [https://stackoverflow.com/questions/60404612/parse-jwt-token-to-get-the-payload-content-only-without-external-library-in-c-sh](https://stackoverflow.com/questions/60404612/parse-jwt-token-to-get-the-payload-content-only-without-external-library-in-c-sh)</small>
 <br>
 
+
+## Shared State
+<br>
+
+
+### Do not share state between apps on the same server using singleton services unless the services have been specifically designed for it.
+
+Blazor server applications run and use server memory. When multiple applications are hosted on the same server, those applications share the same process. Blazor initiates
+a circuit for each application session which has its own DI container scope. While this makes scoped services unique per Blazor session, singleton services do not share this
+behavior.
+
+Without careful design considerations, sharing state with singleton services can introduce security vulnerabilities, such as leaking user state across circuits.
+
+Applies to: Blazor Server
+<br>
+
