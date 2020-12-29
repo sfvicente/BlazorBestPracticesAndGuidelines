@@ -52,3 +52,28 @@ guaranteed to be available within the `IHttpContextAccessor`. There is also no g
 todo: add code sample.
 
 <br>
+
+
+### To make request state available to an application, pass data through parameters to the root component in the initial rendering of the application.
+
+The `IHttpContextAccessor` ´should not be used within Blazor apps. To make request state available to an application
+
+Create a class to hold all the data needed:
+
+todo: code example
+
+In the initial rendering of the application, populate the class with data using the `HttpContext` information available at that point:
+
+todo: code example
+
+Pass the information to the _Blazor_ application as a parameter to the root component:
+
+todo: code example
+
+Use the data within the application directly or through a scoped service.
+
+todo: code example
+
+
+Additional Tags: HTTP Context
+<br>
