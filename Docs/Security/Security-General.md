@@ -43,3 +43,12 @@ Without careful design considerations, sharing state with singleton services can
 Applies to: Blazor Server
 <br>
 
+
+### Do not use `IHttpContextAccessor` within Blazor apps.
+
+As _Blazor_ applications do not run within the context of the _ASP.NET Core_ pipeline, using the `IHttpContextAccessor` is a security risk. The `HttpContext` is not
+guaranteed to be available within the `IHttpContextAccessor`. There is also no guaranteed that it is holding the context that started the Blazor application.
+
+todo: add code sample.
+
+<br>
