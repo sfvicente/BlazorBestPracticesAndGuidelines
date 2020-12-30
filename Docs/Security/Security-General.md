@@ -57,21 +57,40 @@ Additional Tags: HTTP Context
 
 ### To make request state available to an application, pass data through parameters to the root component in the initial rendering of the application.
 
-The `IHttpContextAccessor` ´should not be used within Blazor apps. To make request state available to an application
+The `IHttpContextAccessor` should not be used within Blazor apps. To make request state available to an application use the following steps:
 
-Create a class to hold all the data needed:
+1. Create a class to hold all the data needed:
+
+```cs
+public class HostModel: PageModel
+{
+    private readonly IHttpContextAccessor _httpContextAccessor;
+
+	public string UserAgent { get; set; }
+    public string IPAddress { get; set; }
+
+    public HttpContextFeatureModel(IHttpContextAccessor httpContextAccessor)
+    {
+        _httpContextAccessor = httpContextAccessor;    
+    }
+
+    public void OnGet()
+    {
+        UserAgent = _httpContextAccessor.HttpContext.Request.Headers["User-Agent"];
+        IPAddress = _httpContextAccessor.HttpContext.Connection.RemoteIpAddress.ToString();  
+    }
+}
+```
+
+2. In the initial rendering of the application, populate the class with data using the `HttpContext` information available at that point:
 
 todo: code example
 
-In the initial rendering of the application, populate the class with data using the `HttpContext` information available at that point:
+3. Pass the information to the _Blazor_ application as a parameter to the root component:
 
 todo: code example
 
-Pass the information to the _Blazor_ application as a parameter to the root component:
-
-todo: code example
-
-Use the data within the application directly or through a scoped service.
+4. Use the data within the application directly or through a scoped service.
 
 todo: code example
 
