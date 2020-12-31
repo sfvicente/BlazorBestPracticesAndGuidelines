@@ -210,6 +210,11 @@ void IDisposable.Dispose()
 <br>
 
 
+## 404 Error
+The 404 error is an action that happens when a user tries to reach a non-existent page on a site. It can be generated due to the user clicking a broken link, attempting
+to access a page that has been deleted, or a mistyped a URL.
+<br>
+
 ### Provide a 404 page when the application fails to match a URL to a component.
 
 404 is a standard response code that is returned by a server to indicate that a page was successfully requested but the application was unable to locate it.
