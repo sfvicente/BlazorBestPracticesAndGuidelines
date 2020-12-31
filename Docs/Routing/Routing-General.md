@@ -92,6 +92,21 @@ This returns a string with the full URL, including hostname.
 <br>
 
 
+### To obtain the current relative URL or fragments of the current URL, convert the `NavigationManager.Uri` into a Uri type.
+
+todo: complement description
+
+```csharp
+@page "/"
+@inject NavigationManager NavigationManager
+
+<h1>Hello, world!</h1>
+
+@(new Uri(navigationManager.Uri).PathAndQuery)
+```
+
+<br>
+
 ### Use the `NavigateTo` method of the `NavigationManager` class to navigate to a specific URI.
 
 The `NavigationManager` class provides an abstraction for querying and managing URI navigation. Use the `NavigateTo` to navigate to the desired component.
