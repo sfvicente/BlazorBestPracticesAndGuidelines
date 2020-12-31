@@ -76,7 +76,8 @@ The `NavigationManager` provides an abstraction for querying and managing URI na
 
 ### Use the `Uri` property of the `NavigationManager` class to obtain the current absolute URI.
 
-The `NavigationManager` class provides an abstraction for querying and managing URI navigation. Use the `Uri` to determine the current absolute URI.
+The `NavigationManager` class provides an abstraction for querying and managing URI navigation. In order to retrieve the current URL, inject the `NavigationManager`
+class into the _Razor_ component. It is located inside the `Microsoft.AspNetCore.Components` assembly. Then use the `Uri` property to determine the current absolute URI:
 
 ```csharp
 @page "/"
@@ -86,6 +87,8 @@ The `NavigationManager` class provides an abstraction for querying and managing 
 
 Current Url: @NavigationManager.Uri
 ```
+
+This returns a string with the full URL, including hostname.
 <br>
 
 
