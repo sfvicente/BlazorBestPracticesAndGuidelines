@@ -126,6 +126,7 @@ The `ontoggle` event occurs when the user opens or closes the `<details>` elemen
 ```
 
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+<br>
 
 
 ### To bind items in a collection to controls in a user interface structure such as table, use a loop with an event connected to a method that accepts the instance of item.
