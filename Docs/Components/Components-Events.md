@@ -2,6 +2,50 @@
 <br>
 
 
+### To handle client-side UI events, specify an event attribute and declare an event handler in the component code.
+
+Components can handle UI events by specifying both an event attribute and an event handler. Event attributes are defined inside an HTML tag. It requires the event name
+and must be prepended with an @.
+
+For example, to handle the `onclick` event in an input field, add the `onclick` as an attribute as shown below:
+
+```csharp
+<input @onclick="" />
+```
+
+In addition to specifying the event attribute, it is required to also declare an event handler. This can be achieved either inline:
+
+```csharp
+<p>Message: @Message</p>
+<button @onclick="@((e) => {
+    Message = "Hello World!";
+})">Set Message</button>
+
+@code {
+    public virtual string Message { get; set; }
+}
+```
+
+Or through a method within the `@code` section of the _Razor_ component:
+
+```csharp
+<p>Message: @Message</p>
+<button @onclick="Click">Set Message</button>
+
+@code {
+    public virtual string Message { get; set; }
+
+    public virtual void Click(MouseEventArgs e)
+    {
+        Message = "Hello World!";
+    }
+}
+```
+
+Additional Tags: Event Handler
+<br>
+
+
 ### Use the @on{EVENT}:stopPropagation directive attribute to stop event propagation.
 
 ```csharp
