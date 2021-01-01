@@ -46,7 +46,7 @@ Additional Tags: Event Handler
 <br>
 
 
-### Use the @on{EVENT}:stopPropagation directive attribute to stop event propagation.
+### Use the `@on{EVENT}:stopPropagation` directive attribute to stop event propagation.
 
 ```csharp
 <input type="text" value="" @onkeypress:preventDefault />
@@ -54,7 +54,7 @@ Additional Tags: Event Handler
 <br><br>
 
 
-### Use both the @on{EVENT}:stopPropagation directive attribute and with your event handling to stop event propagation but still process your code.
+### Use both the `@on{EVENT}:stopPropagation` directive attribute and with your event handling to stop event propagation but still process your code.
 
 ```csharp
 <input type="text" value="" @onkeypress="HandleKeyPresses" @onkeypress:preventDefault />
