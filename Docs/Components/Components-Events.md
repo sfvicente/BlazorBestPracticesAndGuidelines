@@ -129,6 +129,18 @@ Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-r
 <br>
 
 
+### To detect each character input on a text box, use the `@oninput` event.
+
+To capture every character being typed in a textbox, bind the `oninput` event with an input element. This trigger the event for each character input.
+
+```csharp
+<input type="text" @oninput="@HandleInput" />
+```
+
+Additional Tags: Events
+<br>
+
+
 ### To bind items in a collection to controls in a user interface structure such as table, use a loop with an event connected to a method that accepts the instance of item.
 
 The code below binds each button of the table to functionality for the removal of the item from the collection.
