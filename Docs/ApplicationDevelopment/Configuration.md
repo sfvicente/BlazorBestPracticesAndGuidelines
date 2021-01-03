@@ -1,6 +1,7 @@
 # Application Development | Configuration
 <br>
 
+
 ### Use the `UseStartup()` method to control `Startup` class activation.
 
 The `UseStartup()` method has an overload that allows you to provide a factory method for controlling `Startup` class activation. This is useful if you want to pass 
@@ -25,5 +26,6 @@ public class Program
 ```
 
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+<br>
 
 
