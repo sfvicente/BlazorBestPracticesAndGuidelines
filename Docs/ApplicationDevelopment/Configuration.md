@@ -29,3 +29,14 @@ Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-r
 <br>
 
 
+### To disable pre-rendering in _Blazor Server_ applications, change the application component render mode to `Server`.
+
+To disable prerendering for a _Blazor Server_ application, edit the Pages/_Host.cshtml file. Modify the render-mode attribute value of the Component Tag Helper to `Server`.
+
+```csharp
+<component type="typeof(App)" render-mode="Server" />
+```
+
+Applies To: Blazor Server
+Additional Tags: Application, Render Mode
+<br>
