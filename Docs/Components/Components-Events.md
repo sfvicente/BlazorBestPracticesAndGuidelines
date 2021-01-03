@@ -141,6 +141,37 @@ Additional Tags: Events
 <br>
 
 
+### To handle the change of the selected item in a dropdown, use the `onchange` event attribute.
+
+To capture a change in the selected item in a dropdown, add the `onchange` event attribute to the . When specifying the event handler, use a parameter of type `ChangeEventArgs`.
+
+```csharp
+@page "/select"
+
+<label>Please select an option:</label>
+<select @onchange="Select">
+    <option value="">Please Select...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+</select>
+
+<p>You selected: @SelectedOption</p>
+
+@code {
+    public virtual string SelectedOption { get; set; }
+
+    public void HandleOptionChange(ChangeEventArgs changeEventArgs)
+    {
+        SelectedOption = changeEventArgs.Value.ToString();
+    }
+}
+```
+
+Additional Tags: UI, Dropdown
+<br>
+
+
 ### To bind items in a collection to controls in a user interface structure such as table, use a loop with an event connected to a method that accepts the instance of item.
 
 The code below binds each button of the table to functionality for the removal of the item from the collection.
