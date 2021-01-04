@@ -105,7 +105,8 @@ To render raw HTML, wrap the HTML content in a `MarkupString` value. The value i
 
 ## Component Parameters
 
-Components can have component parameters, which are values passed to the component so that it can execute and complete it's tasks.
+Component parameters are values passed to the component that are required to execute and complete tasks.
+<br>
 
 
 ### Use the `Parameter` attribute to specify arguments for a component in markup.
