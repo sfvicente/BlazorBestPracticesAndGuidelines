@@ -20,7 +20,10 @@ Rendering raw HTML from sources that you do not trust is a security risk and sho
 <br><br>
 
 
-### Validate arguments to ensure that the target is allowed by the app.
+### Always validate component arguments to ensure that the target for navigation requests is allowed by the app.
+
+Although it should be avoided, in case the application uses user input as part of the navigation logic, before executing the `NavigationManager.NavigateTo()` method,
+the inputs need to be properly validated. Otherwise, the application may be redirected to a malicious site.
 
 ```csharp
 // ToDo: Example
