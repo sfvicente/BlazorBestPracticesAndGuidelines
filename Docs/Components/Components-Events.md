@@ -223,6 +223,25 @@ The code below binds each button of the table to functionality for the removal o
 <br>
 
 
+### To define an asynchronous event handler, declare the handler as `async` with return type `Task`.
+
+Event handlers can be defined as asynchronous by using the `async` keyword in the declaration and a return type of `Task`.
+
+```csharp
+<button class="btn btn-primary" @onclick="HandleAddToCart">
+    Add To Cart
+</button>
+
+@code {
+    private async Task HandleAddToCart(MouseEventArgs e)
+    {
+        await AddItemToCart();
+    }
+}
+
+<br>
+
+
 ### Avoid using events that produce large amounts of data in _Blazor Server_ applications.
 
 Example of DOM events that can produce excessive data are `oninput` and `onscroll`.
