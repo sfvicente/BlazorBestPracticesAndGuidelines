@@ -181,6 +181,32 @@ Using `forceLoad` is not required in order to navigate to an off-site URI. Calli
 <br>
 
 
+### To navigate to a new browser tab, use _JavaScript Interop_ with the `IJSRuntime` object.
+
+Use _blank as the value for the third parameter, which will notify the system that the url needs to be opened in the new browser tab.
+
+TODO: complement description.
+
+```csharp
+@inject IJSRuntime jsRuntime
+
+<button @onclick="HandleNavigateToNewTab">Navigate to New Tab</button>
+
+@code {
+
+    public async Task HandleNavigateToNewTab()
+    {
+        string url = "/counter";
+
+        await jsRuntime.InvokeAsync<object>("open", url, "_blank");
+    }
+}
+```
+
+Additional Tags: Javascript Interop
+<br>
+
+
 ### Use the `IsNavigationIntercepted` property of the `NavigationManager` to determine whether navigation was initiated through code or HTML.
 
 The `IsNavigationIntercepted` indicates whether the navigation was initiated via code or via an HTML navigation. If the `IsNavigationIntercepted` is set to `false`, the navigation was initiated by using the `NavigationManager.NavigateTo()` method in the code. If the value of the property is set to `true`, then _Blazor_ has intercepted the navigation instead of allowing the browser to navigate to the new URL, which would result in a request to the server. Any request not initiated using the `NavigateTo()` method will be intercepted.
