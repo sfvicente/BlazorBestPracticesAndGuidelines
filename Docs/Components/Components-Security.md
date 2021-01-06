@@ -1,6 +1,9 @@
 # Components | Security
 <br>
 
+## Content Rendering
+<br> 
+
 
 ### Don't render raw HTML constructed from any untrusted source
 
