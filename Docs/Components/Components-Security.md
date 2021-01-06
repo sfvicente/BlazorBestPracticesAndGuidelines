@@ -15,6 +15,10 @@ Rendering raw HTML from sources that you do not trust is a security risk and sho
 <br><br>
 
 
+## Navigation
+<br>
+
+
 ### Avoid using user input as part of the navigation call arguments.
 
 ```csharp
