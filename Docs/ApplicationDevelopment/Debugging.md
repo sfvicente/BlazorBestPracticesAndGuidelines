@@ -1,6 +1,18 @@
 # Application Development | Debugging
 <br>
 
+
+### To Log or print comments during code execution, use `Console.Write` and `Console.WriteLine`.
+
+Similar to `console.log` in JavaScript, Blazor applications can use `Console.Write` and `Console.WriteLine` to log or print comments during execution.
+
+```csharp
+Console.WriteLine("This is content logged to output window");
+```
+
+<br>
+
+
 ### To view more detailed information on exceptions that occur within your application, enable `DetailedErrors`.
 
 Add the code below to your _Startup.cs_ to see more details about exceptions happening in your application:
