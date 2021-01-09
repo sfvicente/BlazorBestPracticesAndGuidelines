@@ -178,4 +178,37 @@ A parameter that hasn't been specified will not be present in the collection.
 <br>
 
 
+## Cascading Values
+ 
+Cascading values is a component that allows values passed to it to be cascaded down its component tree to all of its descendants.
+<br>
 
+
+### To use content from cascading values in a component, declare a property of the same type, decorated with the `[CascadingParameter]` attribute.
+
+The code below setups cascaded values for the component.
+
+```csharp
+<CascadingValue Value="@Username">
+    <MyComponent></MyComponent>
+</CascadingValue>
+
+@code {
+    string Username = "admin";
+}
+```
+
+To access the information, declare a property of the same type within the component. Decore the property with the `[CascadingParameter]` attribute.
+
+```csharp
+<h1>My Component</h1>
+
+<p>Hello: @Username</p>
+
+@code {
+    [CascadingParameter]
+    string Username { get; set; }
+}
+```
+
+<br>
