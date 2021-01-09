@@ -59,3 +59,35 @@ the example below, instead of using `context.Id`, the `Context` attribute is ass
     ...
 }
 <br>
+
+
+## Generic-typed Components
+<br>
+
+
+### To define a generic component, use the `@typeparam` directive to specify type parameters.
+
+Templated components can be generically typed by add the `@typeparam` directive at the top of the component code:
+
+```csharp
+@typeparam TItem
+
+<ul>
+    @foreach (var item in Items)
+    {
+        @ItemTemplate(item)
+    }
+</ul>
+
+@code {
+    [Parameter]
+    public RenderFragment<TItem> ItemTemplate { get; set; }
+
+    [Parameter]
+    public IReadOnlyList<TItem> Items { get; set; }
+}
+```
+
+TODO: complement description
+
+<br>
