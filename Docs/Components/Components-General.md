@@ -1,6 +1,11 @@
 # Components | General
 <br>
 
+## Naming Conventions
+
+A naming convention is an agreed scheme for naming items.
+<br>
+
 
 ### Use PascalCase for naming components
 
