@@ -7,9 +7,9 @@ A naming convention is an agreed scheme for naming items.
 <br>
 
 
-### Use PascalCase for naming components
+### Use PascalCase for naming components.
 
-Component names should be created by concatenating capitalized words.
+A component name is required to start with an uppercase character. Create component names by concatenating capitalized words:
 
 ```
 NavMenu.razor
