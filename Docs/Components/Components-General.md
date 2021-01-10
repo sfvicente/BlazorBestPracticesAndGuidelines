@@ -108,6 +108,37 @@ To render raw HTML, wrap the HTML content in a `MarkupString` value. The value i
 <br>
 
 
+## Inheritance
+<br>
+
+
+### Use the `@inherits` directive to allow a component to inherit from a base class.
+
+```csharp
+using Microsoft.AspNetCore.Components;
+
+namespace MyNamespace
+{
+    public class MyBaseComponent : ComponentBase
+    {
+        public string Title { get; set; } = 
+            "My Application";
+    }
+}
+```
+
+When developing the base class, it should derive from `ComponentBase`. Use the `@inherits` directive on the subclass to inherit the component's properties and methods:
+
+```csharp
+@page "/SubComponent"
+@inherits MyBaseComponent
+
+<h1>@Title</h1>
+```
+
+<br>
+
+
 ## Component Parameters
 
 Component parameters are values passed to the component that are required to execute and complete tasks.
