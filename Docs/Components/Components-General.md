@@ -43,6 +43,12 @@ You can use the parenthesis @( ) to create a code block. This will allow quotes 
 <br>
 
 
+## Namespaces
+
+Namespaces are mechanisms to organize and control the scope of program elements in application projects.
+<br>
+
+
 ### Add the `@using` directive in the an __Imports.razor_ file at any level file to make a library's components available to a single page or set of pages within a folder.
 
 ```csharp
