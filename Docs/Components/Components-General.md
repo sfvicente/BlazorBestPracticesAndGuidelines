@@ -220,6 +220,47 @@ A parameter that hasn't been specified will not be present in the collection.
 <br>
 
 
+## Child Content
+<br>
+
+
+### To allow a component to accept content for rendering, create a parameter named `ChildContent` of type `RenderFragment`.
+
+Components can be configured by other components through the use of parameters. However to set child content for rendering, a component can use parameters of
+type `RenderFragment`. By convention, it is required that the property is named `ChildContent`.
+
+Below is the example of a content that can accept child content for rendering:
+
+```csharp
+<div>
+    <h1>@Title</h1>
+    <div>@ChildContent</div>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}
+```
+
+The component can be set from the parent in the following way:
+
+```csharp
+@page "/ParentComponent"
+
+<h1>My Parent Component</h1>
+
+<ChildComponent Title="MyTitle">
+    Content to be set in the child component provided by the parent component.
+</ChildComponent>
+```
+
+<br>
+
+
 ## Cascading Values
  
 Cascading values is a component that allows values passed to it to be cascaded down its component tree to all of its descendants.
