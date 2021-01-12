@@ -18,6 +18,12 @@ NavMenu.razor
 <br>
 
 
+## _Razor_ Code
+
+Razor code is a markup syntax for embedding code into web application pages. Its syntax is composed of mix of _Razor_ markup, C#, and HTML.
+<br>
+
+
 ### Use the `Razor` code block notation to be able to use quotes inside component declarations.
 
 You can use the parenthesis @( ) to create a code block. This will allow quotes to be used inside the component declaration.
