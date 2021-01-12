@@ -27,21 +27,6 @@ You can use the parenthesis @( ) to create a code block. This will allow quotes 
 ```
 <br>
 
-### Use the `@using` directive in the top-level __Imports.razor_ file to make a library's components available to an entire project.
-
-```csharp
-@using System.Net.Http
-@using Microsoft.AspNetCore.Authorization
-@using Microsoft.AspNetCore.Components.Authorization
-@using Microsoft.AspNetCore.Components.Forms
-@using Microsoft.AspNetCore.Components.Routing
-@using Microsoft.AspNetCore.Components.Web
-@using Microsoft.JSInterop
-
-@using MyComponent
-```
-<br>
-
 
 ## Namespaces
 
@@ -54,6 +39,22 @@ Namespaces are mechanisms to organize and control the scope of program elements 
 ```csharp
 @using MyComponent
 
+```
+<br>
+
+
+### Use the `@using` directive in the top-level __Imports.razor_ file to make a library's components available to an entire project.
+
+```csharp
+@using System.Net.Http
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.JSInterop
+
+@using MyComponent
 ```
 <br>
 
