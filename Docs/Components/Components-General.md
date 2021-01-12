@@ -153,6 +153,8 @@ Component parameters are values passed to the component that are required to exe
 
 ### Use the `Parameter` attribute to specify arguments for a component in markup.
 
+When you create a component, it's possible to add parameters to allow passing information to the component. Consider the following component:
+
 ```csharp
 <h1>@Title</h1>
 
@@ -161,53 +163,61 @@ Component parameters are values passed to the component that are required to exe
 	public string Title { get; set; }
 }
 ```
+
+The component can be added to the application and its parameteres can be used as in the example below:
+
+```csharp
+<MyComponent Title="@MyText" />
+
+@code {
+    public string MyText { get; set; }
+}
+```
+
+Although parameters can be specified to pass information, the declaration of the component might not assign any values:
+
+```csharp
+<MyComponent />
+```
+
 <br>
 
 
 ### To determine if a component parameter has been assigned a value, override the `SetParametersAsync()` method and inspect the parameter collection.
 
-When you create a component, it's possible to add parameters to allow passing information to the component. Consider the following component:
+There may be cases in which, although a component has defined parameters, it is used without assigning values to it. See the following example:
 
 ```csharp
 <h1>@Title</h1>
 
 @code {
 	[Parameter]
-	public Foo Foo { get; set; }
+	public string Title { get; set; }
 }
 ```
-
-The component can be added to the application and it's parameter can be used as in the example below:
-
-```csharp
-<MyComponent Foo="@foo" />
-
-@code {
-    public Foo foo { get; set; }
-}
-```
-
-You can also choose to use the component but unlike the previous example, decide not to assign an argument to the `Foo` parameter.
 
 ```csharp
 <MyComponent />
 ```
-In this case, the parameter is omitted. As a component can be used both ways, it may be necessary to determine whether the parameter was assigned a value or not.
+
+In this case, the parameter is omitted. As the component can be used both ways, it may be necessary to determine whether the parameter was assigned a value or not.
 
 You can override the `SetParametersAsync()` method and iterate through the 'parameters' collection to determine if the parameter has been passed to the component.
 A parameter that hasn't been specified will not be present in the collection.
 
 ```csharp
+...
+
 @code {
 
     [Parameter]
-    public Foo Foo { get; set; }
+    public string Title { get; set; }
 
     public override async Task SetParametersAsync(ParameterView parameters)
     {
         foreach(var p in parameters)
         {
-            if(p.Name == "Foo")
+            if(p.Name == "Title")
             {
                 System.Diagnostics.Debug.WriteLine($"Value: {p.Value?.ToString()}");
             }
