@@ -99,6 +99,12 @@ To render raw HTML, wrap the HTML content in a `MarkupString` value. The value i
 <br>
 
 
+## Asynchronous Programming
+Asynchronous programming is method of parallel programming in which a program flow runs concurrently with external events or actions
+without blocking and forcing it to wait for results.
+<br>
+
+
 ### To assign a result of an `async` function to _razor_ component, use a property to store the value.
 
 ```csharp
