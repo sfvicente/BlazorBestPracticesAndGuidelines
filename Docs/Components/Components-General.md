@@ -34,6 +34,22 @@ You can use the parenthesis @( ) to create a code block. This will allow quotes 
 <br>
 
 
+### Do not use the loop variable in a `for` loop directly in a lambda expression.
+
+The following code should not be used:
+
+```csharp
+// ToDo: Example
+```
+
+Using the same variable used by all lambda expressions causes `i`'s value to be the same in all lambdas. Always capture its value in a local variable before using it.
+
+```csharp
+// ToDo: Example
+```
+<br>
+
+
 ## Namespaces
 
 Namespaces are mechanisms to organize and control the scope of program elements in application projects.
@@ -61,22 +77,6 @@ Namespaces are mechanisms to organize and control the scope of program elements 
 @using Microsoft.JSInterop
 
 @using MyComponent
-```
-<br>
-
-
-### Do not use the loop variable in a `for` loop directly in a lambda expression.
-
-The following code should not be used:
-
-```csharp
-// ToDo: Example
-```
-
-Using the same variable used by all lambda expressions causes `i`'s value to be the same in all lambdas. Always capture its value in a local variable before using it.
-
-```csharp
-// ToDo: Example
 ```
 <br>
 
