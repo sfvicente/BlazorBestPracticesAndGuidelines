@@ -105,6 +105,32 @@ without blocking and forcing it to wait for results.
 <br>
 
 
+### To invoke asynchronous operations, use the `async` and `await` mechanisms.
+
+// TODO: Complement description.
+
+```csharp
+@page "/"
+
+<button @onclick="HandleSetMessage">Set Message</button>
+<br />
+<p>@Message</p>
+
+@code {
+    public string Message = "Before method call.";
+
+    public async void HandleSetMessage()
+    {
+        await Task.Run(() => MyMethod());
+        content = "After method call.";       
+    }
+
+    void MyMethod() => Task.Delay(5000).Wait();
+}
+```
+
+<br>
+
 ### To assign a result of an `async` function to _razor_ component, use a property to store the value.
 
 ```csharp
