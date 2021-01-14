@@ -114,9 +114,9 @@ Blazor components can implement `IDisposable` to dispose of resources when the c
 <br>
 
 
-### Use `IIAsyncDisposable` for the asynchronous release of allocated resources.
+### Use `IAsyncDisposable` for the asynchronous release of allocated resources.
 
-The `IIAsyncDisposable` interface provides a mechanism for releasing unmanaged resources asynchronously.
+The `IAsyncDisposable` interface provides a mechanism for releasing unmanaged resources asynchronously.
 
 todo: complement description
 
