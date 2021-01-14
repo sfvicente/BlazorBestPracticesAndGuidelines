@@ -44,7 +44,8 @@ public abstract class MyCustomComponent: ComponentBase
 
 ### Do not call `StateHasChanged()` inside a components `Dispose()` method.
 
-Calling `StateHasChanged()` inside a components `Dispose()` method ins't supported. `StateHasChanged` might be invoked as part of tearing down the renderer, so requesting UI updates at that point isn't supported.
+Calling `StateHasChanged()` inside the `Dispose()` method of a component is not supported. `StateHasChanged` might be invoked as part of tearing down the renderer, so
+requesting UI updates at that point is not supported.
 
 ```csharp
 @using System
