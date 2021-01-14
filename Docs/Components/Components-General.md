@@ -81,24 +81,6 @@ Namespaces are mechanisms to organize and control the scope of program elements 
 <br>
 
 
-### To render raw HTML on a page, use the `MarkupString` property.
-
-To render raw HTML, wrap the HTML content in a `MarkupString` value. The value is parsed as HTML or SVG and inserted into the DOM.
-
-```csharp
-@page "/test"
-
-<h1>Example: Raw HTML</h1>
-
-@((MarkupString)markup)
-
-@code{
-	string markup = "<p>This is a <strong>Hello World</strong> example</p>";
-}
-```
-<br>
-
-
 ## Asynchronous Programming
 Asynchronous programming is method of parallel programming in which a program flow runs concurrently with external events or actions
 without blocking and forcing it to wait for results.

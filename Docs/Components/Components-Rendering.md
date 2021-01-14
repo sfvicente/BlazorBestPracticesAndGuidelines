@@ -29,6 +29,24 @@ It is also possible to render components dynamically at the application level.
 <br>
 
 
+### To render raw HTML on a page, use the `MarkupString` property.
+
+To render raw HTML, wrap the HTML content in a `MarkupString` value. The value is parsed as HTML or SVG and inserted into the DOM.
+
+```csharp
+@page "/test"
+
+<h1>Example: Raw HTML</h1>
+
+@((MarkupString)markup)
+
+@code{
+	string markup = "<p>This is a <strong>Hello World</strong> example</p>";
+}
+```
+<br>
+
+
 ## `StateHasChanged` Method
 
 The `StateHasChanged` is a method of the `ComponentBase` that notifies the component that its state has changed.
