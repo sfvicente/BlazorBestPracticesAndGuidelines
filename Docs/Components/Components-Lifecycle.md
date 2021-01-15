@@ -89,12 +89,20 @@ Blazor components can implement `IDisposable` to dispose of resources when the c
 <br>
 
 
-### Implement  `IDisposable` in a component to unsubscribe to events.
+### Always implement `IDisposable` in a component to unsubscribe to events.
+
+Not unregistering event handlers is a common cause of memory leaks. To avoid that, any event handlers previously set should be removed during the disposal of the component.
+
+When an even event handler is attached and not removed after the component or the handler is disposed, even if it is not being referenced, it leads to the object instance
+containing the handler to remain in memory longer than necessary. Also, if the component is rendered again, it normally runs the same logic to attach another event handler 
+instance to the same event. This will lead to issue if the component is disposed and created frequently.
 
 ```csharp
 @using System
 @implements IDisposable
+
 ...
+
 @code {
     [Parameter]
     public Cart cart { get; set; }
@@ -111,6 +119,8 @@ Blazor components can implement `IDisposable` to dispose of resources when the c
     }
 }
 ```
+
+Additional Tags: Event, Event Handling, Memory Leak
 <br>
 
 
