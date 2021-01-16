@@ -66,3 +66,19 @@ Variables that hold references to components via `@ref` attribute are only popul
 ```
 <br/>
 
+
+### Use a lambda expression or assign the event handler delegate in the `OnAfterRenderAsync` or `OnAfterRender` methods to use a reference variable with an event handler.
+
+Using a lambda expression or assigning the event handler delegate in the `OnAfterRenderAsync` or `OnAfterRender` methods ensures that the reference variable is assigned
+before the event handler is assigned.
+
+```
+
+	ToDo: code sample
+```
+
+<br/>
+
+
+
+
