@@ -251,6 +251,24 @@ A parameter that hasn't been specified will not be present in the collection.
 <br>
 
 
+### To accept arbitrary attributes in a component, define a parameter with the `CaptureUnmatchedValues` property set to true.
+
+A component can capture information through the use of parameters. However, it can also catch arbitary information passed as additional attributes. To do so, it requires
+the definition of a parameter with the `CaptureUnmatchedValues` property set to true. The `CaptureUnmatchedValues` determines whether a component parameter will
+capture values that don't match any other parameter.
+
+```csharp
+@code {
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> InputAttributes { get; set; }
+}
+```
+
+In each component, only one parameter with `CaptureUnmatchedValues` property set to true is supported. Also, the type used for this parameter must be assignable
+from `Dictionary<string, object>`.
+<br>
+
+
 ## Child Content
 <br>
 
