@@ -269,6 +269,24 @@ from `Dictionary<string, object>`.
 <br>
 
 
+### Consider using attribute splatting and arbitrary parameters when defining a component that produces a markup element which supports a variety of customizations
+
+Components with large amount of configurable combinations of parameters can require additional time and effort to define each attribute separately.
+
+// TODO: complement description
+
+// todo: add code example
+
+```csharp
+@code {
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> InputAttributes { get; set; }
+}
+```
+
+<br>
+
+
 ## Child Content
 <br>
 
