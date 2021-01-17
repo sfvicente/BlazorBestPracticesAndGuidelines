@@ -37,3 +37,10 @@ If the application must work when no network connectivity, use the _Blazor WebAs
 // Todo complement description
 
 <br>
+
+
+### Use _Blazor Server_ if the application runs or contains sensitive code.
+
+// Todo complement description
+
+<br>
