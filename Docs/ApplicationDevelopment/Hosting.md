@@ -25,3 +25,15 @@ Applies To: Blazor Server
 Additional Tags: Performance
 <br>
 
+
+## Hosting Model Decision
+<br>
+
+
+### User _Blazor WebAssembly_ if the application requires offline mode support.
+
+If the application must work when no network connectivity, use the _Blazor WebAssembly_ hosting model. _Blazor Server_ does not support offline mode.
+
+// Todo complement description
+
+<br>
