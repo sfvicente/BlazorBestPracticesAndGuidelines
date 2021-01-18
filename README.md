@@ -13,6 +13,7 @@ Guidance and best practices for development using the Blazor framework.
 ### Components
 
 - [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-General.md)
+- [DataBinding](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/DataBinding.md)
 - [Lifecycle](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Lifecycle.md)
 - [Events](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Events.md)
 - [Communication](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Communication.md)
