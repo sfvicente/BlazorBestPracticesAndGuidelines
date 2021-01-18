@@ -33,3 +33,21 @@ A property can also be used to implement data binding:
 
 The content of the fields is copied from the view elements when the control loses focus.
 <br>
+
+
+### Use the '@bind:event' HTML element attribute to bind a property or field to other events instead of the default binding event for an element.
+
+The `@bind` attribute uses a pre-configured event to use for data binding. In case of an input field, it binds to the control `onchange` event. To use another event,
+we can apply the `@bind:event` attribute with an event parameter instead.
+
+The example below performs data binding on a input field with the `oninput` event:
+
+```csharp
+<input @bind="message" @bind:event="oninput" />
+The message content is: @message
+
+@code {
+    private string message { get; set; }
+}
+```
+<br>
