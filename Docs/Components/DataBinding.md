@@ -7,7 +7,7 @@ Data-binding is the automatic synchronization of data between models and compone
 ### Use the `@bind` HTML element attribute with a field, property, or _Razor_ expression value to implement data binding in a component.
 
 _Razor_ components allow for binding model data with view elements. To enable data binding, add the `@bind` HMTL attribute and set the attribute with the field name that
-will hold the data:
+will hold the data. Take into account that attribute binding is case sensitive.
 
 ```csharp
 <p>
@@ -31,7 +31,7 @@ A property can also be used to implement data binding:
 }
 ```
 
-The content of the fields is copied from the view elements when the control loses focus.
+In this case, the content of the fields is copied from the view elements when the control loses focus as binding uses the `onchange` event by default.
 <br>
 
 
