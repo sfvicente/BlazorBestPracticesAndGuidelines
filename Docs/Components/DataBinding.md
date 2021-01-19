@@ -51,3 +51,15 @@ The message content is: @message
 }
 ```
 <br>
+
+
+## Formatting
+<br>
+
+
+### Do not use the `@bind:format` HTML element attribute to format strings containing currency or number content.
+
+Using binding to format currencies or number formats is not currently supported.
+<br>
+
+
