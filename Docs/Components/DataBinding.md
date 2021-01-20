@@ -57,6 +57,23 @@ The message content is: @message
 <br>
 
 
+### Use the `@bind:format` HTML element attribute to format strings containing dates.
+
+Using `@bind:format` attribute, data binding can be applied to a date with the specified format:
+
+```csharp
+<input @bind="startDate" @bind:format="yyyy-MM-dd" />
+
+@code {
+    private DateTime currentDate = new DateTime(2021, 1, 20);
+}
+```
+
+In the previous example the `@bind:format` is binded to a `System.DateTime`. However, it also supports binding for `System.DateTime?`, `System.DateTimeOffset` and
+`System.DateTimeOffset?`.
+<br>
+
+
 ### Do not use the `@bind:format` HTML element attribute to format strings containing currency or number content.
 
 Using binding to format currencies or number formats is not currently supported.
