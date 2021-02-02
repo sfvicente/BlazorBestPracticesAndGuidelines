@@ -10,10 +10,28 @@ The `@inject` directive allows adding services from the service container to com
 
 ### To inject a service in a component, use the `@inject` directive.
 
-TODO: Description
+Dependencies are injected in components after the component instance is created and before the `OnInitialized` or `OnInitializedAsync` lifecycle events
+are triggered. Due to this behavior, dependencies cannot be used in the constructor of the component. However, those will be available in the
+`OnInitialized` and `OnInitializedAsync` methods.
+
+To consume services, declare the `@inject` dependency in the component using the dependency name: 
 
 ```csharp
-TODO: Example
+@page "/checkout"
+@using Services
+@inject ICartService CartService
+
+...
+
+@code { 
+	private IReadOnlyList<Products> _products;
+
+	protected override async Task OnInitializedAsync()
+	{
+		_products = await CartService.GetAllProductsAsync();
+		...
+	}
+}
 ```
 <br>
 
