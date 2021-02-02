@@ -278,3 +278,40 @@ NavigationManager.NavigateTo("counter/2");
 
 ```
 <br>
+
+
+## Other
+<br>
+
+
+### To obtain all the routes of an application programmatically, use reflection.
+
+To obtain the list of all routes contained in an application, iterate through all component types using reflection and select those that have a `RouteAttribute`:
+
+```csharp
+var components = assembly
+    .ExportedTypes
+    .Where(t => t.IsSubclassOf(typeof(ComponentBase)));
+
+var routes = components
+    .Select(component => GetRouteFromComponent(component))
+    .Where(config => config is not null)
+    .ToList();
+
+...
+
+private string GetRouteFromComponent(Type component)
+{
+    var attributes = component.GetCustomAttributes(inherit: true);
+    var routeAttribute = attributes.OfType<RouteAttribute>().FirstOrDefault();
+
+    if (routeAttribute is null)
+    {
+        return null;
+    }
+
+    return routeAttribute.Template;
+}
+```
+
+<br>
