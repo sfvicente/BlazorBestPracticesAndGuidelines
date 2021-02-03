@@ -2,7 +2,7 @@
 <br>
 
 
-## Registration
+## Service Registration
 <br>
 
 
