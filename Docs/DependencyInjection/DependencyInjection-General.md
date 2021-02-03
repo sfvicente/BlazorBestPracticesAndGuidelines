@@ -27,13 +27,30 @@ public class Program
 <br>
 
 
-## `@inject` directive
+## Requesting Services
+<br>
 
-The `@inject` directive allows adding services from the service container to components via dependency injection.
+
+### Use constructor injection to add required services to a service.
+
+Unlike components, when developing services, the `@inject` directive and the `[Inject]` attribute is not supported. To allow for dependencies to be injected, constructor injection
+is used.
+
+```csharp
+public class HttpCrawler
+{
+	public HttpCrawler(HttpClient httpClient)
+	{
+		...
+	}
+}
+```
 <br>
 
 
 ### To inject a service in a component, use the `@inject` directive.
+
+The `@inject` directive allows adding services from the service container to components via dependency injection.
 
 Dependencies are injected in components after the component instance is created and before the `OnInitialized` or `OnInitializedAsync` lifecycle events
 are triggered. Due to this behavior, dependencies cannot be used in the constructor of the component. However, those will be available in the
@@ -106,13 +123,9 @@ TODO: Add code
 <br>
 
 
-## `[Inject]` Attribute
+### Use the `[Inject]` attribute to inject services into component classes.
 
 The `[Inject]` indicates that the associated property should have a value injected from the service provider during the class initialization.
-<br>
-
-
-### Use the `[Inject]` attribute to inject services into component classes.
 
 Using the `[Inject]` attribute, you can add a service to a class-only component. In the example below, the `CartService` service is injected into the component property injection.
 
@@ -125,23 +138,6 @@ Using the `[Inject]` attribute, you can add a service to a class-only component.
         protected ICartService cartService { get; set; }  
     }  
 }  
-```
-<br>
-
-
-### Use constructor injection to add required services to a service.
-
-Unlike components, when developing services, the `@inject` directive and the `[Inject]` attribute is not supported. To allow for dependencies to be injected, constructor injection
-is used.
-
-```csharp
-public class HttpCrawler
-{
-	public HttpCrawler(HttpClient httpClient)
-	{
-		...
-	}
-}
 ```
 <br>
 
