@@ -2,6 +2,31 @@
 <br>
 
 
+## Registration
+<br>
+
+
+### To register services for dependency injection use, add the service to the application's service collection.
+
+Configuration for the application service collection can be done in the `Main` entry method for the application:
+
+```csharp
+public class Program
+{
+    public static async Task Main(string[] args)
+    {
+        var builder = WebAssemblyHostBuilder.CreateDefault(args);
+        ...
+        builder.Services.AddTransient<ICartService, CartService>();
+        ...
+
+        await builder.Build().RunAsync();
+    }
+}
+```
+<br>
+
+
 ## `@inject` directive
 
 The `@inject` directive allows adding services from the service container to components via dependency injection.
