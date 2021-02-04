@@ -157,3 +157,15 @@ todo: add description
 <br>
 
 
+### Avoid direct instantiation of dependent classes within services when designing services for dependency injection.
+
+When performing direct instantiation of dependent classes within services, it couples the implementation of those classes to a specific implementation.
+
+todo: complement description
+
+```csharp
+
+// todo: add example
+```
+<br>
+
