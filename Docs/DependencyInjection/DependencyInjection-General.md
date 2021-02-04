@@ -142,3 +142,18 @@ public class HttpCrawler
 <br>
 
 
+## Guidelines
+<br>
+
+
+### Avoid static classes and members when designing services for dependency injection.
+
+todo: add description
+
+```csharp
+
+// todo: add example
+```
+<br>
+
+
