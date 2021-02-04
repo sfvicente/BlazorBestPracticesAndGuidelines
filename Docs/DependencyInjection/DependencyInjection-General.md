@@ -31,23 +31,6 @@ public class Program
 <br>
 
 
-### Use constructor injection to add required services to a service.
-
-Unlike components, when developing services, the `@inject` directive and the `[Inject]` attribute is not supported. To allow for dependencies to be injected, constructor injection
-is used.
-
-```csharp
-public class HttpCrawler
-{
-	public HttpCrawler(HttpClient httpClient)
-	{
-		...
-	}
-}
-```
-<br>
-
-
 ### To inject a service in a component, use the `@inject` directive.
 
 The `@inject` directive allows adding services from the service container to components via dependency injection.
@@ -140,4 +123,22 @@ Using the `[Inject]` attribute, you can add a service to a class-only component.
 }  
 ```
 <br>
+
+
+### Use constructor injection to add required services to a service.
+
+Unlike components, when developing services, the `@inject` directive and the `[Inject]` attribute is not supported. To allow for dependencies to be injected, constructor injection
+is used.
+
+```csharp
+public class HttpCrawler
+{
+	public HttpCrawler(HttpClient httpClient)
+	{
+		...
+	}
+}
+```
+<br>
+
 
