@@ -188,6 +188,23 @@ todo: complement description
 <br>
 
 
+## Service Lifetime
+<br>
+
+
+### Use scopes to control the lifetimes of services.
+
+<Scopes aren't hierarchical, and there's no special connection among scopes.>
+
+todo: complement description
+
+```csharp
+
+// todo: add example
+```
+<br>
+
+
 ## Service Container
 <br>
 
