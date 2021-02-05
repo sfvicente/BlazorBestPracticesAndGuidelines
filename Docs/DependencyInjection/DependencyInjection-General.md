@@ -169,3 +169,20 @@ todo: complement description
 ```
 <br>
 
+
+
+## `IDisposable`
+<br>
+
+
+### Don't register IDisposable instances with a transient lifetime.
+
+Use the factory pattern instead.
+
+todo: complement description
+
+```csharp
+
+// todo: add example
+```
+<br>
