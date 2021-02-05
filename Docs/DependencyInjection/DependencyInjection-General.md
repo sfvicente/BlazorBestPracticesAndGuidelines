@@ -186,3 +186,24 @@ todo: complement description
 // todo: add example
 ```
 <br>
+
+
+## Service Container
+<br>
+
+
+### Always use the built-in container unless an unsupported feature is required.
+
+todo: complement description
+
+The current built-in service container does not support the following features:
+
+- Property injection
+- Injection based on name
+- Child containers
+- Custom lifetime management
+- `Func<T>` support for lazy initialization
+- Convention-based registration
+
+<br>
+
