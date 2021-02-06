@@ -188,6 +188,17 @@ todo: complement description
 <br>
 
 
+### Don't call `Dispose` on a dependency within the class that has received that `IDisposable` dependency.
+
+todo: complement description
+
+```csharp
+
+// todo: add example
+```
+<br>
+
+
 ## Service Lifetime
 <br>
 
