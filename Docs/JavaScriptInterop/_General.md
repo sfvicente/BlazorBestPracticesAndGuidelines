@@ -169,7 +169,7 @@ TODO: Complement code
 <br>
 
 
-### When performing interop with generic types and returning a value, use `ValueTask<TResult>`.
+### Always use `ValueTask<TResult>` when performing interop with generic types and returning a value.
 
 TODO: add description
 
