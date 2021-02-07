@@ -142,6 +142,19 @@ public class HttpCrawler
 <br>
 
 
+### Consider assigning injected dependencies to read-only fields or properties.
+
+This prevents the assignment of other references to the object inside the class.
+
+todo: complement description
+
+```csharp
+
+// todo: add example
+```
+<br>
+
+
 ## Guidelines
 <br>
 
