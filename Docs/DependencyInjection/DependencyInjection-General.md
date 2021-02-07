@@ -144,7 +144,7 @@ public class HttpCrawler
 
 ### Always define the necessary dependencies of services explicitly in their constructors.
 
-By explicitly defining the dependencies in the constructors, services can not be instanciated or used without it.
+By explicitly defining the dependencies in the constructors, services can not be instantiated or used without it.
 
 todo: complement description
 
