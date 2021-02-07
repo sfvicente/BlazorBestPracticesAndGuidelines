@@ -142,6 +142,19 @@ public class HttpCrawler
 <br>
 
 
+### Always define the necessary dependencies of services explicitly in their constructors.
+
+By explicitly defining the dependencies in the constructors, services can not be instanciated or used without it.
+
+todo: complement description
+
+```csharp
+
+// todo: add example
+```
+<br>
+
+
 ### Consider assigning injected dependencies to read-only fields or properties.
 
 This prevents the assignment of other references to the object inside the class.
