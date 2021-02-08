@@ -186,6 +186,10 @@ public static ValueTask<T> GenericMethod<T>(this ElementReference elementRef,
 <br>
 
 
+## Configuration
+<br>
+
+
 ### To change the default timeout for all interop calls, set the `JSInteropDefaultCallTimeout` property in `Startup.ConfigureServices`.
 
 TODO: improve description
