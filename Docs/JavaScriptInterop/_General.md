@@ -220,6 +220,10 @@ var result = await JSRuntime.InvokeAsync<string>("myFunction",
 <br>
 
 
+## Performance/Optimization
+<br>
+
+
 ### Consider sending the content of interop calls with large payloads in smaller chunks and processing the messages as a `Stream`.
 
 TODO: improve description
