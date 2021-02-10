@@ -338,4 +338,6 @@ todo: complement description
     <partial name="_ValidationScriptsPartial" />
 }
 ```
+
+Additional Tags: Razor Pages, Component Tag Helper
 <br>
