@@ -114,8 +114,19 @@ The `@key` directive attribute is a mechanism to control the mapping process of 
 
 ### Use `@key` whenever a list such as a `@foreach` block is rendered and a suitable value exists to define the `@key`.
 
+TODO: complement description
+
 ```csharp
-// ToDo: Example
+@foreach (var user in Users)
+{
+    <UserEditor @key="user" Role="@user.Role" />
+}
+
+@code {
+    [Parameter]
+    public IEnumerable<User> Users { get; set; }
+}
+
 ```
 <br><br>
 
