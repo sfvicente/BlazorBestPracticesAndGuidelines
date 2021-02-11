@@ -2,7 +2,7 @@
 
 The _Blazor_ framework includes a system to control order of eents in the lifetime of components. The each component has synchronous and asynchronous lifecycle methods which 
 can be overriden to extend and configure component initialization and rendering.
-<br>
+<br><br>
 
 
 ### Do not access parameters from within a constructor of a component class. Use the `OnInitialized()` or `OnInitializedAsync()` methods instead.
@@ -89,7 +89,7 @@ Components can implement `IDisposable` to dispose of resources when the componen
 ```
 
 Additional Tags: Unmanaged Resources
-<br>
+<br><br>
 
 
 ### Always implement `IDisposable` in a component to unsubscribe to events.
@@ -124,7 +124,7 @@ instance to the same event. This will lead to issue if the component is disposed
 ```
 
 Additional Tags: Event, Event Handling, Memory Leak
-<br>
+<br><br>
 
 
 ### Use `IAsyncDisposable` for the asynchronous release of allocated resources.
@@ -135,4 +135,4 @@ todo: complement description
 
 todo: add code
 
-<br>
+<br><br>
