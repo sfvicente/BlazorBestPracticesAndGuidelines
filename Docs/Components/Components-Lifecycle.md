@@ -64,9 +64,8 @@ requesting UI updates at that point is not supported.
 
 
 ## Component Disposal
-
 Component disposal is a mechanism for releasing resources, such as memory that was allocated or locks that have been acquired.
-<br>
+<br><br>
 
 
 ### Implement `IDisposable` to dispose of resources when the component is removed from the UI
