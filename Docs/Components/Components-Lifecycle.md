@@ -5,9 +5,12 @@ can be overriden to extend and configure component initialization and rendering.
 <br><br>
 
 
-### Do not access parameters from within a constructor of a component class. Use the `OnInitialized()` or `OnInitializedAsync()` methods instead.
+### Do not access parameters from within a constructor of a component class.
 
-The following code example won't work as the property `InlineClass` won't be set to any value. The property will be null within the execution of the constructor of an instance.
+Accessing parameters should not be done inside a constructor. The properties will be null within the execution of the constructor of an instance. Use the `OnInitialized()` 
+or `OnInitializedAsync()` methods instead.
+
+The following code example won't work as the property `InlineClass` won't be set to any value:
 
 ```csharp
 public abstract class MyCustomComponent: ComponentBase
@@ -22,7 +25,7 @@ public abstract class MyCustomComponent: ComponentBase
 }
 ```
 
-At the time that the constructor is executed, the parameter is not yet set. It will be available when `OnInitialized` or `OnInitializedAsync` is called.
+At the time that the constructor is executed, the parameter has not yet been set. It will be available when `OnInitialized` or `OnInitializedAsync` is called.
 
 ```csharp
 public abstract class MyCustomComponent: ComponentBase
