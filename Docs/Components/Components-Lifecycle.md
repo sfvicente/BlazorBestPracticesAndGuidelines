@@ -71,12 +71,14 @@ Component disposal is a mechanism for releasing resources, such as memory that w
 
 ### Implement `IDisposable` to dispose of resources when the component is removed from the UI
 
-Blazor components can implement `IDisposable` to dispose of resources when the component is removed from the UI. A Razor component can implement `IDispose` by using the `@implements` directive:
+Components can implement `IDisposable` to dispose of resources when the component is removed from the UI. `IDispose` can be implemented by using the `@implements` directive:
 
 ```csharp
 @using System
 @implements IDisposable
+
 ...
+
 @code {
 	...
 
@@ -86,6 +88,8 @@ Blazor components can implement `IDisposable` to dispose of resources when the c
 	}
 }
 ```
+
+Additional Tags: Unmanaged Resources
 <br>
 
 
