@@ -139,3 +139,17 @@ todo: complement description
 todo: add code
 
 <br><br>
+
+
+### Always use `DisposeAsync` instead of `Dispose()` for For asynchronous disposal tasks.
+
+todo: complement description
+
+```csharp
+public async ValueTask DisposeAsync()
+{
+    ...
+}
+```
+
+<br><br>
