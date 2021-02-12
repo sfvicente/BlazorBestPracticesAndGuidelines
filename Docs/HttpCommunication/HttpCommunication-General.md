@@ -36,6 +36,8 @@ public class Startup
 		services.AddHttpClient();
 		...
 ```
+
+Applies To: Blazor Server
 <br>
 
 
