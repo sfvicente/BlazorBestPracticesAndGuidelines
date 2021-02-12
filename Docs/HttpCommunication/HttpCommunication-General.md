@@ -41,6 +41,27 @@ Applies To: Blazor Server
 <br>
 
 
+### To perform HTTP communication requests, inject an `HttpClient` instance using the @inject directive.
+
+An `HttpClient` can be requested using dependency injection (DI).
+
+todo: complement description
+
+```csharp
+@using System.Net.Http
+@inject HttpClient Http
+
+@code {
+    private CartProduct[] cartProducts;
+
+    protected override async Task OnInitializedAsync() => 
+         cartProducts = await Http.GetFromJsonAsync<CartProduct[]>("api/CartProducts");
+}
+```
+
+<br>
+
+
 ## HTTP Request Methods
 
 HTTP requests are actions to be performed on a resource identified by a given Uri.
