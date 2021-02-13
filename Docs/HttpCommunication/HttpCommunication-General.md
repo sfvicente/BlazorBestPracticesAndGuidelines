@@ -41,7 +41,7 @@ Applies To: Blazor Server
 <br>
 
 
-### To perform HTTP communication requests, inject an `HttpClient` instance using the @inject directive.
+### To perform HTTP communication requests, inject an `HttpClient` instance using the `@inject` directive.
 
 An `HttpClient` can be requested using dependency injection (DI).
 
