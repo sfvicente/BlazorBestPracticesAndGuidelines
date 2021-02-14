@@ -68,21 +68,9 @@ HTTP requests are actions to be performed on a resource identified by a given Ur
 <br>
 
 
-### Use  `GetJsonAsync`  to send HTTP GET requests to a server.
+### Use `GetJsonAsync` to send HTTP GET requests to a server.
 
-The HttpClient method `GetJsonAsync`  sends an HTTP GET request and parses the JSON response body to create an object.
-
-```csharp
-@code {  
-        ...       
-}  
-``` 
-<br>
-
-
-### Use  `PostJsonAsync`  to send HTTP POST requests to a server.
-
-The `HttpClient` method `PostJsonAsync`  sends an HTTP POST request, including JSON-encoded content, and parses the JSON response body to create an object.
+The HttpClient method `GetJsonAsync` sends an HTTP GET request and parses the JSON response body to create an object.
 
 ```csharp
 @code {  
@@ -92,9 +80,9 @@ The `HttpClient` method `PostJsonAsync`  sends an HTTP POST request, including J
 <br>
 
 
-### Use  `PutJsonAsync`  to send HTTP PUT requests to a server.
+### Use `PostJsonAsync` to send HTTP POST requests to a server.
 
-The `HttpClient` method `PutJsonAsync`  sends an HTTP PUT request, including JSON-encoded content.
+The `HttpClient` method `PostJsonAsync` sends an HTTP POST request, including JSON-encoded content, and parses the JSON response body to create an object.
 
 ```csharp
 @code {  
@@ -104,9 +92,21 @@ The `HttpClient` method `PutJsonAsync`  sends an HTTP PUT request, including JSO
 <br>
 
 
-### Use  `DeleteAsync`  to send HTTP DELETE requests to a server.
+### Use `PutJsonAsync` to send HTTP PUT requests to a server.
 
-The `HttpClient` method `DeleteAsync`  send a DELETE request to the specified Uri as an asynchronous operation.
+The `HttpClient` method `PutJsonAsync` sends an HTTP PUT request, including JSON-encoded content.
+
+```csharp
+@code {  
+        ...       
+}  
+``` 
+<br>
+
+
+### Use `DeleteAsync` to send HTTP DELETE requests to a server.
+
+The `HttpClient` method `DeleteAsync` send a DELETE request to the specified Uri as an asynchronous operation.
 
 ```csharp
 @code {  
