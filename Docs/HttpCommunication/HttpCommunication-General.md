@@ -122,10 +122,36 @@ The `HttpClient` method `DeleteAsync` send a DELETE request to the specified Uri
 
 ### Use `SendAsync` and `HttpRequestMessage` to customize requests.
 
-If there is a need to specify the request URI, include specific HTTP headers or use HTTP methods that are not GET, POST, PUT or DELETE. Use `HttpRequestMessage` to configure the message and `SendAsync` to perform communication.
+Requests can be customized if there is a need to specify the request URI, include specific HTTP headers or use HTTP methods that are
+not GET, POST, PUT or DELETE. Use the `HttpRequestMessage` class to configure the message and `SendAsync` to perform communication.
 
 ```csharp
-TODO: Example
+@using System.Net.Http
+@using System.Net.Http.Headers
+@using System.Net.Http.Json
+@inject HttpClient Http
+
+...
+
+@code {
+
+    private async Task GetCartItems()
+    {
+        var requestMessage = new HttpRequestMessage()
+        {
+            Method = new HttpMethod("GET"),
+            RequestUri = new Uri("https://localhost/api/getCartItems")
+        };
+
+        requestMessage.Content.Headers.TryAddWithoutValidation("x-custom-header", "value");
+
+        var response = await Http.SendAsync(requestMessage);
+
+        ...
+        }
+    }
+
+}
 ```
 <br>
 
