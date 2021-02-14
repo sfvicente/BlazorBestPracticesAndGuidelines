@@ -116,6 +116,10 @@ The `HttpClient` method `DeleteAsync` send a DELETE request to the specified Uri
 <br>
 
 
+## Request Customization
+<br>
+
+
 ### Use `SendAsync` and `HttpRequestMessage` to customize requests.
 
 If there is a need to specify the request URI, include specific HTTP headers or use HTTP methods that are not GET, POST, PUT or DELETE. Use `HttpRequestMessage` to configure the message and `SendAsync` to perform communication.
@@ -123,10 +127,6 @@ If there is a need to specify the request URI, include specific HTTP headers or 
 ```csharp
 TODO: Example
 ```
-<br>
-
-
-## Request Customization
 <br>
 
 
