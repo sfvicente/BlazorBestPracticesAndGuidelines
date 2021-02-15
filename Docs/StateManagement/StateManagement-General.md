@@ -50,15 +50,48 @@ Applies To: Blazor Server
 The `ProtectedSessionStorage` class allows storing and retrieving data in the browser's session storage collection. Any data stored through this method, will be scoped
 to the current browser tab. If the user closes the browser tab or the browser application, all the data will be discarded.
 
-Use the `@inject` directive to inject an instance of `ProtectedSessionStorage` in a component:
+Use the `@inject` directive to inject an instance of `ProtectedSessionStorage` in a component. Call the `SetAsync` method to store the data in the session storage:
 
 ```csharp
 @using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
 @inject ProtectedSessionStorage ProtectedSessionStore
+
+...
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        await protectedSessionStorage.SetAsync("userSetting", mySetting);
+    }
+}
 ```
 
-// TODO: Complement description
-// TODO: add code samples
+To read previously saved data, use the `GetAsync` method:
+
+```csharp
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inject ProtectedSessionStorage protectedSessionStorage
+
+...
+
+@code
+{
+    protected override async Task OnInitializedAsync()
+    {
+        ProtectedBrowserStorageResult<string> userSettingStorageResult = await protectedSessionStorage.GetAsync<string>("userSetting");
+
+        if (userSettingStorageResult.Success)
+        {
+            string userSetting = userSettingStorageResult.Value;
+
+            ...
+        }
+
+        ...
+    }
+}
+```
 
 Applies To: Blazor Server
 <br>
