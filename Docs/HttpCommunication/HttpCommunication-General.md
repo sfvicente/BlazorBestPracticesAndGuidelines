@@ -88,7 +88,20 @@ The `HttpClient` method `PostJsonAsync` sends an HTTP POST request, including JS
 @code {  
         ...       
 }  
-``` 
+```
+
+And the corresponding API operation:
+
+```csharp
+[HttpPost]
+public async Task<ActionResult<Message>> PostMessage(Message message)
+{
+    _context.Messages.Add(message);
+    await _context.SaveChangesAsync();
+
+    return CreatedAtAction("GetMessage", new { id = message.Id }, message);
+}
+```
 <br>
 
 
