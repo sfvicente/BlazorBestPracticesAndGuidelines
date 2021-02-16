@@ -165,6 +165,7 @@ todo: add code
 ```
 <br>
 
+
 ### Use the `SetBrowserRequestCredentials` extension method to include credentials in a cross-origin request.
 
 todo: add description
