@@ -109,10 +109,44 @@ The `HttpClient` method `PutJsonAsync` sends an HTTP PUT request, including JSON
 The `HttpClient` method `DeleteAsync` send a DELETE request to the specified Uri as an asynchronous operation.
 
 ```csharp
-@code {  
-        ...       
-}  
+@page "/messages/delete"
+
+@inject HttpClient Http
+@inject NavigationManager Navigate
+
+...
+
+@code {
+    protected async Task Delete()
+    {
+        await Http.DeleteAsync("api/messages/" + Convert.ToInt32(messageId));
+
+        ...
+
+        Navigate.NavigateTo("/messages");
+    }
+}
 ``` 
+
+And the corresponding Web API operation:
+
+```csharp
+[HttpDelete("{id}")]
+public async Task<ActionResult<Messages>> DeleteMessage(int id)
+{
+    var message = await _context.Messages.FindAsync(id);
+
+    if (message == null)
+    {
+        return NotFound();
+    }
+
+    _context.Messages.Remove(message);
+    await _context.SaveChangesAsync();
+
+    return message;
+}
+```
 <br>
 
 
