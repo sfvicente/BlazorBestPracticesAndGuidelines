@@ -113,7 +113,31 @@ The `HttpClient` method `PutJsonAsync` sends an HTTP PUT request, including JSON
 @code {  
         ...       
 }  
-``` 
+```
+
+And the corresponding API operation:
+
+```csharp
+[HttpPut("{id}")]
+public async Task<IActionResult> PutMessage(Message message)
+{
+    ...
+
+    var existingMessage = _context.Messages.Where(m => m.Id == message.Id).FirstOrDefault<Message>();
+
+    if (existingMessage != null)
+    {
+        existingMessage.Content = message.Content;
+        existingMessage.From = message.From;
+
+        await _context.SaveChangesAsync();
+
+        return Ok();
+    }
+
+    return NotFound();
+}
+```
 <br>
 
 
