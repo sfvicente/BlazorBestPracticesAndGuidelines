@@ -97,6 +97,10 @@ Applies To: Blazor Server
 <br>
 
 
+## Data Persistence
+<br>
+
+
 ### Use custom code to persist UI state.
 
 User interface state can't be persisted in a similar way to component instances and their render trees. To persist something similar to UI state, such as the expanded nodes of a TreeView, the app must have custom code to model the behavior as serializable app state.
@@ -105,3 +109,16 @@ User interface state can't be persisted in a similar way to component instances 
 TODO: Example
 ```
 <br><br>
+
+
+### Always use a server-side database to store permanent data or data that is required to cross multiple users or devices.
+
+TODO: complement description
+
+The options for server-side databases include:
+    - Relational SQL database
+    - NoSQL database
+    - Key-value store
+    - Blob store
+
+<br>
