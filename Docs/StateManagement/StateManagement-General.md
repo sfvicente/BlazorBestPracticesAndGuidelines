@@ -11,7 +11,8 @@ to cookies. HTML5 provides the `localStorage` and the `sessionStorage` objects f
 
 ### Prefer `sessionStorage` to `localStorage` to store transient application data and avoid synchronization across multiple browser tabs.
 
-If you want to avoid performing synchronization state across browser tags, it is generaly safer to use `sessionStorage` as it is scope to the current browser tab.
+If you want to avoid performing synchronization state across browser tags, it is generaly safer to use `sessionStorage`. As `sessionStorage` is scope to the current browser tab,
+it avoids bugs when managing state across tags and conflicting behavior if state is overwritten by performing actions on other tabs.
 
 TODO: complement.
 
