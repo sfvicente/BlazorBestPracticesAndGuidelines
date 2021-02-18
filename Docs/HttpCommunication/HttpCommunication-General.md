@@ -76,7 +76,24 @@ The HttpClient method `GetJsonAsync` sends an HTTP GET request and parses the JS
 @code {  
         ...       
 }  
-``` 
+```
+
+And the corresponding API operation:
+
+```csharp
+[HttpGet("{id}")]
+public async Task<ActionResult<Message>> GetMessage(int id)
+{
+    var message = await _context.Messages.FirstOrDefaultAsync(m => m.Id == id);
+
+    if (message == null)
+    {
+        return NotFound();
+    }
+
+    return message;
+}
+```
 <br>
 
 
