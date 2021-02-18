@@ -112,6 +112,21 @@ TODO: Example
 <br><br>
 
 
+### Consider using part of the URL to model transient data that represents navigation state.
+
+The URL can be used as a mechanism to store data representing navigation state. For example when viewing an individual entitity or a specific page
+of a set of page records.
+
+// TODO: complement description
+
+// TODO: add examples
+
+One advantage of using this technique for state management is that the URL components do not change even if the user manually reloads the page.
+
+Additional Tags: Navigation, URL
+<br>
+
+
 ### Always use a server-side database to store permanent data or data that is required to cross multiple users or devices.
 
 TODO: complement description
