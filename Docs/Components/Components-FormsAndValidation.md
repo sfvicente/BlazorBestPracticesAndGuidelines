@@ -172,6 +172,7 @@ class MyFieldClassProvider : FieldCssClassProvider
 ```
 
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+<br>
 
 
 ## `ValidationSummary`
