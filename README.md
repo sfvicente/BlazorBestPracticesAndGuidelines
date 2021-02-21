@@ -21,6 +21,7 @@ Guidance and best practices for development using the Blazor framework.
 - [Forms & Validation](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-FormsAndValidation.md)
 - [Rendering](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Rendering.md)
 - [Templated Components](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-TemplatedComponents.md)
+- [Dynamic Components](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/DynamicComponents.md)
 - [CSS Isolation](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-CssIsolation.md)
 - [Localization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Localization.md)
 - [Optimization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Optimization.md)
