@@ -1,6 +1,6 @@
 # Blazor | Best Practices and Guidelines
 
-A collection of best practices and guidelines for application programming and development using the Blazor framework.
+A collection of best practices and guidelines for application programming and development using the _Blazor_ open-source web framework.
 
 ## Blazor Programming
 
