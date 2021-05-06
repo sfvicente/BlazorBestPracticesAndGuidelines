@@ -1,8 +1,8 @@
 # Blazor | Best Practices and Guidelines
 
 A collection of best practices and guidelines for application programming and development using the _Blazor_ open-source web framework.
-
 <br>
+
 ## Blazor Programming
 
 Guidance and best practices for development using the Blazor framework.
@@ -60,8 +60,8 @@ Guidance and best practices for development using the Blazor framework.
 - [Active Directory](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-ActiveDirectory.md)
 - [Authorization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-Authorization.md)
 - [CPU Exhaustion](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Security/Security-CpuExhaustion)
-
 <br>
+
 ## Blazor Application Development
 
 Guidance on generic application development, software engineering and specific functionality for Blazor applications.
