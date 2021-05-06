@@ -198,6 +198,8 @@ todo: complement description
 
 
 ## `IDisposable`
+
+The `IDisposable` interface provides a mechanism for releasing unmanaged resources.
 <br>
 
 
