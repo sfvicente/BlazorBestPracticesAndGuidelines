@@ -2,10 +2,10 @@
 <br>
 
 
-### Use the `InputFile` component for handling file uploads or reading browser file data into.
+### Use the `InputFile` component for handling file uploads or reading browser file data into an application.
 
-The `InputFile component renders as an HTML input of type `file`. By default, the user can select single files, or if you add the “multiple” attribute then the user can supply
-multiple files at once. When one or more files is selected by the user, the `InputFile` component fires an OnChange event and passes in an `InputFileChangeEventArgs` that provides
+The `InputFile component renders as an HTML input of type `file`. By default, the user can select single files, or if you add the "multiple" attribute then the user can supply
+multiple files at once. When one or more files is selected by the user, the `InputFile` component fires an `OnChange` event and passes in an `InputFileChangeEventArgs` that provides
 access to the selected file list and details about each file.
 
 ```csharp
@@ -39,11 +39,15 @@ access to the selected file list and details about each file.
 ```
 
 To read data from a user-selected file, you call `OpenReadStream` on the file and read from the returned stream. In a Blazor WebAssembly app, the data is streamed directly into
-your .NET code within the browser. In a Blazor Server app, the file data is streamed to your .NET code on the server as you read from the stream. In case you’re using the
-component to receive an image file, Blazor also provides a `RequestImageFileAsync` convenience method for resizing images data within the browser’s JavaScript runtime before
-they’re streamed into your .NET application.
+your .NET code within the browser. In a Blazor Server app, the file data is streamed to your .NET code on the server as you read from the stream.
 
-Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+Applies To: Blazor WebAssembly, Blazor Server
+
+References:
+	ASP.NET Core updates in .NET 5 Release Candidate 1
+	ASP.NET Blog, 14 Sep 2020
+	https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+<br><br>
 
 
 ### To upload files to a server in a _Web Assembly_ application, use an API call.
