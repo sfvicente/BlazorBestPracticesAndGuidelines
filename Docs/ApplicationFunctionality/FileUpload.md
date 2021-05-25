@@ -64,3 +64,11 @@ TODO: Code Sample
 <br>
 
 
+### Consider using the `RequestImageFileAsync()` method for resizing image data when receiving an image file.
+
+When using the `InputFile` component, _Blazor_ provides a `RequestImageFileAsync()` method. This method allows for the resizing of image data within the browser's _JavaScript_
+runtime before the data is streamed to the application.
+
+TODO: Code Sample
+
+<br><br>
