@@ -61,7 +61,7 @@ TODO: Code Sample
 However, if you wanted to send it to a server, you will need an API on the server and then perform a POST of the file to that API.
 
 TODO: Code Sample
-<br>
+<br><br>
 
 
 ### Consider using the `RequestImageFileAsync()` method for resizing image data when receiving an image file.
