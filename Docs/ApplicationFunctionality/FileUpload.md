@@ -4,7 +4,7 @@
 
 ### Use the `InputFile` component for handling file uploads or reading browser file data into an application.
 
-The `InputFile component renders as an HTML input of type `file`. By default, the user can select single files, or if you add the "multiple" attribute then the user can supply
+The `InputFile` component renders as an HTML input of type `file`. By default, the user can select single files, or if you add the "multiple" attribute then the user can supply
 multiple files at once. When one or more files is selected by the user, the `InputFile` component fires an `OnChange` event and passes in an `InputFileChangeEventArgs` that provides
 access to the selected file list and details about each file.
 
@@ -44,7 +44,7 @@ your .NET code within the browser. In a Blazor Server app, the file data is stre
 Applies To: Blazor WebAssembly, Blazor Server
 
 References:
-	ASP.NET Core updates in .NET 5 Release Candidate 1
+    ASP.NET Core updates in .NET 5 Release Candidate 1
 	ASP.NET Blog, 14 Sep 2020
 	https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
 <br><br>
