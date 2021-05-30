@@ -2,7 +2,7 @@
 <br>
 
 
-### Add “browser” as a supported platform in the project file to enable browser compatibilty checks for libraries.
+### Add `browser` as a supported platform in the project file to enable browser compatibilty checks for libraries.
 
 ```csharp
 <SupportedPlatform Include="browser" />
@@ -30,7 +30,7 @@ private static string GetLoggingDirectory()
 <br><br>
 
 
-### Use a conditional `Microsoft.AspNetCore.Components` package reference to support both _.NET Core 3.x_ and _.NET 5_.
+### Use a conditional `Microsoft.AspNetCore.Components` package reference to support both .NET Core 3.x and .NET 5.
 
 // todo: complement description
 
