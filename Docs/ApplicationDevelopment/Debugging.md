@@ -2,6 +2,14 @@
 <br>
 
 
+## To debug Blazor WebAssembly applications, use browser development tools or Visual Studio IDEs.
+
+_Blazor WebAssembly_ applications can be debugged using the following tools:
+- Browser development tools in Edge (version 80 or later) and Chrome (version 70 or later)
+- Visual Studio Integrated development environments (IDEs)
+<br><br><br>
+
+
 ### To Log or print comments during code execution, use `Console.Write` and `Console.WriteLine`.
 
 Similar to `console.log` in JavaScript, Blazor applications can use `Console.Write` and `Console.WriteLine` to log or print comments during execution.
@@ -65,14 +73,6 @@ public class Startup
 }
 ```
 <br><br>
-
-
-## Blazor Web Assembly Debugging
-
-_Blazor WebAssembly_ applications can be debugged using the following tools:
-	- Browser development tools in Edge (version 80 or later) and Chrome (version 70 or later)
-	- Visual Studio Integrated development environments (IDEs)
-
 
 
 ### Add a delay at the start of the `OnInitialized` or `OnInitialized¿sync` methods if breakpoints are not being hit.
