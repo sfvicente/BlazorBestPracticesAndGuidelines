@@ -11,6 +11,7 @@
 This is not required for Blazor WebAssembly projects and Razor class library projects as it is added automatically.
 
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+<br><br>
 
 
 ### Use the `UnsupportedOSPlatform` attribute to indicate that a specific API is not supported in browsers.
@@ -26,6 +27,7 @@ private static string GetLoggingDirectory()
 ```
 
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+<br><br>
 
 
 ### Use a conditional `Microsoft.AspNetCore.Components` package reference to support both _.NET Core 3.x_ and _.NET 5_.
@@ -40,5 +42,5 @@ Microsoft recommends the following:
 <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.0-rc.1.*" Condition="'$(TargetFramework)' != 'netstandard2.0'" />
 ```
 
-<br>
+<br><br>
 
