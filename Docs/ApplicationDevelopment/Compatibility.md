@@ -10,7 +10,7 @@
 
 This is not required for Blazor WebAssembly projects and Razor class library projects as it is added automatically.
 
-<sub><sup>Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/</sup></sub>
+<sub>Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/</sub>
 <br><br>
 
 
@@ -26,7 +26,7 @@ private static string GetLoggingDirectory()
 }
 ```
 
-<sub><sup>Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/</sup></sub>
+<sub>Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/</sub>
 <br><br>
 
 
