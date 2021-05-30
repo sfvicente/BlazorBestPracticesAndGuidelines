@@ -1,6 +1,8 @@
 # Application Development | Debugging
 <br>
 
+## General
+<br>
 
 ### To debug Blazor WebAssembly applications, use browser development tools or Visual Studio IDEs.
 
@@ -20,6 +22,9 @@ Console.WriteLine("This is content logged to output window");
 
 <br>
 
+
+## Detailed Errors
+<br>
 
 ### To view more detailed information on exceptions that occur within your application, enable `DetailedErrors`.
 
@@ -74,6 +79,9 @@ public class Startup
 ```
 <br><br>
 
+
+## Troubleshooting
+<br>
 
 ### Add a delay at the start of the `OnInitialized` or `OnInitialized¿sync` methods if breakpoints are not being hit.
 
