@@ -2,7 +2,7 @@
 <br>
 
 
-## To debug Blazor WebAssembly applications, use browser development tools or Visual Studio IDEs.
+### To debug Blazor WebAssembly applications, use browser development tools or Visual Studio IDEs.
 
 _Blazor WebAssembly_ applications can be debugged using the following tools:
 - Browser development tools in Edge (version 80 or later) and Chrome (version 70 or later)
