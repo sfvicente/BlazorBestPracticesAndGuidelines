@@ -25,7 +25,7 @@ public static IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
 	}
 ```
 <small>Reference: [https://stackoverflow.com/questions/60404612/parse-jwt-token-to-get-the-payload-content-only-without-external-library-in-c-sh](https://stackoverflow.com/questions/60404612/parse-jwt-token-to-get-the-payload-content-only-without-external-library-in-c-sh)</small>
-<br>
+<br><br><br>
 
 
 ## Shared State
@@ -41,7 +41,7 @@ behavior.
 Without careful design considerations, sharing state with singleton services can introduce security vulnerabilities, such as leaking user state across circuits.
 
 Applies to: Blazor Server
-<br>
+<br><br><br>
 
 
 ### Do not use `IHttpContextAccessor` within Blazor apps.
@@ -52,7 +52,7 @@ guaranteed to be available within the `IHttpContextAccessor`. There is also no g
 todo: add code sample.
 
 Additional Tags: HTTP Context
-<br>
+<br><br><br>
 
 
 ### To make request state available to an application, pass data through parameters to the root component in the initial rendering of the application.
@@ -96,4 +96,4 @@ todo: code example
 
 
 Additional Tags: HTTP Context
-<br>
+<br><br><br>
