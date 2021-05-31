@@ -5,6 +5,7 @@
 ## `AuthorizeView` Component
 
 The `AuthorizeView` component displays content depending on the user's authorization status.
+<br>
 
 
 ### Use the `AuthorizeView` component to selectively display UI depending on whether the user is authorized to view it.
@@ -16,7 +17,7 @@ The component simplifies the process to display information for an authorized us
     This is only displayed to authenticated users.
 </AuthorizeView>
 ```
-<br>
+<br><br>
 
 
 ### Use the `context` variable exposed by `AuthorizeView` to access information about the signed-in user.
@@ -28,7 +29,7 @@ The `AuthorizeView` component exposes a `context` variable of type `Authenticati
     <h1>Signed-in Username: @context.User.Identity.Name</h1>
 </AuthorizeView>
 ```
-<br>
+<br><br>
 
 
 ### Use the `AuthorizeView` component to display information about the logged-in user but not use it in procedural logic.
@@ -42,7 +43,7 @@ AuthenticationState, which can be used to display information about the current 
     This is only displayed to authenticated users.
 </AuthorizeView>
 ```
-<br>
+<br><br>
 
 
 ### Use the `<Authorizing>` tag to display content while authentication occurs when performing asynchronous authentication.
@@ -65,12 +66,13 @@ content during the operation.
 ```
 
 Applies to: Blazor WebAssembly
-<br>
+<br><br><br>
 
 
 ## `[Authorize]` Attribute
 
 The `[Authorize]` attribute specifies that the class or method it is applied to, requires the defined authorization.
+<br>
 
 
 ### Use the `[Authorize]` attribute to control authorization to a _Razor_ component.
@@ -81,7 +83,7 @@ The `[Authorize]` attribute specifies that the class or method it is applied to,
 
 <p>This is only visible if user is signed in.<p>
 ```
-<br>
+<br><br>
 
 
 ### Use the `Roles` property of the `[Authorize]` attribute to perform role-based authorization.
@@ -94,7 +96,7 @@ The `AuthorizeAttribute.Roles` property gets or sets a comma delimited list of r
 
 <p>This is only visible for signed-in administrators and owners.<p>
 ```
-<br>
+<br><br>
 
 
 ### Use the `Policy` property of the `[Authorize]` attribute to perform policy-based authorization.
@@ -107,4 +109,4 @@ The `AuthorizeAttribute.Policy` property gets or sets the policy name that deter
 
 <p>This is only visible if users satisfies the 'allow-printing' policy.</p>
 ```
-<br>
+<br><br>
