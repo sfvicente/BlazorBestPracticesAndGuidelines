@@ -76,8 +76,8 @@ Guidance on generic application development, software engineering and specific f
 - [Environment](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Environment.md)
 - [Error Handling](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ErrorHandling.md)
 - [Hosting](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Hosting.md)
-- [Performance](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Performance.md)
-- [Project Structure](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/ProjectStructure.md)
+- [Performance](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Performance.md)
+- [Project Structure](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/ProjectStructure.md)
 - [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/ApplicationDevelopment/Security.md)
 
 ### Application Functionality
