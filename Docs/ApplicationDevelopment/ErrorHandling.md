@@ -18,7 +18,7 @@ The `index.html` in the _wwwroot_ folder contains the following code:
 TODO: complement description
 
 Applies To: Blazor WebAssembly
-<br>
+<br><br><br>
 
 
 ### Consider customizing the error handling experience in the `Pages/_Host.cshtml` file.
