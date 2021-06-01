@@ -1,6 +1,11 @@
 # Layouts | General
 <br>
 
+
+## `@layout` Directive
+The `@layout` directive specifies a layout for routable Razor components that define `@page` directives.
+<br>
+
 ### To explicitly specify a layout for an individual component, use the `@layout` directive.
 
 The most explicit level of specifying a layout template is in the component itself by using the `@layout` directive.
