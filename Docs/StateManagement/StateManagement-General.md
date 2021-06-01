@@ -40,7 +40,11 @@ Use the `@inject` directive to inject an instance of `ProtectedLocalStorage` in 
 ```
 
 // TODO: Complement description
-// TODO: add code samples
+
+```csharp
+    // TODO: add code samples
+```
+
 
 Applies To: Blazor Server
 <br>
@@ -107,7 +111,7 @@ Applies To: Blazor Server
 User interface state can't be persisted in a similar way to component instances and their render trees. To persist something similar to UI state, such as the expanded nodes of a TreeView, the app must have custom code to model the behavior as serializable app state.
 
 ```csharp
-TODO: Example
+    // TODO: add code samples
 ```
 <br><br>
 
@@ -119,7 +123,9 @@ of a set of page records.
 
 // TODO: complement description
 
-// TODO: add examples
+```csharp
+    // TODO: add code samples
+```
 
 One advantage of using this technique for state management is that the URL components do not change even if the user manually reloads the page.
 
