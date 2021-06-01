@@ -37,8 +37,23 @@ Adding a `@layout` directive to the __Imports.razor_ file results in an infinite
 <br><br><br>
 
 
-To set the default application layout, specify the layout in the `Router` component.
+### To set the default application layout, specify the layout in the `Router` component.
 
-TODO: add code
+You can configure the default application layout in the `DefaultLayout` attribute of the `RoutView` element. This element is located
+inside the `Router` component.
+
+<sub>App.razor</sub>
+```csharp
+<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MyLayout)" />
+    </Found>
+    <NotFound>
+        <p>Sorry, there's nothing at this address.</p>
+    </NotFound>
+</Router>
+```
+
+Setting a default layout is a recommended practice due to the ability to override layouts per component and per folder.
 
 <br><br><br>
