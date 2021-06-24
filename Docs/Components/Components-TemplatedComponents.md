@@ -31,6 +31,18 @@ in the component's render area.
 <br>
 
 
+### Consider specifying `null` for `Action` and `RenderFragment` component parameters to simplify components that take optional callback parameters or template parameters.
+
+todo: add description
+
+```
+ToDo: Example
+```
+
+Requires: .NET 6 Preview 5
+<br><br>
+
+
 ## Template Context Parameters
 <br>
 
