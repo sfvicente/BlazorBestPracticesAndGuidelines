@@ -6,6 +6,24 @@
 <br>
 
 
+### Use layout components to avoid code duplication and user interface inconsistency.
+
+Layout components allow for reuse of markup code. This prevents content duplication and avoids having to maintain several code elements.
+
+```csharp
+@layout AdminLayout
+@page "/admin/"
+
+<h2>Administration Area</h2>
+...
+
+code {
+	...
+}
+```
+<br><br>
+
+
 ### To set the default application layout, specify the layout in the `Router` component.
 
 You can configure the default application layout in the `DefaultLayout` attribute of the `RoutView` element. This element is located
