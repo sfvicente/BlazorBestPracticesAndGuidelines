@@ -4,6 +4,10 @@ Data-binding is the automatic synchronization of data between models and compone
 <br>
 
 
+## General
+<br>
+
+
 ### Use the `@bind` HTML element attribute with a field, property, or _Razor_ expression value to implement data binding in a component.
 
 _Razor_ components allow for binding model data with view elements. To enable data binding, add the `@bind` HMTL attribute and set the attribute with the field name that
