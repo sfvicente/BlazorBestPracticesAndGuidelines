@@ -1,4 +1,6 @@
 # Layouts | General
+
+Layouts are Razor components that share markup content with other components, allowing for a consistent application experience.
 <br>
 
 
