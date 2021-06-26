@@ -40,3 +40,29 @@ To disable prerendering for a _Blazor Server_ application, edit the Pages/_Host.
 Applies To: Blazor Server
 Additional Tags: Application, Render Mode
 <br>
+
+
+
+## `loadBootResource`
+<br>
+
+
+### Use the `loadBootResource` API to customize how boot resources are loaded.
+
+The `loadBootResource` function overrides the built-in boot resource loading mechanism.
+
+```csharp
+<script src="_framework/blazor.webassembly.js" autostart="false"></script>
+<script>
+  Blazor.start({
+    loadBootResource: function (type, name, defaultUri, integrity) {
+        ...
+    }
+  });
+</script>
+```
+
+Applies To: Blazor WebAssembly
+Additional Tags: Application, Startup
+<br>
+
