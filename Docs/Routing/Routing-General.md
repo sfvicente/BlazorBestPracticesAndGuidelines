@@ -236,6 +236,23 @@ void IDisposable.Dispose()
 <br>
 
 
+## Query String
+<br>
+
+
+### Use the `GetUriWithQueryParameter()` extension method to add, update or remove a single query string parameter.
+
+The `GetUriWithQueryParameter()` extension method of the `NavigationManager` class manipulates the query string programatically. It allows adding,
+updating or removing individual parameters in a query string and returns a new URI based on the current address with the changes. 
+
+```csharp
+var uri = NavigationManager.GetUriWithQueryParameter("page", 2);
+```
+
+Requires: .NET 6 Release Candidate 1
+<br>
+
+
 ## 404 Error
 The 404 error is an action that happens when a user tries to reach a non-existent page on a site. It can be generated due to the user clicking a broken link, attempting
 to access a page that has been deleted, or a mistyped a URL.
