@@ -98,6 +98,28 @@ Additional Tags: Event Handler
 <br>
 
 
+### To determine the coordinates at which the mouse was clicked, use the `PageX` and `PageY` properties in `MouseEventArgs` class.
+
+The `PageX` and `PageY` properties in `MouseEventArgs` class allows the retrieval of the coordinates, in pixels, relative to the
+left edge of the document.
+
+```csharp
+<div @onclick="HandleClick">
+    TODO: Add code sample
+</div>
+
+@code {
+    void HandleClick(MouseEventArgs args)
+    {
+        TODO: Add code sample   
+    }
+}
+```
+
+Requires: .NET 6 Release Candidate 1
+<br>
+
+
 ### Use the `ontoggle` event to show or hide additional data of the `details` HTML element.
 
 The `ontoggle` event occurs when the user opens or closes the `<details>` element. You can use the the `ontoggle` event to control the additional data contained in element.
