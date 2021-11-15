@@ -203,7 +203,7 @@ The `IDisposable` interface provides a mechanism for releasing unmanaged resourc
 <br>
 
 
-### Don't register IDisposable instances with a transient lifetime.
+### Don't register `IDisposable` instances with a transient lifetime.
 
 Use the factory pattern instead.
 
