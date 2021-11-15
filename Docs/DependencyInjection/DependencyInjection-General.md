@@ -157,13 +157,23 @@ todo: complement description
 
 ### Consider assigning injected dependencies to read-only fields or properties.
 
-This prevents the assignment of other references to the object inside the class.
+A `readonly` modifier prevents the assignment to the field after the constructor exits. This action protects the assignment of other references
+to the object inside the class.
 
 todo: complement description
 
 ```csharp
+public class CartService : ICartService
+{
+    private readonly IProductService productService;
 
-// todo: add example
+    public CartService(IProductService productService)
+    {
+		...
+
+        this.productService = productService;
+    }
+}
 ```
 <br>
 
