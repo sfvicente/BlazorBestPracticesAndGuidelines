@@ -184,6 +184,8 @@ public class CartService : ICartService
 
 ### Avoid static classes and members when designing services for dependency injection.
 
+Static classes are classes which cannot be instantiated.
+
 todo: add description
 
 ```csharp
