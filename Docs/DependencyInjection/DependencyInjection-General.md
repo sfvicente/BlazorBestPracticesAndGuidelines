@@ -262,9 +262,8 @@ todo: complement description
 
 ### Always use the built-in container unless an unsupported feature is required.
 
-todo: complement description
-
-The current built-in service container does not support the following features:
+.NET supports dependency injection and provides `IServiceProvider` as the built-in service container. `IServiceProvider` does not
+currently support the following features:
 
 - Property injection
 - Injection based on name
@@ -272,6 +271,8 @@ The current built-in service container does not support the following features:
 - Custom lifetime management
 - `Func<T>` support for lazy initialization
 - Convention-based registration
+
+Unless one or more of these features is required, always use the built-in container.
 
 <br>
 
