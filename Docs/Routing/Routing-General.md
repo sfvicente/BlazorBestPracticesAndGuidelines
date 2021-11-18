@@ -128,13 +128,31 @@ The `NavigationManager` class provides an abstraction for querying and managing 
 <br>
 
 
-### Use the `LocationChanged` event to determine when the URL in the browser is changed.
+### Use the `LocationChanged` event of the `NavigationManager` class to determine when the URL in the browser is changed.
 
-`LocationChanged` is an event that is triggered whenever the URL in the browser is modified. It passes an instance of `LocationChangedEventArgs` which provides the the URL :
+The `LocationChanged` is an event that triggers whenever the navigation location changes. It passes an instance of `LocationChangedEventArgs` which provides the URL:
 
 ```csharp
-// TODO: Example
+@code {
+    ...
 
+    protected override void OnInitialized()
+    {
+        NavigationManager.LocationChanged += HandleLocationChanged;
+    }
+
+    private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        string newLocationUrl = e.Location;
+    
+        ...
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= HandleLocationChanged;
+    }
+}
 ```
 <br>
 
