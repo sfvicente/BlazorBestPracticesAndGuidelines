@@ -201,9 +201,8 @@ Using `forceLoad` is not required in order to navigate to an off-site URI. Calli
 
 ### To navigate to a new browser tab, use _JavaScript Interop_ with the `IJSRuntime` object.
 
-Use _blank as the value for the third parameter, which will notify the system that the url needs to be opened in the new browser tab.
-
-TODO: complement description.
+Currently, navigating to a new browser tab cannot be performed without _JavaScript Interop_. Use the `InvokeAsync` method of the `IJSRuntime` to call
+the browser's `open` function. Use `_blank` as the value for the third parameter. This will notify the system that the url needs to be opened in a new browser tab.
 
 ```csharp
 @inject IJSRuntime jsRuntime
