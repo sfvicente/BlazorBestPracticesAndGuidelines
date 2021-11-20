@@ -250,6 +250,8 @@ void IDisposable.Dispose()
 	NavigationManager.LocationChanged -= LocationChanged;
 }
 ```
+
+Additional Tags: Events
 <br>
 
 
