@@ -367,4 +367,5 @@ private string GetRouteFromComponent(Type component)
 }
 ```
 
+Additional Tags: Routes
 <br>
