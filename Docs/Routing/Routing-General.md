@@ -270,7 +270,7 @@ updating or removing individual parameters in a query string and returns a new U
 var uri = NavigationManager.GetUriWithQueryParameter("page", 2);
 ```
 
-Requires: .NET 6 Release Candidate 1
+Requires: .NET 6 RC1
 <br>
 
 
@@ -283,7 +283,7 @@ updating or removing multiple parameters in a query string and returns a new URI
 TODO: add code example with ?limit=12&offset=30
 ```
 
-Requires: .NET 6 Release Candidate 1
+Requires: .NET 6 RC1
 <br>
 
 
