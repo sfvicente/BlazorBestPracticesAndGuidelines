@@ -154,6 +154,8 @@ The `LocationChanged` is an event that triggers whenever the navigation location
     }
 }
 ```
+
+Additional Tags: Events
 <br>
 
 
