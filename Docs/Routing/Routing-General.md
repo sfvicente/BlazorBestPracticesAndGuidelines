@@ -328,6 +328,8 @@ _Razor_ pages. Instead, inject the `NavigationManager` component and use it's `N
 NavigationManager.NavigateTo("counter/2");
 
 ```
+
+Additional Tags: Redirect
 <br>
 
 
