@@ -192,10 +192,8 @@ public static ValueTask<T> GenericMethod<T>(this ElementReference elementRef,
 
 ### To obtain the current IP address of the application, use a 3rd party API.
 
-Currently, the _Blazor Framework_ does not have a mechanism to retrieve the current IP address for the application. It is however possible to use a service
-such as _Ipify_ that will return the address in various formats.
-
-To retrieve the information either JS Interop or and HTTP client can be used:
+Currently, the _Blazor Framework_ does not have a mechanism to retrieve the current IP address for the application. However, it is possible to use a service
+such as _Ipify_ that will return the address in various formats. Use either JS Interop or an HTTP client to retrieve the required information.
 
 TODO: Complement description
 
