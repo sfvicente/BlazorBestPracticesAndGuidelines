@@ -27,6 +27,7 @@ Guidance and best practices for development using the Blazor framework.
 - [Localization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Localization.md)
 - [Optimization](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Optimization.md)
 - [Security](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Components-Security.md)
+- [Media](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Components/Media.md)
 
 ### Dependency Injection
 
