@@ -12,7 +12,7 @@ The `@ref` attribute provide a way to reference a component instance to allow se
 
 In order to capture the reference to a child component, add the `@ref` attribute to the declaration of the child component in the markup section. You also need to define a field with the same type as the child component.
 
-```
+```cs
 <AddTaskDialogBox @ref="addTaskDialogBox" ... />
 
 @code {
@@ -27,7 +27,7 @@ In order to capture the reference to a child component, add the `@ref` attribute
 
 After a reference field is populated with the child component instance, you can invoke methods on the component instance.
 
-```
+```cs
 <AddTaskDialogBox @ref="addTaskDialogBox" ... />
 
 @code {
@@ -57,7 +57,7 @@ Instead, use normal declarative parameters to pass data to child components. Use
 
 Variables that hold references to components via `@ref` attribute are only populated after the component is rendered and its output includes the component element.
 
-```
+```cs
 <AddTaskDialogBox @ref="addTaskDialogBox" ... />
 
 @code {
@@ -72,7 +72,7 @@ Variables that hold references to components via `@ref` attribute are only popul
 Using a lambda expression or assigning the event handler delegate in the `OnAfterRenderAsync` or `OnAfterRender` methods ensures that the reference variable is assigned
 before the event handler is assigned.
 
-```
+```cs
 
 	ToDo: code sample
 ```
