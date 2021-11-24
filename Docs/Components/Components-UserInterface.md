@@ -9,7 +9,7 @@ reference to a rendered element.
 
 The following code displays how to set the UI focus on an element.
 
-```csharp
+```cs
 <button @onclick="() => textInput.FocusAsync()">Set focus</button>
 <input @ref="textInput"/>
 ```
@@ -22,7 +22,7 @@ Applies To: .NET 5
 
 Currently, there isn't a Blazor implementation of the browser functions `alert()` , `prompt()` and `confirm()`. You need to inject the `JSRuntime` object and use _Interop_.
 
-```csharp
+```cs
 @inject IJSRuntime JsRuntime;
 ...
 
