@@ -161,6 +161,7 @@ The performance cost isn't large, but only specify `@key` if controlling the ele
 
 <Virtualization is a technique for limiting the UI rendering to just the parts that are currently visible. A common example is when an application has a long list or table with 
 many rows and only a small subset is visible at any given time.>
+<br>
 
 
 ### Use the built-in virtualization support to improve the perceived performance of component rendering.
@@ -199,6 +200,7 @@ The `Virtualize` component calculates how many items to render based on the heig
 Requires: .NET 5 RC1
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
 Additional Tags: Performance
+<br>
 
 
 ### Specify an `ItemsProvider` when performing virtualization to prevent loading all items into memory.
@@ -234,6 +236,7 @@ async ValueTask<ItemsProviderResult<Employee>> LoadEmployees(ItemsProviderReques
 Requires: .NET 5 RC1
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
 Additional Tags: Performance
+<br>
 
 
 ### Consider caching data in the items provider so it is readily available.
@@ -254,6 +257,7 @@ async ValueTask<ItemsProviderResult<Post>> LoadPosts(ItemsProviderRequest reques
 
 Requires: .NET 5 RC1
 Additional Tags: Performance
+<br>
 
 
 ### Use a placeholder to render temporary elements while waiting for the item data to become available.
@@ -282,6 +286,7 @@ This can be used to improve perceived performance. It especially useful when req
 
 Additional Tags: Performance
 Requires: .NET 5 RC1
+<br>
 
 
 ### Invoke `StateHasChanged` when changes are made to the items rendered in a `Virtualize` component to force re-evaluation and rerendering of the component.
@@ -294,7 +299,6 @@ ToDo: Add explanation
 
 Requires: .NET 5 RC1
 Additional Tags: `StateHasChanged` Method
-
 <br><br>
 
 
