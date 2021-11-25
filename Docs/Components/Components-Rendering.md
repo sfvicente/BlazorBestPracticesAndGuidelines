@@ -196,6 +196,7 @@ Instead, you can replace the foreach loop with the `Virtualize` component, which
 
 The `Virtualize` component calculates how many items to render based on the height of the container and the size of the rendered items.
 
+Requires: .NET 5 RC1
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
 Additional Tags: Performance
 
@@ -230,6 +231,7 @@ async ValueTask<ItemsProviderResult<Employee>> LoadEmployees(ItemsProviderReques
 ```
 >
 
+Requires: .NET 5 RC1
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
 
 
@@ -249,6 +251,7 @@ async ValueTask<ItemsProviderResult<Post>> LoadPosts(ItemsProviderRequest reques
 }
 ```
 Additional Tags: Performance
+Requires: .NET 5 RC1
 
 
 ### Use a placeholder to render temporary elements while waiting for the item data to become available.
@@ -275,6 +278,8 @@ This can be used to improve perceived performance. It especially useful when req
 </Virtualize>
 ```
 
+Requires: .NET 5 RC1
+
 
 ### Invoke `StateHasChanged` when changes are made to the items rendered in a `Virtualize` component to force re-evaluation and rerendering of the component.
 
@@ -284,6 +289,7 @@ ToDo: Add explanation
 /// TODO: Add code sample
 ```
 
+Requires: .NET 5 RC1
 Additional Tags: `StateHasChanged` Method
 
 <br><br>
