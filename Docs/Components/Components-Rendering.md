@@ -233,6 +233,7 @@ async ValueTask<ItemsProviderResult<Employee>> LoadEmployees(ItemsProviderReques
 
 Requires: .NET 5 RC1
 Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+Additional Tags: Performance
 
 
 ### Consider caching data in the items provider so it is readily available.
@@ -250,8 +251,9 @@ async ValueTask<ItemsProviderResult<Post>> LoadPosts(ItemsProviderRequest reques
     return new ItemsProviderResult<Post>(posts, totalPosts);
 }
 ```
-Additional Tags: Performance
+
 Requires: .NET 5 RC1
+Additional Tags: Performance
 
 
 ### Use a placeholder to render temporary elements while waiting for the item data to become available.
@@ -278,6 +280,7 @@ This can be used to improve perceived performance. It especially useful when req
 </Virtualize>
 ```
 
+Additional Tags: Performance
 Requires: .NET 5 RC1
 
 
