@@ -26,6 +26,8 @@ Additional Tags: Rendering
 ```csharp
 // ToDo: Example
 ```
+
+Additional Tags: User Input, Navigation
 <br><br>
 
 
