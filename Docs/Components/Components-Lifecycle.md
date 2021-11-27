@@ -18,6 +18,8 @@ public abstract class MyCustomComponent: ComponentBase
 	[Parameter]
 	public string InlineClass { get; set; }
 	
+	public InlineClassMapper Mapper { get; }
+
 	protected MyCustomComponent()
 	{
 		this.Mapper = new InlineClassMapper(this.InlineClass);
