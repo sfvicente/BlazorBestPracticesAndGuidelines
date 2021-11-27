@@ -44,6 +44,8 @@ public abstract class MyCustomComponent: ComponentBase
 	}
 }
 ```
+
+Additional Tags: Parameters
 <br><br>
 
 
