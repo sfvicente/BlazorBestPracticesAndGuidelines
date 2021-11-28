@@ -148,7 +148,7 @@ The `ontoggle` event occurs when the user opens or closes the `<details>` elemen
 ```
 
 Requires: .NET 5 RC1
-Reference: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-5-release-candidate-1/
+Reference: https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-net-5-release-candidate-1/#blazor-support-for-ontoggle-event
 <br>
 
 
