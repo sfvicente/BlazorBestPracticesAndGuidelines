@@ -276,6 +276,6 @@ TODO: complement description
 TODO: add code samples
 
 Applies to: Blazor Server
-Tags: Events, Security
+Additional Tags: Security
 
 <br>
