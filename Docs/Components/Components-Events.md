@@ -100,8 +100,8 @@ Additional Tags: Event Handler
 
 ### To determine the coordinates at which the mouse was clicked, use the `PageX` and `PageY` properties in `MouseEventArgs` class.
 
-The `PageX` and `PageY` properties in `MouseEventArgs` class allows the retrieval of the coordinates, in pixels, relative to the
-left edge of the document.
+The `PageX` and `PageY` properties in `MouseEventArgs` class allows the retrieval of the coordinates at which a mouse click was performed. The
+coordinates are represented in pixels and relative to the left edge of the document.
 
 ```cs
 <div @onclick="HandleClick">
@@ -116,7 +116,7 @@ left edge of the document.
 }
 ```
 
-Requires: .NET 6 Release Candidate 1
+Requires: .NET 6 RC 1
 <br>
 
 
