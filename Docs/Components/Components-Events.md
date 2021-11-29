@@ -9,13 +9,13 @@ and must be prepended with an @.
 
 For example, to handle the `onclick` event in an input field, add the `onclick` as an attribute as shown below:
 
-```csharp
+```cs
 <input @onclick="" />
 ```
 
 In addition to specifying the event attribute, it is required to also declare an event handler. This can be achieved either inline:
 
-```csharp
+```cs
 <p>Message: @Message</p>
 <button @onclick="@((e) => {
     Message = "Hello World!";
@@ -28,7 +28,7 @@ In addition to specifying the event attribute, it is required to also declare an
 
 Or through a method within the `@code` section of the _Razor_ component:
 
-```csharp
+```cs
 <p>Message: @Message</p>
 <button @onclick="Click">Set Message</button>
 
@@ -48,7 +48,7 @@ Additional Tags: Event Handler
 
 ### Use the `@on{EVENT}:stopPropagation` directive attribute to stop event propagation.
 
-```csharp
+```cs
 <input type="text" value="" @onkeypress:preventDefault />
 ```
 <br><br>
@@ -56,7 +56,7 @@ Additional Tags: Event Handler
 
 ### Use both the `@on{EVENT}:stopPropagation` directive attribute and with your event handling to stop event propagation but still process your code.
 
-```csharp
+```cs
 <input type="text" value="" @onkeypress="HandleKeyPresses" @onkeypress:preventDefault />
 ```
 <br><br>
@@ -64,7 +64,7 @@ Additional Tags: Event Handler
 
 ### To detect and handle mouse right-click events, use the `MouseEventArgs` property `Button`
 
-```csharp
+```cs
 <div @onmouseup="HandleMouseUp" >
     div content
 </div>
@@ -82,7 +82,7 @@ Additional Tags: Event Handler
 
 ### To handle mouse right-click events and not display the browser context menu, use the HTML `oncontextmenu` attribute
 
-```csharp
+```cs
 <div oncontextmenu="return false;" @onmouseup="HandleMouseUp">
     div content
 </div>
@@ -103,7 +103,7 @@ Additional Tags: Event Handler
 The `PageX` and `PageY` properties in `MouseEventArgs` class allows the retrieval of the coordinates, in pixels, relative to the
 left edge of the document.
 
-```csharp
+```cs
 <div @onclick="HandleClick">
     TODO: Add code sample
 </div>
@@ -124,7 +124,7 @@ Requires: .NET 6 Release Candidate 1
 
 The `ontoggle` event occurs when the user opens or closes the `<details>` element. You can use the the `ontoggle` event to control the additional data contained in element.
 
-```csharp
+```cs
 <div>
     @if (detailsExpanded)
     {
@@ -157,7 +157,7 @@ Additional Tags: HTML
 
 To capture every character being typed in a textbox, bind the `oninput` event with an input element. This trigger the event for each character input.
 
-```csharp
+```cs
 <input type="text" @oninput="@HandleInput" />
 ```
 
@@ -169,7 +169,7 @@ Additional Tags: Events
 
 To capture a change in the selected item in a dropdown, add the `onchange` event attribute to the . When specifying the event handler, use a parameter of type `ChangeEventArgs`.
 
-```csharp
+```cs
 @page "/select"
 
 <label>Please select an option:</label>
@@ -200,7 +200,7 @@ Additional Tags: UI, Dropdown
 
 The code below binds each button of the table to functionality for the removal of the item from the collection.
 
-```csharp
+```cs
 @page "/cart"
 
 <h3>Cart</h3>
@@ -251,7 +251,7 @@ The code below binds each button of the table to functionality for the removal o
 
 Event handlers can be defined as asynchronous by using the `async` keyword in the declaration and a return type of `Task`.
 
-```csharp
+```cs
 <button class="btn btn-primary" @onclick="HandleAddToCart">
     Add To Cart
 </button>
