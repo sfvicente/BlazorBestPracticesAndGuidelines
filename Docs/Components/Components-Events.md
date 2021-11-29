@@ -117,6 +117,7 @@ coordinates are represented in pixels and relative to the left edge of the docum
 ```
 
 Requires: .NET 6 RC 1
+Additional Tags: Mouse
 <br>
 
 
