@@ -160,6 +160,13 @@ To capture every character being typed in a textbox, bind the `oninput` event wi
 
 ```cs
 <input type="text" @oninput="@HandleInput" />
+
+@code {
+    void HandleInput(ChangeEventArgs args)
+    {
+        TODO: Add code sample   
+    }
+}
 ```
 
 Additional Tags: Events, Keyboard
