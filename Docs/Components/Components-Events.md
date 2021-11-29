@@ -162,7 +162,7 @@ To capture every character being typed in a textbox, bind the `oninput` event wi
 <input type="text" @oninput="@HandleInput" />
 ```
 
-Additional Tags: Events
+Additional Tags: Events, Keyboard
 <br>
 
 
