@@ -10,7 +10,7 @@ TODO: Example
 
 It is also possible to render components dynamically at the application level.
 
-```csharp
+```cs
 <app>
 	@if(condition == 1)
 	{
@@ -33,7 +33,7 @@ It is also possible to render components dynamically at the application level.
 
 To render raw HTML, wrap the HTML content in a `MarkupString` value. The value is parsed as HTML or SVG and inserted into the DOM.
 
-```csharp
+```cs
 @page "/test"
 
 <h1>Example: Raw HTML</h1>
@@ -54,7 +54,7 @@ The `StateHasChanged` is a method of the `ComponentBase` that notifies the compo
 
 ### Do not use `StateHasChanged()` to force the render of components in synchronous methods.
 
-```csharp
+```cs
 <button @onclick="@PlaceOrder_Clicked" disabled="@DisablePlaceOrderButton">Place Order</button>
 
 @code {
@@ -75,7 +75,7 @@ In this example button will be disabled only after PlaceOrder() method finishes 
 
 StateHasChanged informs the component that its state has changed but it does not render the component. The component will decide when to render itself. You can't do that in a synchronous method, you should async your code to let the component a chance to render.
 
-```csharp
+```cs
 <button @onclick="@PlaceOrder_Clicked" disabled="@DisablePlaceOrderButton">Place Order</button>
 
 @code{
@@ -96,7 +96,7 @@ StateHasChanged informs the component that its state has changed but it does not
 The `ShouldRender()` method is called each time the component is rendered. You can override `ShouldRender()` to prevent the UI from refreshing.
 If the implementation returns  `true`, the UI is refreshed, otherwise, refresh is suppressed.
 
-```csharp
+```cs
 protected override bool ShouldRender()
 {
     return false;
@@ -116,7 +116,7 @@ The `@key` directive attribute is a mechanism to control the mapping process of 
 
 TODO: complement description
 
-```csharp
+```cs
 @foreach (var user in Users)
 {
     <UserEditor @key="user" Role="@user.Role" />
@@ -133,7 +133,7 @@ TODO: complement description
 
 ### Use `@key` to prevent Blazor from preserving an element or component subtree when an object changes.
 
-```csharp
+```cs
 // ToDo: Example
 ```
 <br><br>
@@ -141,7 +141,7 @@ TODO: complement description
 
 ### Do not to use @key when there's a performance cost when diffing with  `@key`.
 
-```csharp
+```cs
 // ToDo: Example
 ```
 
@@ -151,7 +151,7 @@ The performance cost isn't large, but only specify `@key` if controlling the ele
 
 ### Only use distinct values, such as object instances or primary key values.
 
-```csharp
+```cs
 // ToDo: Example
 ```
 <br><br>
@@ -170,7 +170,7 @@ many rows and only a small subset is visible at any given time.>
 
 A typical list or table-based component might use a C# foreach loop to render each item in the list or each row in the table, like this:
 
-```csharp
+```cs
 @foreach (var employee in employees)
 {
     <tr>
@@ -185,7 +185,7 @@ If the list grew to include thousands of rows, then rendering it may take a whil
 
 Instead, you can replace the foreach loop with the `Virtualize` component, which only renders the rows that are currently visible.
 
-```csharp
+```cs
 <Virtualize Items="employees" Context="employee">
     <tr>
         <td>@employee.FirstName</td>
@@ -207,7 +207,7 @@ Additional Tags: Performance
 
 To avoid loading all the items from a data source into memory, specify an `ItemsProvider` when defining the `Virtualize` component:
 
-```csharp
+```cs
 <Virtualize ItemsProvider="LoadUsers" Context="user">
      <tr>
          <td>@user.FirstName</td>
@@ -223,7 +223,7 @@ the required number of items starting at a specific start index. The items provi
 ItemsProviderResult<TItem> along with a count of the total number of items available.>
 
 <
-```csharp
+```cs
 async ValueTask<ItemsProviderResult<Employee>> LoadEmployees(ItemsProviderRequest request)
 {
     var numEmployees = Math.Min(request.Count, totalEmployees - request.StartIndex);
@@ -243,7 +243,7 @@ Additional Tags: Performance
 
 The items provider method is used to retrieve the required items. It can either retrieve data with each request or include a caching mechanism to prevent trips to the data source.
 
-```csharp
+```cs
 async ValueTask<ItemsProviderResult<Post>> LoadPosts(ItemsProviderRequest request)
 {
     var postCount = Math.Min(request.Count, totalPosts - request.StartIndex);
@@ -266,7 +266,7 @@ The `Virtualize` component allows the use of a placeholder to denote the tempora
 
 This can be used to improve perceived performance. It especially useful when requesting information from remote or slow data sources.
 
-```csharp
+```cs
 <Virtualize ItemsProvider="LoadUsers" Context="user">
     <ItemContent>
         <tr>
@@ -293,7 +293,7 @@ Requires: .NET 5 RC1
 
 ToDo: Add explanation
 
-```csharp
+```cs
 /// TODO: Add code sample
 ```
 
@@ -313,7 +313,7 @@ The `ShouldRender` method of the `ComponentBase` class returns a flag to indicat
 If a UI-only component doesn't change after being rendered the first time, the `ShouldRender` should be set to `false`. This prevents re-rendering of the component and associated
 cost for the application.
 
-```csharp
+```cs
 @code {
     protected override bool ShouldRender() => false;
 }
@@ -345,7 +345,7 @@ You can integrate _Razor_ components and views into _Razor Pages_ using the Comp
 
 todo: complement description
 
-```csharp
+```cs
 @page
 @model RegisterModel
 @{
