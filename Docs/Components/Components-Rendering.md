@@ -62,10 +62,12 @@ The `StateHasChanged` is a method of the `ComponentBase` that notifies the compo
 
 @code {
  private bool DisablePlaceOrderButton { get; set; } = false;
+
  private void PlaceOrder_Clicked()
     {
         DisablePlaceOrderButton = true;
         StateHasChanged();
+
         if (cart.Lines.Count() == 0)
         {
             DisablePlaceOrderButton = false;
@@ -83,6 +85,7 @@ StateHasChanged informs the component that its state has changed but it does not
 
 @code{
     private bool DisablePlaceOrderButton { get; set; } = false;
+
     private async Task PlaceOrder_Clicked()
     {
         DisablePlaceOrderButton = true;
