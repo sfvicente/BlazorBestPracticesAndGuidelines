@@ -29,6 +29,9 @@ It is also possible to render components dynamically at the application level.
 <br>
 
 
+## Markup
+<br>
+
 ### To render raw HTML on a page, use the `MarkupString` property.
 
 To render raw HTML, wrap the HTML content in a `MarkupString` value. The value is parsed as HTML or SVG and inserted into the DOM.
