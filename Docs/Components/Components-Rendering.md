@@ -97,10 +97,10 @@ StateHasChanged informs the component that its state has changed but it does not
 <br><br>
 
 
-### To Suppress UI refreshing, override `ShouldRender()` and return `false`.
+### To suppress UI refreshing, override `ShouldRender()` and return `false`.
 
-The `ShouldRender()` method is called each time the component is rendered. You can override `ShouldRender()` to prevent the UI from refreshing.
-If the implementation returns  `true`, the UI is refreshed, otherwise, refresh is suppressed.
+The `ShouldRender()` method is called each time the component is rendered. You can override `ShouldRender()` to prevent the UI from refreshing. If the
+method implementation returns `true`, the UI is refreshed, otherwise, refresh is suppressed.
 
 ```cs
 protected override bool ShouldRender()
@@ -108,7 +108,8 @@ protected override bool ShouldRender()
     return false;
 }
 ```
-Even if  `ShouldRender()`  is overridden, the component is always initially rendered.
+
+However, even if `ShouldRender()` is overridden to return `false`, the component is always initially rendered.
 <br>
 
 
