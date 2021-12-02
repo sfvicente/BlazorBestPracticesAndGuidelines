@@ -28,7 +28,7 @@ Razor code is a markup syntax for embedding code into web application pages. Its
 
 You can use the parenthesis @( ) to create a code block. This will allow quotes to be used inside the component declaration.
 
-```csharp
+```cs
 <MyComponent User="@context.User.Claims.Where(user => user.Type == "administrator")"></MyComponent>
 ```
 <br>
@@ -38,13 +38,13 @@ You can use the parenthesis @( ) to create a code block. This will allow quotes 
 
 The following code should not be used:
 
-```csharp
+```cs
 // ToDo: Example
 ```
 
 Using the same variable used by all lambda expressions causes `i`'s value to be the same in all lambdas. Always capture its value in a local variable before using it.
 
-```csharp
+```cs
 // ToDo: Example
 ```
 <br>
@@ -58,7 +58,7 @@ Namespaces are mechanisms to organize and control the scope of program elements 
 
 ### Add the `@using` directive in the an __Imports.razor_ file at any level file to make a library's components available to a single page or set of pages within a folder.
 
-```csharp
+```cs
 @using MyComponent
 
 ```
@@ -67,7 +67,7 @@ Namespaces are mechanisms to organize and control the scope of program elements 
 
 ### Use the `@using` directive in the top-level __Imports.razor_ file to make a library's components available to an entire project.
 
-```csharp
+```cs
 @using System.Net.Http
 @using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Components.Authorization
@@ -91,7 +91,7 @@ without blocking and forcing it to wait for results.
 
 // TODO: Complement description.
 
-```csharp
+```cs
 @page "/"
 
 <button @onclick="HandleSetMessage">Set Message</button>
@@ -115,7 +115,7 @@ without blocking and forcing it to wait for results.
 
 ### To assign a result of an `async` function to _razor_ component, use a property to store the value.
 
-```csharp
+```cs
 @page "/"
 @inject ICountingService Counter
 
@@ -141,7 +141,7 @@ without blocking and forcing it to wait for results.
 
 ### Use the `@inherits` directive to allow a component to inherit from a base class.
 
-```csharp
+```cs
 using Microsoft.AspNetCore.Components;
 
 namespace MyNamespace
@@ -156,7 +156,7 @@ namespace MyNamespace
 
 When developing the base class, it should derive from `ComponentBase`. Use the `@inherits` directive on the subclass to inherit the component's properties and methods:
 
-```csharp
+```cs
 @page "/SubComponent"
 @inherits MyBaseComponent
 
@@ -176,7 +176,7 @@ Component parameters are values passed to the component that are required to exe
 
 When you create a component, it's possible to add parameters to allow passing information to the component. Consider the following component:
 
-```csharp
+```cs
 <h1>@Title</h1>
 
 @code {
@@ -187,7 +187,7 @@ When you create a component, it's possible to add parameters to allow passing in
 
 The component can be added to the application and its parameteres can be used as in the example below:
 
-```csharp
+```cs
 <MyComponent Title="@MyText" />
 
 @code {
@@ -197,7 +197,7 @@ The component can be added to the application and its parameteres can be used as
 
 Although parameters can be specified to pass information, the declaration of the component might not assign any values:
 
-```csharp
+```cs
 <MyComponent />
 ```
 
@@ -208,7 +208,7 @@ Although parameters can be specified to pass information, the declaration of the
 
 There may be cases in which, although a component has defined parameters, it is used without assigning values to it. See the following example:
 
-```csharp
+```cs
 <h1>@Title</h1>
 
 @code {
@@ -217,7 +217,7 @@ There may be cases in which, although a component has defined parameters, it is 
 }
 ```
 
-```csharp
+```cs
 <MyComponent />
 ```
 
@@ -226,7 +226,7 @@ In this case, the parameter is omitted. As the component can be used both ways, 
 You can override the `SetParametersAsync()` method and iterate through the 'parameters' collection to determine if the parameter has been passed to the component.
 A parameter that hasn't been specified will not be present in the collection.
 
-```csharp
+```cs
 ...
 
 @code {
@@ -257,7 +257,7 @@ A component can capture information through the use of parameters. However, it c
 the definition of a parameter with the `CaptureUnmatchedValues` property set to true. The `CaptureUnmatchedValues` determines whether a component parameter will
 capture values that don't match any other parameter.
 
-```csharp
+```cs
 @code {
     [Parameter(CaptureUnmatchedValues = true)]
     public Dictionary<string, object> InputAttributes { get; set; }
@@ -277,7 +277,7 @@ Components with large amount of configurable combinations of parameters can requ
 
 // todo: add code example
 
-```csharp
+```cs
 @code {
     [Parameter(CaptureUnmatchedValues = true)]
     public Dictionary<string, object> InputAttributes { get; set; }
@@ -298,7 +298,7 @@ type `RenderFragment`. By convention, it is required that the property is named 
 
 Below is the example of a content that can accept child content for rendering:
 
-```csharp
+```cs
 <div>
     <h1>@Title</h1>
     <div>@ChildContent</div>
@@ -315,7 +315,7 @@ Below is the example of a content that can accept child content for rendering:
 
 The component can be set from the parent in the following way:
 
-```csharp
+```cs
 @page "/ParentComponent"
 
 <h1>My Parent Component</h1>
@@ -338,7 +338,7 @@ Cascading values is a component that allows values passed to it to be cascaded d
 
 The code below setups cascaded values for the component.
 
-```csharp
+```cs
 <CascadingValue Value="@Username">
     <MyComponent></MyComponent>
 </CascadingValue>
@@ -350,7 +350,7 @@ The code below setups cascaded values for the component.
 
 To access the information, declare a property of the same type within the component. Decore the property with the `[CascadingParameter]` attribute.
 
-```csharp
+```cs
 <h1>My Component</h1>
 
 <p>Hello: @Username</p>
@@ -372,7 +372,7 @@ To access the information, declare a property of the same type within the compon
 
 To obtain the list of all components contained in an application get all the types whose base class is `ComponentBase` using reflection:
 
-```csharp
+```cs
 var components = Assembly.GetExecutingAssembly()
                         .ExportedTypes
                         .Where(t => 
