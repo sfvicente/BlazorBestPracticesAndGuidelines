@@ -204,7 +204,7 @@ Although parameters can be specified to pass information, the declaration of the
 <br>
 
 
-### To determine if a component parameter has been assigned a value, override the `SetParametersAsync()` method and inspect the parameter collection.
+### To determine if a component parameter has been assigned a value, override the `SetParametersAsync()` method and inspect the argument containing the parameter collection.
 
 There may be cases in which, although a component has defined parameters, it is used without assigning values to it. See the following example:
 
