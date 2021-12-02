@@ -370,7 +370,8 @@ To access the information, declare a property of the same type within the compon
 
 ### To obtain all the components of an application programmatically, use reflection.
 
-To obtain the list of all components contained in an application get all the types whose base class is `ComponentBase` using reflection:
+The components of an application are all the types whose base class is `ComponentBase`. You can obtain the list of those components
+using reflection:
 
 ```cs
 var components = Assembly.GetExecutingAssembly()
