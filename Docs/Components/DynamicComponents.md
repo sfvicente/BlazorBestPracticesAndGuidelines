@@ -4,7 +4,8 @@
 
 ### Use the `DynamicComponent` built-in component to dynamically render a component specified by type.
 
-// TODO: complement description
+The `DynamicComponent` is a component that renders another component dynamically according to its `Type` parameter. It allows an application
+to present components without the need to add programming logic or check for specific types.
 
 ```cs
 <DynamicComponent Type="@myComponentType" />
