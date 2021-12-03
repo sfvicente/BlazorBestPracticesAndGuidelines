@@ -141,6 +141,8 @@ without blocking and forcing it to wait for results.
 
 ### Use the `@inherits` directive to allow a component to inherit from a base class.
 
+When developing a base class to be used by components, it should derive from `ComponentBase`.
+
 ```cs
 using Microsoft.AspNetCore.Components;
 
@@ -148,13 +150,12 @@ namespace MyNamespace
 {
     public class MyBaseComponent : ComponentBase
     {
-        public string Title { get; set; } = 
-            "My Application";
+        public string Title { get; set; } = "My Application";
     }
 }
 ```
 
-When developing the base class, it should derive from `ComponentBase`. Use the `@inherits` directive on the subclass to inherit the component's properties and methods:
+Use the `@inherits` directive on the subclass to inherit the component's properties and methods:
 
 ```cs
 @page "/SubComponent"
