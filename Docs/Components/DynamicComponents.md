@@ -11,7 +11,15 @@ to present components without the need to add programming logic or check for spe
 <DynamicComponent Type="@myComponentType" />
 ```
 
-Data can be passed to dynamic components through the `Parameters` attribute using a dictionary:
+// TODO: complement code samples
+
+<br>
+
+
+### To pass parameters to a dynamically-renderer component, use the `Parameters` attribute.
+
+Data can be passed to dynamic components through the `Parameters` attribute using a dictionary. A `IDictionary<string, object>` can be used
+where the `string` is the name of the parameter, and the `object` is the parameter's value.
 
 ```cs
 <DynamicComponent Type="@myComponentType" Parameters="@myParameters" />
@@ -26,4 +34,3 @@ Data can be passed to dynamic components through the `Parameters` attribute usin
 // TODO: complement code samples
 
 <br>
-
