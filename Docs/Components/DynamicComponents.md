@@ -1,6 +1,9 @@
 # Components | Dynamic Components
 <br>
 
+## General
+<br>
+
 
 ### Use the `DynamicComponent` built-in component to dynamically render a component specified by type.
 
@@ -13,6 +16,10 @@ to present components without the need to add programming logic or check for spe
 
 // TODO: complement code samples
 
+<br>
+
+
+## Parameters
 <br>
 
 
