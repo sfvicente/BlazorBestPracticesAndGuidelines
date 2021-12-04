@@ -34,3 +34,14 @@ where the `string` is the name of the parameter, and the `object` is the paramet
 // TODO: complement code samples
 
 <br>
+
+
+### Avoid the use of catch-all parameters when using dynamically-renderer components.
+
+// TODO: Complement content
+
+The use of catch-all parameters with `DynamicComponent` should be avoided. 
+
+// TODO: complement code samples
+
+<br>
