@@ -5,6 +5,10 @@ and helps to avoid styling conflicts among components and libraries.
 <br>
 
 
+## `::deep` Combinator
+<br>
+
+
 ### Use the `::deep` combinator in CSS to cascade styles down to child components.
 
 Although CSS isolation only applies to the current component by default, styles can be configured to be applied to child components. To cascade styles to child 
@@ -22,6 +26,10 @@ components without the need to create component-specific CSS file, use the `::de
     font-family: Tahoma, Arial, Verdana, sans-serif;
 }
 ```
+<br>
+
+
+## Bundling
 <br>
 
 
