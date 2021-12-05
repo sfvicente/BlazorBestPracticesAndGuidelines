@@ -74,6 +74,8 @@ The following code should not be used:
 	}
 }
 ```
+
+Additional Tags: `Dispose()`
 <br><br>
 
 
