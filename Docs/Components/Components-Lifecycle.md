@@ -4,6 +4,8 @@ The _Blazor_ framework includes a system to control order of eents in the lifeti
 can be overriden to extend and configure component initialization and rendering.
 <br><br>
 
+## General
+<br>
 
 ### Do not access parameters from within a constructor of a component class.
 
@@ -48,6 +50,9 @@ public abstract class MyCustomComponent: ComponentBase
 Additional Tags: Parameters
 <br><br>
 
+
+## `StateHasChanged()` Method
+<br>
 
 ### Do not call `StateHasChanged()` inside a components `Dispose()` method.
 
