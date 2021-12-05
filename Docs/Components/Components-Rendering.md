@@ -2,6 +2,9 @@
 <br>
 
 
+## General
+<br>
+
 ### To render components dynamically, use `if-else` or `switch-case` conditional statements in _Razor_ view code.
 
 You can use and render different components for different scenarios. Displaying components dynamically can be done with if-else or switch-case conditions and through the use of variables.
