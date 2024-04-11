@@ -44,9 +44,9 @@ Guidance and best practices for development using the Blazor framework.
 - [Headers](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-Headers.md)
 - [CORS](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/HttpCommunication/HttpCommunication-Cors.md)
 
-### Routing
+### Routing and Navigation
 
-- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Routing/Routing-General.md)
+- [General](https://github.com/sfvicente/BlazorStyleGuide/blob/master/Docs/Routing/RoutingAndNavigation-General.md)
 
 ### JavaScript Interop
 
