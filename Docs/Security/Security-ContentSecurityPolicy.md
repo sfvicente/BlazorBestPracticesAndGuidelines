@@ -8,7 +8,7 @@
 <br>
 
 
-### Always use a `<meta>' tag in the ´<head>´ content to apply the Content Security Policy
+### Always use a `<meta>` tag in the `<head>` content to apply the Content Security Policy
 
 #### For Blazor WebAssembly Applications
 
