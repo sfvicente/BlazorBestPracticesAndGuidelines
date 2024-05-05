@@ -1,6 +1,6 @@
 # Security | Content Security Policy
-
-// TODO
+A Content Security Policy (CSP) is a security standard that helps prevent various types of attacks, including Cross-Site
+Scripting (XSS) and data injection attacks, by defining which resources can be loaded and executed by your application.
 <br>
 
 
