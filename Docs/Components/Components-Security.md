@@ -7,10 +7,27 @@
 
 ### Don't render raw HTML constructed from any untrusted source
 
-Rendering raw HTML from sources that you do not trust is a security risk and should be avoided.
+Rendering raw HTML from sources that you do not trust is a security risk and should be avoided. Instead, use built-in
+mechanisms or third-party libraries for HTML sanitization.
 
 ```csharp
-// ToDo: Example
+@inject IHtmlSanitizer HtmlSanitizer
+
+@if (!string.IsNullOrEmpty(UntrustedHtml))
+{
+    <div>
+        @HtmlSanitizer.Sanitize(UntrustedHtml)
+    </div>
+}
+else
+{
+    <p>No content available.</p>
+}
+
+@code {
+    // Simulated untrusted HTML content
+    string UntrustedHtml = "<script>alert('This is a malicious script!');</script>";
+}
 ```
 
 Additional Tags: Rendering
