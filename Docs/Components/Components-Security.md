@@ -67,7 +67,17 @@ Additional Tags: Navigation
 ### When rendering links as part of an application, if possible, use relative links.
 
 ```csharp
-// ToDo: Example
+@page "/"
+
+<h3>Relative Links Example</h3>
+
+<!-- Example of using a relative link -->
+<p><a href="counter">Go to Counter Page</a></p>
+
+<p>
+    This link will take you to the Counter page within the same application,
+    regardless of the hosting environment.
+</p>
 ```
 <br><br>
 
