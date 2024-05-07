@@ -7,7 +7,10 @@
 
 ### Use JavaScript isolation to avoid polluting the global namespace with imported JavaScript.
 
-todo: add description
+Always leverage JavaScript isolation in when incorporating external scripts or custom JavaScript functionalities. This
+practice promotes modularity, reduces the potential for naming collisions, and enhances the overall maintainability of 
+your Blazor application.
+
 todo: add examples
 
 <br>
