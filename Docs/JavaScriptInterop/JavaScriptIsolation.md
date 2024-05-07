@@ -27,6 +27,24 @@ todo: add examples
 ### To render UI generated from JavaScript libraries within a component, add an empty element with a reference and update it in the `OnAfterRenderAsync` first render.
 
 todo: add description
-todo: add examples
+
+```razor
+@page "/map-example"
+@using Microsoft.JSInterop
+
+<h3>Map Example</h3>
+<div id="mapContainer"></div>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Initialize and render the map after first render
+            await JSRuntime.InvokeVoidAsync("initializeMap", "mapContainer");
+        }
+    }
+}
+```
 
 <br>
