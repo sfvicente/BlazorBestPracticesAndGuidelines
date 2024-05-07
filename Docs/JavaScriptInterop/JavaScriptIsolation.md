@@ -1,6 +1,7 @@
 # JavaScript Interop | JavaScript Isolation
 
- JaaScript isolation is a feature that allows loading JavaScript modules for usage in a specific Blazor component.
+ JavaScript isolation allows you to confine the scope of imported JavaScript to specific components or areas of your
+ application, preventing conflicts or unintended interactions with other scripts or global variables.
 <br>
 
 
