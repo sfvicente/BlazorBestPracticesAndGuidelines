@@ -26,7 +26,10 @@ todo: add examples
 
 ### To render UI generated from JavaScript libraries within a component, add an empty element with a reference and update it in the `OnAfterRenderAsync` first render.
 
-todo: add description
+By adding empty elements with references and updating them in the `OnAfterRenderAsync` method's first render, you ensure
+that JavaScript-generated UI components are properly integrated into Blazor's component lifecycle. This approach helps
+maintain a clean separation between Blazor's rendering system and JavaScript-based UI functionalities, ensuring a robust
+and predictable user interface.
 
 ```razor
 @page "/map-example"
