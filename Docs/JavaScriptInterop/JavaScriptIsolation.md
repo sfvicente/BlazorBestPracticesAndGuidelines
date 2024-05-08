@@ -11,7 +11,29 @@ Always leverage JavaScript isolation in when incorporating external scripts or c
 practice promotes modularity, reduces the potential for naming collisions, and enhances the overall maintainability of 
 your Blazor application.
 
-todo: add examples
+```razor
+@page "/example"
+@using Microsoft.JSInterop
+
+<h3>Example Component</h3>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Load script.js in isolation
+            await JSRuntime.InvokeVoidAsync("import", "./js/script.js");
+        }
+    }
+
+    private async Task CallScriptFunction()
+    {
+        // Call showAlert function from script.js
+        await JSRuntime.InvokeVoidAsync("showAlert");
+    }
+}
+```
 
 <br>
 
