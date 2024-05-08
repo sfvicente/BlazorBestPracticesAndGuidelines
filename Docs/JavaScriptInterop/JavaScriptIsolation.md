@@ -2,7 +2,7 @@
 
  JavaScript isolation allows you to confine the scope of imported JavaScript to specific components or areas of your
  application, preventing conflicts or unintended interactions with other scripts or global variables.
-<br>
+<br><br>
 
 
 ### Use JavaScript isolation to avoid polluting the global namespace with imported JavaScript.
