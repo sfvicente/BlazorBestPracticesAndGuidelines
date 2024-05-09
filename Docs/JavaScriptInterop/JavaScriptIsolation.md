@@ -40,7 +40,10 @@ your Blazor application.
 
 ### Use JavaScript isolation to avoid forcing consumers of a library or components to import its JavaScript dependencies.
 
-todo: add description
+JavaScript isolation in Blazor components or libraries, allows developers to abstract away complex JavaScript dependencies,
+improving the usability and maintainability of their code. Consumers benefit from a cleaner, more encapsulated API without
+the need to handle external script imports, ultimately enhancing the overall developer experience and component reusability.
+
 todo: add examples
 
 <br>
