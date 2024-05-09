@@ -335,9 +335,10 @@ Additional Tags: Lifecycle, Performance
 
 ### Use private fields to manually control the `ShouldRender` method to prevent rendering of exceptionally expensive subtrees that degrade UI performance.
 
-If a component UI changes based on one or more of its parameters, you can use fields to manually control the rendering.
-
-todo: description
+Using private fields to manually control the `ShouldRender` method allows developers to optimize rendering performance
+in components, especially when dealing with complex UIs or expensive rendering operations. By selectively triggering
+re-renders based on specific conditions or state changes, you can minimize unnecessary updates and improve the overall
+responsiveness of applications.
 
 todo: code sample
 
