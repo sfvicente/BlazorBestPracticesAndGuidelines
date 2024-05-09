@@ -90,7 +90,11 @@ Additional Tags: Performance
 
 ### Wrap JavaScript interop calls within `try-catch` statements.
 
-ToDo: Add description
+Wrapping JavaScript interop calls within `try-catch` statements in Blazor components is a recommended practice to enhance
+error handling and application stability. By handling potential exceptions proactively, you can prevent unexpected crashes
+and provide a smoother user experience, especially when integrating with external JavaScript libraries or APIs. Additionally,
+logging or displaying meaningful error messages within the catch block helps with debugging and troubleshooting issues related
+to JavaScript interop.
 
 ```
 ToDo: Example
