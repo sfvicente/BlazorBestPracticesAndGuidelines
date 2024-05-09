@@ -301,7 +301,10 @@ Requires: .NET 5 RC1
 
 ### Invoke `StateHasChanged` when changes are made to the items rendered in a `Virtualize` component to force re-evaluation and rerendering of the component.
 
-ToDo: Add explanation
+Invoking `StateHasChanged()` after modifying the items rendered in a virtualized component is essential to maintaining a
+responsive and accurate user interface in Blazor applications. By explicitly triggering a re-evaluation and re-rendering
+of the component, you ensure that changes to the underlying data are reflected in the virtualized UI, providing a seamless
+and efficient user experience.
 
 ```cs
 /// TODO: Add code sample
