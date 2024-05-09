@@ -313,8 +313,8 @@ Additional Tags: `StateHasChanged` Method
 
 
 ## `ShouldRender` Method
-
-The `ShouldRender` method of the `ComponentBase` class returns a flag to indicate whether the component should render.
+The `ShouldRender` method of the `ComponentBase` class determines whether a component should re-render based on changes
+in its state or parameters.
 <br>
 
 
