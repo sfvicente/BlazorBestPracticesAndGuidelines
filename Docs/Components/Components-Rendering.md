@@ -306,8 +306,26 @@ responsive and accurate user interface in Blazor applications. By explicitly tri
 of the component, you ensure that changes to the underlying data are reflected in the virtualized UI, providing a seamless
 and efficient user experience.
 
-```cs
-/// TODO: Add code sample
+```csharp
+@page "/virtualized-list"
+
+<Virtualize Context="item">
+    <div>@item</div>
+</Virtualize>
+
+<button @onclick="AddItem">Add Item</button>
+
+@code {
+    private List<string> items = new List<string> { "Item 1", "Item 2", "Item 3" };
+
+    private void AddItem()
+    {
+        items.Add($"Item {items.Count + 1}");
+
+        // Call StateHasChanged to force re-evaluation and re-rendering
+        StateHasChanged();
+    }
+}
 ```
 
 Requires: .NET 5 RC1
