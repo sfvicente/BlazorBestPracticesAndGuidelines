@@ -361,7 +361,39 @@ in components, especially when dealing with complex UIs or expensive rendering o
 re-renders based on specific conditions or state changes, you can minimize unnecessary updates and improve the overall
 responsiveness of applications.
 
-todo: code sample
+```csharp
+public class ExpensiveRenderingComponent : ComponentBase
+{
+    private int _counter = 0;
+    private bool _shouldRender = true;
+
+    protected override bool ShouldRender()
+    {
+        return _shouldRender;
+    }
+
+    private void IncrementCounter()
+    {
+        _counter++;
+        // Manually control when to trigger a re-render
+        if (_counter % 5 == 0)
+        {
+            _shouldRender = true; // Render every 5th increment
+        }
+        else
+        {
+            _shouldRender = false; // Skip rendering for other increments
+        }
+    }
+
+    protected override void BuildRenderTree(RenderTreeBuilder builder)
+    {
+        builder.OpenElement(0, "div");
+        builder.AddContent(1, $"Counter value: {_counter}");
+        builder.CloseElement();
+    }
+}
+```
 
 Additional Tags: Lifecycle, Performance
 <br>
