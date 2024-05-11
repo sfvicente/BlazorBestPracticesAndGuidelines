@@ -96,8 +96,33 @@ and provide a smoother user experience, especially when integrating with externa
 logging or displaying meaningful error messages within the catch block helps with debugging and troubleshooting issues related
 to JavaScript interop.
 
-```
-ToDo: Example
+```csharp
+@page "/interop-example"
+@using Microsoft.JSInterop
+
+<h3>Interop Example</h3>
+
+<button @onclick="CallJsInterop">Call JavaScript Interop</button>
+
+@code {
+    [Inject]
+    protected IJSRuntime JSRuntime { get; set; }
+
+    private async Task CallJsInterop()
+    {
+        try
+        {
+            // Attempt to invoke a JavaScript function via interop
+            await JSRuntime.InvokeVoidAsync("exampleJsInteropFunction");
+            Console.WriteLine("JavaScript interop call succeeded.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"JavaScript interop call failed: {ex.Message}");
+            // Handle the exception appropriately (e.g., log, notify user, etc.)
+        }
+    }
+}
 ```
 <br>
 
