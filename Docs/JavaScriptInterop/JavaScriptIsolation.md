@@ -44,8 +44,28 @@ JavaScript isolation in Blazor components or libraries, allows developers to abs
 improving the usability and maintainability of their code. Consumers benefit from a cleaner, more encapsulated API without
 the need to handle external script imports, ultimately enhancing the overall developer experience and component reusability.
 
-todo: add examples
+```razor
+// MyReusableComponent.razor
 
+<h3>My Reusable Component</h3>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Load JavaScript dependency in isolation
+            await JSRuntime.InvokeVoidAsync("import", "./js/myReusableComponent.js");
+        }
+    }
+
+    public async Task CallJavaScriptMethod()
+    {
+        // Call a JavaScript function from isolated dependency
+        await JSRuntime.InvokeVoidAsync("myReusableComponent.doSomething");
+    }
+}
+```
 <br>
 
 
