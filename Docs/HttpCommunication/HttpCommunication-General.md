@@ -249,7 +249,46 @@ not GET, POST, PUT or DELETE. Use the `HttpRequestMessage` class to configure th
 <An HTTP response is typically buffered in a _Blazor WebAssembly_ app to enable support for sync reads on the response content.>
 
 ```csharp
-todo: add code
+@page "/streaming-example"
+@inject HttpClient HttpClient
+
+<button @onclick="MakeStreamingRequest">Make Streaming Request</button>
+
+@code {
+    private async Task MakeStreamingRequest()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, "https://api.example.com/large-data");
+        
+        // Enable response streaming for this request
+        request.SetBrowserResponseStreamingEnabled(true);
+
+        using (var response = await HttpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead))
+        {
+            if (response.IsSuccessStatusCode)
+            {
+                // Read the response stream incrementally
+                using (var stream = await response.Content.ReadAsStreamAsync())
+                {
+                    byte[] buffer = new byte[4096];
+                    int bytesRead;
+                    
+                    // Process the stream data in chunks
+                    do
+                    {
+                        bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
+                        // Process the received data here (e.g., append to UI)
+                        Console.WriteLine($"Received {bytesRead} bytes");
+                    }
+                    while (bytesRead > 0);
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Request failed with status code: {response.StatusCode}");
+            }
+        }
+    }
+}
 ```
 <br>
 
