@@ -298,7 +298,33 @@ not GET, POST, PUT or DELETE. Use the `HttpRequestMessage` class to configure th
 todo: add description
 
 ```csharp
-requestMessage.SetBrowserRequestCredentials(BrowserRequestCredentials.Include);
+@page "/cross-origin-example"
+@inject HttpClient HttpClient
+
+<button @onclick="MakeCrossOriginRequest">Make Cross-Origin Request</button>
+
+@code {
+    private async Task MakeCrossOriginRequest()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, "https://api.example.com/data");
+        
+        // Include credentials in the cross-origin request
+        request.SetBrowserRequestCredentials(BrowserRequestCredentials.Include);
+
+        using (var response = await HttpClient.SendAsync(request))
+        {
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Response content: {content}");
+            }
+            else
+            {
+                Console.WriteLine($"Request failed with status code: {response.StatusCode}");
+            }
+        }
+    }
+}
 ```
 
 Applies to: Blazor WebAssembly
