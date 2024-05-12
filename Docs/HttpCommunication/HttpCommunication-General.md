@@ -327,7 +327,7 @@ todo: add description
 }
 ```
 
-Applies to: Blazor WebAssembly
+<sub>Applies to: Blazor WebAssembly</sub>
 <br>
-Additional tags: security, authentication
+<sub>Additional tags: security, authentication</sub>
 <br>
